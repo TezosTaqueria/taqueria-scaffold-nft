@@ -2,7 +2,7 @@ import { TezosToolkit } from '@taquito/taquito';
 import { BeaconWallet } from "@taquito/beacon-wallet";
 import { NetworkType } from "@airgap/beacon-sdk";
 import { ExampleCode } from '../types/example.code';
-import { ExampleContractType, ExampleWalletType } from '../types/example.types';
+import { ExampleWalletType } from '../types/example.types';
 import { tas } from '../types/type-aliases';
 import { UpdateProgressCallback } from '../utils/hooks';
 
