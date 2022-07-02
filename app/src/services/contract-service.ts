@@ -10,18 +10,18 @@ const createContractService = () => {
     // localhost:4242 - flextesa local network
     // const Tezos = new TezosToolkit(`http://localhost:20000`);
 
-    // Flextesa
-    const network = {
-        // Use react dev server proxy
-        rpcUrl: `/`,
-        type: NetworkType.CUSTOM,
-    };
-
-    // // Testnet
+    // // Flextesa
     // const network = {
-    //     type: NetworkType.HANGZHOUNET,
-    //     rpcUrl: "https://hangzhounet.api.tez.ie"
+    //     // Use react dev server proxy
+    //     rpcUrl: `/`,
+    //     type: NetworkType.CUSTOM,
     // };
+
+    // Testnet
+    const network = {
+        type: NetworkType.ITHACANET,
+        rpcUrl: "https://ithacanet.ecadinfra.com/"
+    };
 
     const Tezos = new TezosToolkit(network.rpcUrl);
 

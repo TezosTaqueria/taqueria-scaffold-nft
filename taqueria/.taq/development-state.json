@@ -127,6 +127,10 @@
         "@taqueria/plugin-flextesa.start sandbox.1656794127050": {
             "time": 1656794127050,
             "output": null
+        },
+        "@taqueria/plugin-flextesa.stop sandbox.1656794285693": {
+            "time": 1656794285693,
+            "output": null
         }
     }
 }
