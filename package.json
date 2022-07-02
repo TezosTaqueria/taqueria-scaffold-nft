@@ -1,4 +1,11 @@
 {
+  "name": "taqueria-scaffold-nft",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "private": true,
   "scripts": {
     "setup": "npm run setup:taqueria && npm run setup:app",
@@ -11,12 +18,5 @@
     "start:taqueria:local": "cd ./taqueria && npm run start:local",
     "stop:local": "npm run stop:taqueria:local",
     "stop:taqueria:local": "cd ./taqueria && npm run stop:local"
-  },
-  "name": "taqueria-quickstart",
-  "description": "- `npm run setup` - `npm run start`",
-  "version": "1.0.0",
-  "main": "index.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  }
 }

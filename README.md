@@ -14,13 +14,13 @@
 - `taqueria`
 
     - Everything related to the contract
-    - `contract/.taq`
+    - `taqueria/.taq`
         - taqueria config folder, including setup for all required plugins
-    - `contract/contracts`
+    - `taqueria/contracts`
         - the contract .ligo code
-    - `contract/artifacts`
+    - `taqueria/artifacts`
         - the compiled contract (*.tz file)
-    - `contract/typings`
+    - `taqueria/typings`
         - the contract typescript typing
 
 

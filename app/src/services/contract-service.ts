@@ -10,18 +10,18 @@ const createContractService = () => {
     // localhost:4242 - flextesa local network
     // const Tezos = new TezosToolkit(`http://localhost:20000`);
 
-    // // Flextesa
-    // const network = { 
-    //     // Use react dev server proxy
-    //     rpcUrl:  `/`,
-    //     type: NetworkType.CUSTOM,
-    // };
-
-    // Testnet
+    // Flextesa
     const network = {
-        type: NetworkType.HANGZHOUNET,
-        rpcUrl: "https://hangzhounet.api.tez.ie"
+        // Use react dev server proxy
+        rpcUrl: `/`,
+        type: NetworkType.CUSTOM,
     };
+
+    // // Testnet
+    // const network = {
+    //     type: NetworkType.HANGZHOUNET,
+    //     rpcUrl: "https://hangzhounet.api.tez.ie"
+    // };
 
     const Tezos = new TezosToolkit(network.rpcUrl);
 
@@ -40,16 +40,16 @@ const createContractService = () => {
         connectWallet: async (updateProgress: UpdateProgressCallback) => {
             console.log('connectWallet START');
 
-            updateProgress( 'Requesting Permissions' );
+            updateProgress('Requesting Permissions');
 
             const wallet = new BeaconWallet({
                 name: "Example Dapp",
             });
-            await wallet.requestPermissions({ 
+            await wallet.requestPermissions({
                 network,
             });
 
-            updateProgress( 'Obtaining User Info' );
+            updateProgress('Obtaining User Info');
 
             state.userAddress = await wallet.getPKH();
             Tezos.setWalletProvider(wallet);
@@ -61,59 +61,59 @@ const createContractService = () => {
             console.log('connectWallet DONE');
         },
         loadContract: async (updateProgress: UpdateProgressCallback, contractAddress: string) => {
-            if(!state.isConnected){ throw new Error('Not connected'); }
-           
-            updateProgress( 'Loading Contract' );
+            if (!state.isConnected) { throw new Error('Not connected'); }
+
+            updateProgress('Loading Contract');
 
             state.contractAddress = contractAddress;
             state.contract = await Tezos.wallet.at<ExampleWalletType>(contractAddress);
-    
-            console.log('setup', {state});
+
+            console.log('setup', { state });
         },
         originateContract: async (updateProgress: UpdateProgressCallback) => {
-            if(!state.isConnected){ throw new Error('Not connected'); }
+            if (!state.isConnected) { throw new Error('Not connected'); }
 
             // Originate contract
-            updateProgress( 'Originating Contract' );
+            updateProgress('Originating Contract');
 
             const origination = await Tezos.wallet.originate<ExampleWalletType>({
                 code: ExampleCode.code,
                 storage: tas.int(42),
             }).send();
 
-            updateProgress( 'Confirming Contract' );
+            updateProgress('Confirming Contract');
             const contractAddress = (await origination.contract()).address;
             state.contractAddress = contractAddress;
             state.contract = await Tezos.wallet.at<ExampleWalletType>(contractAddress);
         },
-        getBalance: async (updateProgress: UpdateProgressCallback) : Promise<number> => {
-            if(!state.contract){ throw new Error('Contract is not setup'); }
+        getBalance: async (updateProgress: UpdateProgressCallback): Promise<number> => {
+            if (!state.contract) { throw new Error('Contract is not setup'); }
 
-            updateProgress( 'Getting Balance' );
+            updateProgress('Getting Balance');
 
             const storage = await state.contract.storage();
-            console.log('getBalance storage', {storage});
+            console.log('getBalance storage', { storage });
             return tas.number(storage);
         },
         increment: async (updateProgress: UpdateProgressCallback, amount: number): Promise<number> => {
-            if(!state.contract){ throw new Error('Contract is not setup'); }
+            if (!state.contract) { throw new Error('Contract is not setup'); }
 
-            updateProgress( 'Sending Transaction' );
+            updateProgress('Sending Transaction');
             const sendResult = await state.contract.methodsObject.increment(tas.int(amount)).send();
 
-            updateProgress( 'Confirming Transaction' );
+            updateProgress('Confirming Transaction');
             await sendResult.confirmation(5);
 
             // Read state after update
             return service.getBalance(updateProgress);
         },
         decrement: async (updateProgress: UpdateProgressCallback, amount: number): Promise<number> => {
-            if(!state.contract){ throw new Error('Contract is not setup'); }
+            if (!state.contract) { throw new Error('Contract is not setup'); }
 
-            updateProgress( 'Sending Transaction' );
+            updateProgress('Sending Transaction');
             const sendResult = await state.contract.methodsObject.decrement(tas.int(amount)).send();
-            
-            updateProgress( 'Confirming Transaction' );
+
+            updateProgress('Confirming Transaction');
             await sendResult.confirmation(5);
 
             // Read state after update
@@ -123,6 +123,6 @@ const createContractService = () => {
     };
 
     return service;
-};  
+};
 
 export const ContractService = createContractService();

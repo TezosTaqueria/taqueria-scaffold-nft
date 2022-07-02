@@ -1,0 +1,132 @@
+{
+    "operations": {},
+    "tasks": {
+        "@taqueria/plugin-ligo.compile.1656790380137": {
+            "time": 1656790380137,
+            "output": [
+                {
+                    "contract": "example.jsligo",
+                    "artifact": "Not compiled"
+                }
+            ]
+        },
+        "@taqueria/plugin-contract-types.generate types.1656790380406": {
+            "time": 1656790380406,
+            "output": null
+        },
+        "@taqueria/plugin-ligo.compile.1656790729668": {
+            "time": 1656790729668,
+            "output": [
+                {
+                    "contract": "example.jsligo",
+                    "artifact": "Not compiled"
+                }
+            ]
+        },
+        "@taqueria/plugin-contract-types.generate types.1656790729939": {
+            "time": 1656790729939,
+            "output": null
+        },
+        "@taqueria/plugin-ligo.compile.1656790905389": {
+            "time": 1656790905389,
+            "output": [
+                {
+                    "contract": "example.jsligo",
+                    "artifact": "Not compiled"
+                }
+            ]
+        },
+        "@taqueria/plugin-contract-types.generate types.1656790905656": {
+            "time": 1656790905656,
+            "output": null
+        },
+        "@taqueria/plugin-ligo.compile.1656791622472": {
+            "time": 1656791622472,
+            "output": [
+                {
+                    "contract": "example.jsligo",
+                    "artifact": "Not compiled"
+                }
+            ]
+        },
+        "@taqueria/plugin-contract-types.generate types.1656791622746": {
+            "time": 1656791622746,
+            "output": null
+        },
+        "@taqueria/plugin-ligo.compile.1656791956749": {
+            "time": 1656791956749,
+            "output": [
+                {
+                    "contract": "example.jsligo",
+                    "artifact": "Not compiled"
+                }
+            ]
+        },
+        "@taqueria/plugin-contract-types.generate types.1656791957024": {
+            "time": 1656791957024,
+            "output": null
+        },
+        "@taqueria/plugin-ligo.compile.1656792189201": {
+            "time": 1656792189201,
+            "output": [
+                {
+                    "contract": "example.jsligo",
+                    "artifact": "Not compiled"
+                }
+            ]
+        },
+        "@taqueria/plugin-contract-types.generate types.1656792189484": {
+            "time": 1656792189484,
+            "output": null
+        },
+        "@taqueria/plugin-ligo.compile.1656792295071": {
+            "time": 1656792295071,
+            "output": [
+                {
+                    "contract": "example.jsligo",
+                    "artifact": "Not compiled"
+                }
+            ]
+        },
+        "@taqueria/plugin-contract-types.generate types.1656792295349": {
+            "time": 1656792295349,
+            "output": null
+        },
+        "@taqueria/plugin-flextesa.start sandbox.1656793015540": {
+            "time": 1656793015540,
+            "output": null
+        },
+        "@taqueria/plugin-flextesa.start sandbox.1656793027045": {
+            "time": 1656793027045,
+            "output": null
+        },
+        "@taqueria/plugin-flextesa.start sandbox.1656793144584": {
+            "time": 1656793144584,
+            "output": null
+        },
+        "@taqueria/plugin-flextesa.stop sandbox.1656793162339": {
+            "time": 1656793162339,
+            "output": null
+        },
+        "@taqueria/plugin-flextesa.stop sandbox.1656793165857": {
+            "time": 1656793165857,
+            "output": null
+        },
+        "@taqueria/plugin-flextesa.start sandbox.1656793191288": {
+            "time": 1656793191288,
+            "output": null
+        },
+        "@taqueria/plugin-flextesa.start sandbox.1656793194420": {
+            "time": 1656793194420,
+            "output": null
+        },
+        "@taqueria/plugin-flextesa.start sandbox.1656793323481": {
+            "time": 1656793323481,
+            "output": null
+        },
+        "@taqueria/plugin-flextesa.start sandbox.1656794127050": {
+            "time": 1656794127050,
+            "output": null
+        }
+    }
+}
