@@ -326,6 +326,28 @@
         "@taqueria/plugin-ipfs-pinata.publish.1656827796969": {
             "time": 1656827796969,
             "output": null
+        },
+        "@taqueria/plugin-ipfs-pinata.publish.1656828854978": {
+            "time": 1656828854978,
+            "output": null
+        },
+        "@taqueria/plugin-ipfs-pinata.publish.1656830005350": {
+            "time": 1656830005350,
+            "output": null
+        },
+        "@taqueria/plugin-ipfs-pinata.publish.1656831000768": {
+            "time": 1656831000768,
+            "output": {
+                "data": {
+                    "failures": [],
+                    "fileIpfsHashes": [
+                        {
+                            "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/art/contract-metadata.json",
+                            "ipfsHash": "QmbSF4bauCvggVoVDZw536xVphjaD8BH39Fkc2pu6qybDg"
+                        }
+                    ]
+                }
+            }
         }
     }
 }

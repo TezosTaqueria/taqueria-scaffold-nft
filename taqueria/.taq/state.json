@@ -191,14 +191,14 @@
             "name": "@taqueria/plugin-ipfs-pinata",
             "version": "0.4.0",
             "schema": "0.1",
-            "alias": "ipfs",
+            "alias": "pinata",
             "tasks": [
                 {
                     "task": "publish",
                     "command": "publish [path]",
                     "aliases": [],
                     "description": "Upload and pin files using your pinata account.",
-                    "encoding": "none",
+                    "encoding": "json",
                     "handler": "proxy",
                     "options": [],
                     "positionals": [
