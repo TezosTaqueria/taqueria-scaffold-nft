@@ -277,6 +277,55 @@
         "@taqueria/plugin-contract-types.generate types.1656822707282": {
             "time": 1656822707282,
             "output": null
+        },
+        "@taqueria/plugin-ligo.compile.1656823038577": {
+            "time": 1656823038577,
+            "output": [
+                {
+                    "contract": "main.mligo",
+                    "artifact": "artifacts/main.tz"
+                }
+            ]
+        },
+        "@taqueria/plugin-contract-types.generate types.1656823038917": {
+            "time": 1656823038917,
+            "output": null
+        },
+        "@taqueria/plugin-ipfs-pinata.ipfs.1656824315818": {
+            "time": 1656824315818,
+            "output": null
+        },
+        "@taqueria/plugin-ipfs-pinata.ipfs.1656824378583": {
+            "time": 1656824378583,
+            "output": null
+        },
+        "@taqueria/plugin-ipfs-pinata.ipfs.1656824639642": {
+            "time": 1656824639642,
+            "output": null
+        },
+        "@taqueria/plugin-ipfs-pinata.publish.1656824959363": {
+            "time": 1656824959363,
+            "output": null
+        },
+        "@taqueria/plugin-ipfs-pinata.publish.1656825368495": {
+            "time": 1656825368495,
+            "output": null
+        },
+        "@taqueria/plugin-ipfs-pinata.publish.1656825645716": {
+            "time": 1656825645716,
+            "output": null
+        },
+        "@taqueria/plugin-ipfs-pinata.publish.1656826688585": {
+            "time": 1656826688585,
+            "output": null
+        },
+        "@taqueria/plugin-ipfs-pinata.publish.1656826759543": {
+            "time": 1656826759543,
+            "output": null
+        },
+        "@taqueria/plugin-ipfs-pinata.publish.1656827796969": {
+            "time": 1656827796969,
+            "output": null
         }
     }
 }

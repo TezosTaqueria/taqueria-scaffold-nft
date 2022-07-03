@@ -30,16 +30,26 @@ const tasks = {
             contract: string,
         }) => { return runTask(`taq compile ${args.contract}`) },
     },
-    'contract-types': {
-        'generate types': async (args: {
-        }) => { return runTask(`taq generate types`) },
-    },
     taquito: {
         originate: async (args: {
             contract: string,
         }) => { return runTask(`taq originate ${args.contract}`) }
-    }
+    },
+    'contract-types': {
+        'generate types': async (args: {
+        }) => { return runTask(`taq generate types`) },
+    },
+    'ipfs-pinata': {
+        publish: async (args: {
+            fileOrDirectoryPath: string;
+        }) => { return runTask(`taq publish ${args.fileOrDirectoryPath}`) },
+    },
 };
+
+
+const getFileInfo = async (filePath: string) => {
+    return await fs.stat(path.join(__dirname, `${filePath}`))
+}
 
 const { provision, apply, plan } = createProvisioner(async () => {
 
@@ -81,10 +91,6 @@ const { provision, apply, plan } = createProvisioner(async () => {
         return lastTaskResult;
     };
 
-    const getFileInfo = async (filePath: string) => {
-        return await fs.stat(path.join(__dirname, `${filePath}`))
-    }
-
     return {
         // TODO: Not sure how state will be structured
         // Assuming this is part of the new contract special state
@@ -105,16 +111,25 @@ const { provision, apply, plan } = createProvisioner(async () => {
                 artifact: string;
             }]>('@taqueria/plugin-ligo', 'compile'),
         },
+        '@taqueria/plugin-taquito': {
+            originate: await getLatestTaskOutput<[{
+                contract: string;
+                artifact: string;
+            }]>('@taqueria/plugin-taquito', 'originate'),
+        },
         '@taqueria/plugin-contract-types': {
             'generate types': await getLatestTaskOutput<null>(
                 '@taqueria/plugin-contract-types', 'generate types'),
         },
-        // @taqueria/plugin-contract-types.generate types
+        '@taqueria/plugin-ipfs-pinata': {
+            publish: await getLatestTaskOutput<null>(
+                '@taqueria/plugin-ipfs-pinata', 'publish'),
+        },
     };
 });
 
 
-// Provision
+// # Provisining Steps
 const pCompile =
     provision("compile contract")
         .task(state => tasks.ligo.compile({
@@ -138,11 +153,38 @@ const pTypes =
 //         .task(state => tasks.taquito.originate({
 //             contract: state["main.mligo"].artifactAbspath
 //         }))
+//         .when(async state =>
+//             (state["@taqueria/plugin-ligo"].compile?.time ?? 0)
+//             > (state["@taqueria/plugin-taquito"].originate?.time ?? 0))
 //         .after([pCompile]);
 
 
 
-// Run
+// # Verify the contract metadata is valid
+// # Publish the contract metadata to ipfs
+const pPublishContractMetadata =
+    provision("publish contract metadata")
+        .task(state => tasks['ipfs-pinata'].publish({
+            fileOrDirectoryPath: './art/contract-metadata.json',
+        }))
+        .when(async state => {
+            const fileInfo = await getFileInfo('../art/contract-metadata.json');
+            const last = state["@taqueria/plugin-ipfs-pinata"].publish;
+            return fileInfo.ctimeMs > (last?.time ?? 0);
+        })
+        .after([])
+    ;
+
+// # Originate the contract with the metadata ipfs hash
+// # Find image files in art folder
+// # Publish new image files to ipfs
+// # Set image hashes in image token metadata file
+// # Verify the image token metadata is valid
+// # Publish image token metadata to ipfs
+// # Mint nft in contract (set tokenId to image token metadata ipfs hash)
+
+
+// Run with Mock Provision
 if (process.argv.join('').includes('plan')) {
     console.log(`Running plan`);
     void plan();

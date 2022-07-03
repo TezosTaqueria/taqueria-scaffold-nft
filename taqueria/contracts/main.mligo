@@ -262,3 +262,4 @@ let main (action, storage : parameter * storage) : return =
             | Update_admin p -> ([]: operation list), update_admin (p, storage)
             | Update_metadata p -> ([]: operation list), update_metadata (p, storage)
             | Update_token_metadata p -> ([]: operation list), update_token_metadata (p, storage)
+

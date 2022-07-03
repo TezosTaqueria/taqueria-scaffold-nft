@@ -27,7 +27,7 @@
             "name": "@taqueria/plugin-contract-types",
             "type": "npm"
         },
-        "ipfs": {
+        "publish": {
             "name": "@taqueria/plugin-ipfs-pinata",
             "type": "npm"
         }
@@ -191,10 +191,10 @@
             "name": "@taqueria/plugin-ipfs-pinata",
             "version": "0.4.0",
             "schema": "0.1",
-            "alias": "jest",
+            "alias": "ipfs",
             "tasks": [
                 {
-                    "task": "ipfs",
+                    "task": "publish",
                     "command": "publish [path]",
                     "aliases": [],
                     "description": "Upload and pin files using your pinata account.",
