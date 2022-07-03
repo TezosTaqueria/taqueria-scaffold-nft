@@ -22,4 +22,3 @@ let main = ([action, store] : [parameter, storage]) : return_ => {
     Reset:     ()  => 0}))
   ]
 };
-

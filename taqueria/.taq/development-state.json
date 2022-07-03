@@ -131,6 +131,152 @@
         "@taqueria/plugin-flextesa.stop sandbox.1656794285693": {
             "time": 1656794285693,
             "output": null
+        },
+        "@taqueria/plugin-ligo.compile.1656818169383": {
+            "time": 1656818169383,
+            "output": [
+                {
+                    "contract": "example.jsligo",
+                    "artifact": "Not compiled"
+                }
+            ]
+        },
+        "@taqueria/plugin-ligo.compile.1656818176716": {
+            "time": 1656818176716,
+            "output": [
+                {
+                    "contract": "example.jsligo",
+                    "artifact": "Not compiled"
+                }
+            ]
+        },
+        "@taqueria/plugin-ligo.compile.1656818220077": {
+            "time": 1656818220077,
+            "output": [
+                {
+                    "contract": "example.jsligo",
+                    "artifact": "Not compiled"
+                }
+            ]
+        },
+        "@taqueria/plugin-ligo.compile.1656818372775": {
+            "time": 1656818372775,
+            "output": [
+                {
+                    "contract": "example.jsligo",
+                    "artifact": "Not compiled"
+                }
+            ]
+        },
+        "@taqueria/plugin-ligo.compile.1656818408474": {
+            "time": 1656818408474,
+            "output": [
+                {
+                    "contract": "example.jsligo",
+                    "artifact": "Not compiled"
+                }
+            ]
+        },
+        "@taqueria/plugin-ligo.compile.1656818468213": {
+            "time": 1656818468213,
+            "output": [
+                {
+                    "contract": "example.jsligo",
+                    "artifact": "Not compiled"
+                }
+            ]
+        },
+        "@taqueria/plugin-ligo.compile.1656818754550": {
+            "time": 1656818754550,
+            "output": [
+                {
+                    "contract": "example.jsligo",
+                    "artifact": "artifacts/example.tz"
+                }
+            ]
+        },
+        "@taqueria/plugin-ligo.compile.1656818763255": {
+            "time": 1656818763255,
+            "output": [
+                {
+                    "contract": "example.jsligo",
+                    "artifact": "artifacts/example.tz"
+                }
+            ]
+        },
+        "@taqueria/plugin-ligo.compile.1656818780110": {
+            "time": 1656818780110,
+            "output": [
+                {
+                    "contract": "example.jsligo",
+                    "artifact": "artifacts/example.tz"
+                }
+            ]
+        },
+        "@taqueria/plugin-ligo.compile.1656818832407": {
+            "time": 1656818832407,
+            "output": [
+                {
+                    "contract": "example.jsligo",
+                    "artifact": "artifacts/example.tz"
+                }
+            ]
+        },
+        "@taqueria/plugin-ligo.compile.1656820498316": {
+            "time": 1656820498316,
+            "output": [
+                {
+                    "contract": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/contracts/example.jsligo",
+                    "artifact": "Not compiled"
+                }
+            ]
+        },
+        "@taqueria/plugin-ligo.compile.1656820691645": {
+            "time": 1656820691645,
+            "output": [
+                {
+                    "contract": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/contracts/example.jsligo",
+                    "artifact": "Not compiled"
+                }
+            ]
+        },
+        "@taqueria/plugin-ligo.compile.1656820775957": {
+            "time": 1656820775957,
+            "output": [
+                {
+                    "contract": "example.jsligo",
+                    "artifact": "artifacts/example.tz"
+                }
+            ]
+        },
+        "@taqueria/plugin-contract-types.generate types.1656821225033": {
+            "time": 1656821225033,
+            "output": null
+        },
+        "@taqueria/plugin-ligo.compile.1656821415806": {
+            "time": 1656821415806,
+            "output": [
+                {
+                    "contract": "main.mligo",
+                    "artifact": "artifacts/main.tz"
+                }
+            ]
+        },
+        "@taqueria/plugin-contract-types.generate types.1656821520266": {
+            "time": 1656821520266,
+            "output": null
+        },
+        "@taqueria/plugin-contract-types.generate types.1656821576407": {
+            "time": 1656821576407,
+            "output": null
+        },
+        "@taqueria/plugin-contract-types.generate types.1656821597834": {
+            "time": 1656821597834,
+            "output": null
+        },
+        "@taqueria/plugin-contract-types.generate types.1656822707282": {
+            "time": 1656822707282,
+            "output": null
         }
     }
 }

@@ -17,6 +17,12 @@
     "start:local": "npm run start:taqueria:local && npm run start:app",
     "start:taqueria:local": "cd ./taqueria && npm run start:local",
     "stop:local": "npm run stop:taqueria:local",
-    "stop:taqueria:local": "cd ./taqueria && npm run stop:local"
+    "stop:taqueria:local": "cd ./taqueria && npm run stop:local",
+    "plan": "cd ./taqueria && npx ts-node ./provisioning/provision.ts --plan",
+    "apply": "cd ./taqueria && npx ts-node ./provisioning/provision.ts --apply"
+  },
+  "devDependencies": {
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5"
   }
 }
