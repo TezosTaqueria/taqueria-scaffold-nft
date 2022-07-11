@@ -4,6 +4,8 @@ import { exec } from "child_process";
 // import type developmentStateJson from "../.taq/development-state.json";
 import fs from "fs/promises";
 import path from "path";
+import { getFileInfo } from "./provisioner-helpers";
+
 
 // Mock tasks and state
 const runTask = async (cli: string) => {
@@ -24,7 +26,7 @@ const runTask = async (cli: string) => {
     });
 };
 
-const tasks = {
+export const tasks = {
     ligo: {
         compile: async (args: {
             contract: string,
@@ -47,11 +49,8 @@ const tasks = {
 };
 
 
-const getFileInfo = async (filePath: string) => {
-    return await fs.stat(path.join(__dirname, `${filePath}`))
-}
 
-const { provision, apply, plan } = createProvisioner(async () => {
+export const provisionerInstance = createProvisioner(async () => {
 
     const getLatestTaskOutput = async <TOutput extends null | unknown[]>(plugin: string, task: string): Promise<undefined | {
         time: number,
@@ -127,70 +126,3 @@ const { provision, apply, plan } = createProvisioner(async () => {
         },
     };
 });
-
-
-// # Provisining Steps
-const pCompile =
-    provision("compile contract")
-        .task(state => tasks.ligo.compile({
-            contract: state["main.mligo"].relpath,
-        }))
-        .when(state => state["main.mligo"].hasChanged())
-    ;
-
-const pTypes =
-    provision("generate types")
-        .task(state => tasks['contract-types']['generate types']({
-        }))
-        .when(async state =>
-            (state["@taqueria/plugin-ligo"].compile?.time ?? 0)
-            > (state["@taqueria/plugin-contract-types"]['generate types']?.time ?? 0))
-        .after([pCompile])
-    ;
-
-// const pOriginate =
-//     provision("originate")
-//         .task(state => tasks.taquito.originate({
-//             contract: state["main.mligo"].artifactAbspath
-//         }))
-//         .when(async state =>
-//             (state["@taqueria/plugin-ligo"].compile?.time ?? 0)
-//             > (state["@taqueria/plugin-taquito"].originate?.time ?? 0))
-//         .after([pCompile]);
-
-
-
-// # Verify the contract metadata is valid
-// # Publish the contract metadata to ipfs
-const pPublishContractMetadata =
-    provision("publish contract metadata")
-        .task(state => tasks['ipfs-pinata'].publish({
-            fileOrDirectoryPath: './art/contract-metadata.json',
-        }))
-        .when(async state => {
-            const fileInfo = await getFileInfo('../art/contract-metadata.json');
-            const last = state["@taqueria/plugin-ipfs-pinata"].publish;
-            return fileInfo.ctimeMs > (last?.time ?? 0);
-        })
-        .after([])
-    ;
-
-// # Originate the contract with the metadata ipfs hash
-// # Find image files in art folder
-// # Publish new image files to ipfs
-// # Set image hashes in image token metadata file
-// # Verify the image token metadata is valid
-// # Publish image token metadata to ipfs
-// # Mint nft in contract (set tokenId to image token metadata ipfs hash)
-
-
-// Run with Mock Provision
-if (process.argv.join('').includes('plan')) {
-    console.log(`Running plan`);
-    void plan();
-} else if (process.argv.join('').includes('apply')) {
-    console.log(`Running apply`);
-    void apply();
-} else {
-    console.log(`Unknown command ${process.argv}`);
-}

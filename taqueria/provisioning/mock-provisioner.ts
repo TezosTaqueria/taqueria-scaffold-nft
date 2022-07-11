@@ -9,6 +9,7 @@ export const createProvisioner = <TInputState>(getInputState: () => Promise<TInp
         _order?: string;
         _defaultOrder?: string;
         _isActive?: boolean;
+        _afterProvisions?: ProvisionDefinition[];
     };
     const provisions = [] as ProvisionDefinition[];
 
@@ -45,6 +46,7 @@ export const createProvisioner = <TInputState>(getInputState: () => Promise<TInp
         // Sort by `after`
         provisions.forEach((p, i) => {
             p._defaultOrder = i.toString().padStart(6, '0');
+            p._afterProvisions = [];
         });
         const pMap = new Map(provisions.map(p => [p.name, p]));
         const visited = new Set([] as string[]);
@@ -56,10 +58,14 @@ export const createProvisioner = <TInputState>(getInputState: () => Promise<TInp
                 return (p._defaultOrder ?? 0).toString().padStart(6, '0');
             }
 
-            const parentOrders = p.after
-                ?.map(x => getOrder(pMap.get(x)))
+            p._afterProvisions = p.after
+                ?.map(x => pMap.get(x)!);
+
+            const parentOrders = p._afterProvisions
+                ?.map(x => getOrder(x))
                 .filter(x => x)
-                .sort() ?? [];
+                .sort()
+                .reverse() ?? [];
 
             p._order = `${parentOrders.map(x => `${x}:`).join('')}${p._defaultOrder}`;
             return p._defaultOrder;
@@ -76,9 +82,11 @@ export const createProvisioner = <TInputState>(getInputState: () => Promise<TInp
         sortProvisions();
 
         const inputState = await getInputState();
-        await Promise.all(provisions.map(async x => {
-            x._isActive = await x.when?.(inputState) ?? true;
-        }));
+
+        for (const p of provisions) {
+            const depsRan = !p._afterProvisions?.length || p._afterProvisions.some(p2 => p2._isActive);
+            p._isActive = depsRan && (await p.when?.(inputState) ?? true);
+        }
 
         const report = provisions
             .map(p => `${p._isActive ? '🟢' : '⚪'} ${p.name.padEnd(32, ' ')} : ${p._order}`)
@@ -95,11 +103,15 @@ export const createProvisioner = <TInputState>(getInputState: () => Promise<TInp
 
         for (const p of provisions) {
             const inputState = await getInputState();
-            const isActive = await p.when?.(inputState) ?? true;
+
+            const depsRan = !p._afterProvisions?.length || p._afterProvisions.some(p2 => p2._isActive);
+            const isActive = depsRan && (await p.when?.(inputState) ?? true);
             if (!isActive) {
                 console.log(`⚪ skip '${p.name}'`);
                 continue;
             }
+
+            p._isActive = isActive;
 
             console.log(`🟢 run '${p.name}'`);
 
