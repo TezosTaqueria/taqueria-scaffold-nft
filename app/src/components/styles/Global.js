@@ -16,22 +16,21 @@ const GlobalStyles = createGlobalStyle`
   }
 
   p {
-    font-family: 'Montserrat';
+   letter-spacing: 0.3px;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 25px;
+    font-size: 14px;
+    line-height: 20px;
   }
   h1 {
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 40px;
     line-height: 56px;
+    margin:0;
   }
 
   .boldTex {
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
