@@ -1,4 +1,10 @@
-export const createProvisioner = <TInputState>(getInputState: () => Promise<TInputState>) => {
+export const createProvisioner = <TInputState>({
+    getInputState,
+    addProvisionTaskOutputToState,
+}: {
+    getInputState: () => Promise<TInputState>,
+    addProvisionTaskOutputToState: (provisionName: string, provisionOutput: unknown) => Promise<void>,
+}) => {
 
     type ProvisionDefinition = {
         name: string;
@@ -115,7 +121,10 @@ export const createProvisioner = <TInputState>(getInputState: () => Promise<TInp
 
             console.log(`🟢 run '${p.name}'`);
 
-            await p.task?.(inputState);
+            const pOutput = await p.task?.(inputState);
+
+            // Save provision output
+            await addProvisionTaskOutputToState(p.name, pOutput);
         }
     };
 

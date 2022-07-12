@@ -439,6 +439,127 @@
                     "ipfsHash": "QmSuMbzV2bmEZuStxSqZuAdNc4eexQcTZSeQLFdREqAN7r"
                 }
             ]
+        },
+        "@taqueria/plugin-ligo.compile.1657583184753": {
+            "time": 1657583184754,
+            "output": [
+                {
+                    "contract": "main.mligo",
+                    "artifact": "artifacts/main.tz"
+                }
+            ]
+        },
+        "@taqueria/plugin-contract-types.generate types.1657583185117": {
+            "time": 1657583185117,
+            "output": null
+        },
+        "@taqueria/plugin-ipfs-pinata.publish.1657583186552": {
+            "time": 1657583186552,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "contract-metadata.json",
+                    "ipfsHash": "QmSuMbzV2bmEZuStxSqZuAdNc4eexQcTZSeQLFdREqAN7r"
+                }
+            ]
+        },
+        "@taqueria/plugin-ipfs-pinata.publish.1657583672452": {
+            "time": 1657583672452,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "contract-metadata.json",
+                    "ipfsHash": "QmSuMbzV2bmEZuStxSqZuAdNc4eexQcTZSeQLFdREqAN7r"
+                }
+            ]
+        },
+        "@taqueria/plugin-ipfs-pinata.publish.1657583772190": {
+            "time": 1657583772190,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "contract-metadata.json",
+                    "ipfsHash": "QmSuMbzV2bmEZuStxSqZuAdNc4eexQcTZSeQLFdREqAN7r"
+                }
+            ]
+        },
+        "custom.hasFileChanged_assets_contract_metadata_json.1657584040715": {
+            "time": 1657584040715,
+            "output": true
+        },
+        "@taqueria/plugin-ipfs-pinata.publish.1657584042179": {
+            "time": 1657584042179,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "contract-metadata.json",
+                    "ipfsHash": "QmSuMbzV2bmEZuStxSqZuAdNc4eexQcTZSeQLFdREqAN7r"
+                }
+            ]
+        },
+        "custom.publish_contract_metadata.1657584042186": {
+            "time": 1657584042186,
+            "output": "┌───┬────────────────────────┬────────────────────────────────────────────────┐\n│   │ File Path              │ Ipfs Hash                                      │\n├───┼────────────────────────┼────────────────────────────────────────────────┤\n│ ✔ │ contract-metadata.json │ QmSuMbzV2bmEZuStxSqZuAdNc4eexQcTZSeQLFdREqAN7r │\n└───┴────────────────────────┴────────────────────────────────────────────────┘\n"
+        },
+        "@taqueria/plugin-ligo.compile.1657584114025": {
+            "time": 1657584114025,
+            "output": [
+                {
+                    "contract": "main.mligo",
+                    "artifact": "artifacts/main.tz"
+                }
+            ]
+        },
+        "custom.compile_contract.1657584114032": {
+            "time": 1657584114032,
+            "output": "┌────────────┬───────────────────┐\n│ Contract   │ Artifact          │\n├────────────┼───────────────────┤\n│ main.mligo │ artifacts/main.tz │\n└────────────┴───────────────────┘\n"
+        },
+        "@taqueria/plugin-contract-types.generate types.1657584114356": {
+            "time": 1657584114356,
+            "output": null
+        },
+        "custom.generate_types.1657584114360": {
+            "time": 1657584114360,
+            "output": "generateTypes { typescriptDir: 'types' }\nGenerating Types: /home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/artifacts => /home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/types\nGenerating Types: /home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/artifacts => /home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/types\nContracts Found: \n\t- /home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/artifacts/example.tz\nContracts Found: \n\t- /home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/artifacts/main.tz\nProcessing /main.tz...\nProcessing /example.tz...\nexample.tz: Types generated\nmain.tz: Types generated\n"
+        },
+        "@taqueria/plugin-ligo.compile.1657584155302": {
+            "time": 1657584155302,
+            "output": [
+                {
+                    "contract": "main.mligo",
+                    "artifact": "artifacts/main.tz"
+                }
+            ]
+        },
+        "custom.compile_contract.1657584155310": {
+            "time": 1657584155310,
+            "output": "┌────────────┬───────────────────┐\n│ Contract   │ Artifact          │\n├────────────┼───────────────────┤\n│ main.mligo │ artifacts/main.tz │\n└────────────┴───────────────────┘\n"
+        },
+        "@taqueria/plugin-contract-types.generate types.1657584155653": {
+            "time": 1657584155653,
+            "output": null
+        },
+        "custom.generate_types.1657584155657": {
+            "time": 1657584155657,
+            "output": "generateTypes { typescriptDir: 'types' }\nGenerating Types: /home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/artifacts => /home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/types\nGenerating Types: /home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/artifacts => /home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/types\nContracts Found: \n\t- /home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/artifacts/example.tz\nContracts Found: \n\t- /home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/artifacts/main.tz\nProcessing /main.tz...\nProcessing /example.tz...\nexample.tz: Types generated\nmain.tz: Types generated\n"
+        },
+        "custom.hasFileChanged_assets_contract_metadata_json.1657584155662": {
+            "time": 1657584155662,
+            "output": true
+        },
+        "@taqueria/plugin-ipfs-pinata.publish.1657584157605": {
+            "time": 1657584157605,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "contract-metadata.json",
+                    "ipfsHash": "QmPiUVgQriujGF7aQMwuM3mQVQH5aeC4hF9RiAJ21BV9iV"
+                }
+            ]
+        },
+        "custom.publish_contract_metadata.1657584157614": {
+            "time": 1657584157614,
+            "output": "┌───┬────────────────────────┬────────────────────────────────────────────────┐\n│   │ File Path              │ Ipfs Hash                                      │\n├───┼────────────────────────┼────────────────────────────────────────────────┤\n│ ✔ │ contract-metadata.json │ QmPiUVgQriujGF7aQMwuM3mQVQH5aeC4hF9RiAJ21BV9iV │\n└───┴────────────────────────┴────────────────────────────────────────────────┘\n"
         }
     }
 }

@@ -1,5 +1,5 @@
 import { provisionerInstance, tasks } from "./mock-provision-tasks-and-state";
-import { getFileInfo } from "./provisioner-helpers";
+import { provisionHasFileChanged } from "./provisioner-builders";
 const { provision } = provisionerInstance;
 
 
@@ -29,13 +29,7 @@ const pTypes =
 // # Verify the contract metadata is valid
 
 // # Publish the contract metadata to ipfs
-const pHasFileChanged_contractMetadata = provision("hasFileChanged contract metadata")
-    .task(async state => true)
-    .when(async state => {
-        const fileInfo = await getFileInfo('../assets/contract-metadata.json');
-        const last = state["@taqueria/plugin-ipfs-pinata"].publish;
-        return fileInfo.ctimeMs > (last?.time ?? 0);
-    });
+const pHasFileChanged_contractMetadata = provisionHasFileChanged('../assets/contract-metadata.json');
 const pPublishContractMetadata =
     provision("publish contract metadata")
         .task(state => tasks['ipfs-pinata'].publish({
@@ -45,12 +39,12 @@ const pPublishContractMetadata =
     ;
 
 // # Originate the contract with the metadata ipfs hash
-const pOriginate =
-    provision("originate with storage")
-        .task(async state => await tasks.taquito.originate({
-            contract: state["main.mligo"].artifactAbspath
-        }))
-        .after([pCompile, pPublishContractMetadata]);
+// const pOriginate =
+//     provision("originate with storage")
+//         .task(async state => await tasks.taquito.originate({
+//             contract: state["main.mligo"].artifactAbspath
+//         }))
+//         .after([pCompile, pPublishContractMetadata]);
 
 // # Find image files in assets folder
 // # Publish new image files to ipfs
