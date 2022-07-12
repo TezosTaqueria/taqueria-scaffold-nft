@@ -105,6 +105,8 @@ export const provisionerInstance = createProvisioner({
     getInputState: async () => {
 
         return {
+            getAllTaskOutput,
+            getLatestTaskOutput,
             getAllProvisionOutput: async <TOutput extends null | unknown[]>(provisionName: string) => {
                 return await getAllTaskOutput<TOutput>('custom', normalizeProvisionName(provisionName))
             },

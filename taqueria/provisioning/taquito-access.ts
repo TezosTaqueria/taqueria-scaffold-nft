@@ -7,7 +7,7 @@ import { char2Bytes } from "@taquito/utils";
 import configJson from "../.taq/config.json";
 
 type NetworkKind = 'flextesa' | 'ithacanet'
-const getTezosToolkit = async (networkKind: NetworkKind) => {
+export const getTezosSettings = async (networkKind: NetworkKind) => {
 
     const network = networkKind === 'ithacanet' ? {
         rpcUrl: "https://ithacanet.ecadinfra.com/",
@@ -29,7 +29,7 @@ const getTezosToolkit = async (networkKind: NetworkKind) => {
     };
 };
 
-export const loadContract = async (networkKind: NetworkKind, address: string) => (await getTezosToolkit(networkKind))
+export const loadContract = async (networkKind: NetworkKind, address: string) => (await getTezosSettings(networkKind))
     .Tezos
     .contract.at<MainContractType>(address);
 
@@ -40,7 +40,7 @@ export const originateContract = async ({
     networkKind: NetworkKind,
     collectionMetadataIpfsHashUri: string;
 }) => {
-    const { Tezos, userAddress } = await getTezosToolkit(networkKind);
+    const { Tezos, userAddress } = await getTezosSettings(networkKind);
     const origination = await Tezos
         .contract.originate<MainContractType>({
             code: MainCode.code,

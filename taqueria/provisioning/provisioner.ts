@@ -4,9 +4,11 @@ import { getDirectoryFiles, getFileInfo, readJsonFile } from "./helpers";
 import { getMediaFileFormat } from "./media-files";
 import { provisionerInstance, tasks } from "./mock-provision-tasks-and-state";
 import { provisionHasFileChanged, provisionHaveFilesChanged } from "./provisioner-builders";
-import { originateContract } from "./taquito-access";
+import { getTezosSettings, loadContract, originateContract } from "./taquito-access";
 import { finalizeTzip21Metadata, Tzip21Metadata_Initial } from "./tzip-21-metadata";
-const { provision } = provisionerInstance;
+import { tas } from "../types/type-aliases";
+import { char2Bytes } from "@taquito/utils";
+const { provision, getState } = provisionerInstance;
 
 // TODO: How to manage environments?
 const networkKind = 'flextesa';
@@ -58,9 +60,9 @@ const pOriginate =
                 collectionMetadataIpfsHashUri: ipfsHash,
             });
 
-            return {
+            return [{
                 contractAddress,
-            };
+            }];
         })
         .after([pCompile, pPublishContractMetadata]);
 
@@ -78,34 +80,76 @@ const pPublishAssetFiles =
 // # Finalize token metadata files
 const pHaveFilesChanged_metadata = provisionHaveFilesChanged('asset metadata files', './assets/', x => x.endsWith('.json'));
 
+const getMainAssetFiles = async () => {
+    const assetFiles = await getDirectoryFiles('./assets');
+    const mainAssetFiles = assetFiles
+        .map(x => {
+            const tokenId = Number(path.basename(x).split('.')[0]);
+            const ext = path.extname(x);
+            const baseFileName = x.substring(0, x.length - ext.length);
+            const descriptionFilePath = `${baseFileName}.description.json`;
+            const metadataFilePath = `${baseFileName}.json`;
+            const thumbFilePath = assetFiles.find(x => x.startsWith(`${baseFileName}.thumb`));
+
+            return ({
+                filePath: x,
+                tokenId,
+                ext,
+                baseFileName,
+                descriptionFilePath,
+                metadataFilePath,
+                thumbFilePath,
+            })
+        })
+        .filter(x => Number.isInteger(x.tokenId) && !x.filePath.endsWith('.json') && !x.filePath.includes('.thumb.'))
+        ;
+
+    return {
+        assetFiles,
+        mainAssetFiles,
+    };
+};
+
+const getAllIpfsFileHashes = async (state: Awaited<ReturnType<typeof getState>>) => {
+    const ipfsHashes = (
+        await state.getAllTaskOutput<{
+            filePath: string,
+            ipfsHash: string,
+        }[]>('@taqueria/plugin-ipfs-pinata', 'publish')
+    )?.flatMap(x => x.output) ?? [];
+    const ipfsHashesMap = new Map(ipfsHashes.map(x => [x.filePath, x.ipfsHash]));
+    return {
+        ipfsHashes,
+        ipfsHashesMap,
+    };
+};
+
 const pFinalizeTokenMetadataFiles =
     provision("finalize token metadata files")
         .task(async state => {
 
-            const assetFiles = await getDirectoryFiles('./assets');
+            const {
+                mainAssetFiles,
+            } = await getMainAssetFiles();
+
             const commonFilePath = path.resolve(process.cwd(), './assets/_common.json');
             const commonJson = await readJsonFile<Record<string, unknown>>(commonFilePath) ?? {};
 
-            const ipfsHashes = (
-                await state.getAllProvisionOutput<{
-                    filePath: string,
-                    ipfsHash: string,
-                }[]>(pPublishAssetFiles.name)
-            )?.flatMap(x => x.output) ?? [];
-            const ipfsHashesMap = new Map(ipfsHashes.map(x => [x.filePath, x.ipfsHash]));
+            const { ipfsHashesMap } = await getAllIpfsFileHashes(state);
 
-            const finalizeTokenMetadataFile = async (assetFilePath: string) => {
-                const ext = path.extname(assetFilePath);
-                const baseFileName = assetFilePath.substring(0, assetFilePath.length - ext.length);
+            const finalizeTokenMetadataFile = async (mainAssetFile: typeof mainAssetFiles[number]) => {
 
-                const descriptionFilePath = `${baseFileName}.description.json`;
+                const {
+                    filePath: assetFilePath,
+                    ext,
+                    baseFileName,
+                    descriptionFilePath,
+                    metadataFilePath,
+                    thumbFilePath,
+                } = mainAssetFile;
+
                 const descriptionJson = await readJsonFile<Record<string, unknown>>(descriptionFilePath) ?? {};
-
-                const metadataFilePath = `${baseFileName}.json`;
                 const metadataJson = await readJsonFile<Record<string, unknown>>(metadataFilePath) ?? {};
-
-                const thumbFilePath = assetFiles.find(x => x.startsWith(`${baseFileName}.thumb`));
-
                 const assetIpfsHash = assetFilePath ? ipfsHashesMap.get(assetFilePath) : undefined;
                 const thumbIpfsHash = thumbFilePath ? ipfsHashesMap.get(thumbFilePath) : undefined;
 
@@ -143,14 +187,13 @@ const pFinalizeTokenMetadataFiles =
             };
 
             // Update all metadata files
-            const mainAssetFiles = assetFiles.filter(x => !x.endsWith('.json') && !x.includes('.thumb.'));
             for (const f of mainAssetFiles) {
                 await finalizeTokenMetadataFile(f);
             }
 
-            return {
+            return [{
                 mainAssetFiles,
-            };
+            }];
         })
         .after([pHaveFilesChanged_metadata, pPublishAssetFiles])
     ;
@@ -164,4 +207,70 @@ const pPublishAssetMetadataFiles =
         .after([pFinalizeTokenMetadataFiles])
     ;
 
-// // # Mint nft in contract (set tokenId to image token metadata ipfs hash)
+// # Mint nft in contract (set tokenId to image token metadata ipfs hash)
+const pMintTokens =
+    provision("mint tokens")
+        .task(async state => {
+
+            const contractAddress = (
+                await state.getLatestProvisionOutput<{
+                    contractAddress: string,
+                }[]>(pOriginate.name)
+            )?.output[0].contractAddress;
+
+            if (!contractAddress) {
+                throw new Error('contractAddress is missing');
+            }
+
+            const oldMintedTokens = (
+                await state.getAllProvisionOutput<{
+                    contractAddress: string,
+                    mintedTokens: {
+                        tokenId: number;
+                        ipfsHash: string;
+                    }[],
+                }[]>('mint tokens')
+            ).flatMap(x => x.output)
+                .filter(x => x.contractAddress === contractAddress)
+                .flatMap(x => x.mintedTokens);
+
+
+            const {
+                mainAssetFiles,
+            } = await getMainAssetFiles();
+            const { ipfsHashesMap } = await getAllIpfsFileHashes(state);
+
+            const tokensToMint = mainAssetFiles.map(x => ({
+                tokenId: x.tokenId,
+                ipfsHash: ipfsHashesMap.get(x.metadataFilePath)!,
+            })).filter(x => x.ipfsHash)
+                .filter(x => oldMintedTokens.some(o => o.tokenId === x.tokenId));
+
+            const contract = await loadContract(networkKind, contractAddress);
+            const { userAddress } = await getTezosSettings(networkKind);
+
+            const remaining = tokensToMint;
+            while (remaining.length) {
+                const batch = remaining.splice(0, 50);
+                const call = contract.methodsObject.mint(batch.map(x => ({
+                    token_id: tas.nat(x.tokenId),
+                    ipfs_hash: tas.bytes(char2Bytes(x.ipfsHash)),
+                    owner: tas.address(userAddress),
+                })));
+
+                const result = await call.send({
+                    //fee: 20000,
+                    fee: 40000, // FAST!
+                    storageLimit: 300 * tokensToMint.length,
+                    gasLimit: 1000 * tokensToMint.length,
+                });
+
+                await result.confirmation(2);
+            }
+
+            return [{
+                contractAddress,
+                mintedTokens: tokensToMint
+            }];
+        })
+        .after([pOriginate, pPublishAssetMetadataFiles]);

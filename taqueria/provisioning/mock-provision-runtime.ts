@@ -24,7 +24,7 @@ export const createProvisioner = <TInputState>({
         const def = { name } as ProvisionDefinition;
         provisions.push(def);
 
-        const task = (taskCallback: (state: TInputState) => Promise<unknown>) => {
+        const task = (taskCallback: (state: TInputState) => Promise<unknown[] | null | undefined>) => {
             def.task = taskCallback;
             return {
                 name,
@@ -132,6 +132,7 @@ export const createProvisioner = <TInputState>({
         provision,
         apply,
         plan,
+        getState: () => getInputState(),
     };
 };
 
