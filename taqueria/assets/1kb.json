@@ -1,0 +1,57 @@
+{
+  "type": "TaqueriaNftScaffold",
+  "creators": [
+    "ECAD Labs Inc."
+  ],
+  "contributors": [
+    "Rick Love"
+  ],
+  "publishers": [
+    "ECAD Labs Inc."
+  ],
+  "externalUri": "https://ecadlabs.com",
+  "tags": [
+    "ECAD"
+  ],
+  "royalties": {
+    "decimals": 2,
+    "shares": {}
+  },
+  "decimals": 0,
+  "isBooleanAmount": true,
+  "language": "en",
+  "date": "2022-07-12T22:44:35.665Z",
+  "name": "1kb-webp",
+  "description": "This is the best 1kb file I have ever seen!",
+  "attributes": [
+    {
+      "name": "size",
+      "value": "1kb"
+    },
+    {
+      "name": "awesomeness",
+      "value": "100%"
+    }
+  ],
+  "artifactUri": "ipfs://QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC",
+  "displayUri": "ipfs://QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC",
+  "thumbnailUri": "ipfs://QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC",
+  "formats": [
+    {
+      "uri": "ipfs://QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC",
+      "mimeType": "image/webp",
+      "dimensions": {
+        "value": "32x32",
+        "unit": "px"
+      }
+    },
+    {
+      "uri": "ipfs://QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC",
+      "mimeType": "image/webp",
+      "dimensions": {
+        "value": "32x32",
+        "unit": "px"
+      }
+    }
+  ]
+}

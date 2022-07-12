@@ -8,10 +8,10 @@ import { getFileInfo, normalizeProvisionName } from "./helpers";
 
 
 // Mock tasks and state
-const getLatestTaskOutput = async <TOutput extends null | unknown[]>(plugin: string, task: string): Promise<undefined | {
+const getAllTaskOutput = async <TOutput extends null | unknown[]>(plugin: string, task: string): Promise<{
     time: number,
     output: TOutput
-}> => {
+}[]> => {
     // tasks: {
     //        "@taqueria/plugin-ligo.compile.1656818763255": {
     //            "time": 1656818763255,
@@ -28,14 +28,20 @@ const getLatestTaskOutput = async <TOutput extends null | unknown[]>(plugin: str
     const allStateContent = await fs.readFile(developmentStateFilePath, { encoding: 'utf-8' });
     const allState = JSON.parse(allStateContent) as DevelopmentStateJson<TOutput>;
 
-    // @taqueria/plugin-ligo.compile
-    const taskRunKeys = Object.keys(allState.tasks)
-        .filter(x => x.startsWith(`${plugin}.${task}`));
-    const lastTaskRunKey = taskRunKeys.sort().reverse()[0];
+    const items = [...Object.entries(allState.tasks)]
+        .filter(([key, value]) => key.startsWith(`${plugin}.${task}`))
+        .map(([key, value]) => value);
 
-    const lastTaskResult = allState.tasks[lastTaskRunKey];
+    items.sort((a, b) => a.time - b.time);
+    return items;
+};
 
-    // console.log(`getLatestTaskOutput`, { plugin, task, lastTaskResult });
+const getLatestTaskOutput = async <TOutput extends null | unknown[]>(plugin: string, task: string): Promise<undefined | {
+    time: number,
+    output: TOutput
+}> => {
+    const allTaskOutput = await getAllTaskOutput<TOutput>(plugin, task);
+    const lastTaskResult = allTaskOutput.reverse()[0];
     return lastTaskResult;
 };
 
@@ -99,6 +105,9 @@ export const provisionerInstance = createProvisioner({
     getInputState: async () => {
 
         return {
+            getAllProvisionOutput: async <TOutput extends null | unknown[]>(provisionName: string) => {
+                return await getAllTaskOutput<TOutput>('custom', normalizeProvisionName(provisionName))
+            },
             getLatestProvisionOutput: async <TOutput extends null | unknown[]>(provisionName: string) => {
                 return await getLatestTaskOutput<TOutput>('custom', normalizeProvisionName(provisionName))
             },

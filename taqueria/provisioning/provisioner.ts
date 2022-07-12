@@ -1,6 +1,11 @@
+import path from "path";
+import fs from "fs/promises";
+import { getDirectoryFiles, getFileInfo, readJsonFile } from "./helpers";
+import { getMediaFileFormat } from "./media-files";
 import { provisionerInstance, tasks } from "./mock-provision-tasks-and-state";
 import { provisionHasFileChanged, provisionHaveFilesChanged } from "./provisioner-builders";
 import { originateContract } from "./taquito-access";
+import { finalizeTzip21Metadata, Tzip21Metadata_Initial } from "./tzip-21-metadata";
 const { provision } = provisionerInstance;
 
 // TODO: How to manage environments?
@@ -24,11 +29,11 @@ const pTypes =
 
 // # Verify the contract metadata is valid
 // # Publish the contract metadata to ipfs
-const pHasFileChanged_contractMetadata = provisionHasFileChanged('./assets/contract-metadata.json');
+const pHasFileChanged_contractMetadata = provisionHasFileChanged('./assets/_collection.json');
 const pPublishContractMetadata =
     provision("publish contract metadata")
         .task(state => tasks['ipfs-pinata'].publish({
-            fileOrDirectoryPath: './assets/contract-metadata.json',
+            fileOrDirectoryPath: './assets/_collection.json',
         }))
         .after([pHasFileChanged_contractMetadata])
     ;
@@ -71,30 +76,88 @@ const pPublishAssetFiles =
         .after([pHaveFilesChanged_assets])
     ;
 
-// // # Set token asset file hashes in token metadata file
-// const pSetAssetFileHashes =
-//     provision("set asset ipfs hashes in metadata files")
-//         .task(async state => {
-//             const ipfsHashesToUpdate = (
-//                 await state.getLatestProvisionOutput<{
-//                     filePath: string,
-//                     ipfsHash: string,
-//                 }[]>(pPublishAssetFiles.name)
-//             )?.output ?? [];
+// # Finalize token metadata files
+const pHaveFilesChanged_metadata = provisionHaveFilesChanged('./assets/', x => x.endsWith('.json'));
 
-//             return {};
-//         })
-//         .after([pPublishAssetFiles])
-//     ;
+const pFinalizeTokenMetadataFiles =
+    provision("finalize token metadata files")
+        .task(async state => {
 
-// # Verify the image token metadata is valid
-// # Publish image token metadata to ipfs
+            const assetFiles = await getDirectoryFiles('./assets');
+            const commonFilePath = path.resolve(process.cwd(), './assets/_common.json');
+            const commonJson = await readJsonFile<Record<string, unknown>>(commonFilePath) ?? {};
+
+            const ipfsHashes = (
+                await state.getAllProvisionOutput<{
+                    filePath: string,
+                    ipfsHash: string,
+                }[]>(pPublishAssetFiles.name)
+            )?.flatMap(x => x.output) ?? [];
+            const ipfsHashesMap = new Map(ipfsHashes.map(x => [x.filePath, x.ipfsHash]));
+
+            const finalizeTokenMetadataFile = async (assetFilePath: string) => {
+                const ext = path.extname(assetFilePath);
+                const baseFileName = assetFilePath.substring(0, assetFilePath.length - ext.length);
+
+                const descriptionFilePath = `${baseFileName}.description.json`;
+                const descriptionJson = await readJsonFile<Record<string, unknown>>(descriptionFilePath) ?? {};
+
+                const metadataFilePath = `${baseFileName}.json`;
+                const metadataJson = await readJsonFile<Record<string, unknown>>(metadataFilePath) ?? {};
+
+                const thumbFilePath = assetFiles.find(x => x.startsWith(`${baseFileName}.thumb`));
+
+                const assetIpfsHash = assetFilePath ? ipfsHashesMap.get(assetFilePath) : undefined;
+                const thumbIpfsHash = thumbFilePath ? ipfsHashesMap.get(thumbFilePath) : undefined;
+
+                if (!assetIpfsHash) {
+                    return;
+                }
+
+                const initialTzip21 = {
+                    ...metadataJson,
+                    ...commonJson,
+                    ...descriptionJson,
+                } as Tzip21Metadata_Initial;
+
+                const finalJson = finalizeTzip21Metadata({
+                    metadata: initialTzip21,
+                    images: {
+                        full: {
+                            ipfsHash: assetIpfsHash,
+                            ...await getMediaFileFormat(assetFilePath),
+                        },
+                        thumbnail: thumbFilePath && thumbIpfsHash ? {
+                            ipfsHash: thumbIpfsHash,
+                            ...await getMediaFileFormat(thumbFilePath),
+                        } : undefined,
+                    },
+                });
+
+                await fs.writeFile(metadataFilePath, JSON.stringify(finalJson, null, 2));
+            };
+
+            // Update all metadata files
+            const mainAssetFiles = assetFiles.filter(x => !x.endsWith('.json') && !x.includes('.thumb.'));
+            for (const f of mainAssetFiles) {
+                await finalizeTokenMetadataFile(f);
+            }
+
+            return {
+                mainAssetFiles,
+            };
+        })
+        .after([pHaveFilesChanged_metadata, pPublishAssetFiles])
+    ;
+
+// // # Verify the image token metadata is valid
+// // # Publish image token metadata to ipfs
 // const pPublishAssetMetadataFiles =
-//     provision("publish asset files")
+//     provision("publish metadata files")
 //         .task(state => tasks['ipfs-pinata'].publish({
 //             fileOrDirectoryPath: './assets/',
 //         }))
-//         .after([pSetAssetFileHashes])
+//         .after([pFinalizeTokenMetadataFiles])
 //     ;
 
 // // # Mint nft in contract (set tokenId to image token metadata ipfs hash)

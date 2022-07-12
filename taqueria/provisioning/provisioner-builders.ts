@@ -25,12 +25,12 @@ export const provisionHaveFilesChanged = (dirPath: string, filter: (absFilePath:
         return fileInfos;
     };
 
-    return provision(`haveFilesChanged ${dirPath}`)
+    return provision(`haveFilesChanged ${dirPath} ${filter ?? ''}`)
         .task(async state => await getFileInfos())
         .when(async state => {
             const fileInfos = await getFileInfos();
 
-            const last = await state.getLatestProvisionOutput<typeof fileInfos>(`haveFilesChanged ${dirPath}`);
+            const last = await state.getLatestProvisionOutput<typeof fileInfos>(`haveFilesChanged ${dirPath} ${filter ?? ''}`);
             const lastFileInfosMap = new Map(last?.output?.map(x => [x.filePath, x.changeTimeMs]) ?? []);
 
             // Are there any new files or file changes
