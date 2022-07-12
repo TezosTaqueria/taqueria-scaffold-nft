@@ -134,6 +134,12 @@ const pFinalizeTokenMetadataFiles =
                     },
                 });
 
+                // Only save if there were changes
+                metadataJson.date = finalJson.date;
+                if (JSON.stringify(finalJson) === JSON.stringify(metadataJson)) {
+                    return;
+                }
+
                 await fs.writeFile(metadataFilePath, JSON.stringify(finalJson, null, 2));
             };
 

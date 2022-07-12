@@ -20,12 +20,12 @@
   "decimals": 0,
   "isBooleanAmount": true,
   "language": "en",
-  "date": "2022-07-12T22:44:35.665Z",
+  "date": "2022-07-12T22:51:16.551Z",
   "name": "1kb-webp",
   "description": "This is the best 1kb file I have ever seen!",
   "attributes": [
     {
-      "name": "size",
+      "name": "phat",
       "value": "1kb"
     },
     {
