@@ -60,7 +60,8 @@ const pOriginate =
         })
         .after([pCompile, pPublishContractMetadata]);
 
-// # Find image files in assets folder
+
+// # Publish new token asset files to ipfs
 const pHaveFilesChanged_assets = provisionHaveFilesChanged('./assets/', x => !x.endsWith('.json'));
 const pPublishAssetFiles =
     provision("publish asset files")
@@ -70,8 +71,30 @@ const pPublishAssetFiles =
         .after([pHaveFilesChanged_assets])
     ;
 
-// # Publish new image files to ipfs
-// # Set image hashes in image token metadata file
+// // # Set token asset file hashes in token metadata file
+// const pSetAssetFileHashes =
+//     provision("set asset ipfs hashes in metadata files")
+//         .task(async state => {
+//             const ipfsHashesToUpdate = (
+//                 await state.getLatestProvisionOutput<{
+//                     filePath: string,
+//                     ipfsHash: string,
+//                 }[]>(pPublishAssetFiles.name)
+//             )?.output ?? [];
+
+//             return {};
+//         })
+//         .after([pPublishAssetFiles])
+//     ;
+
 // # Verify the image token metadata is valid
 // # Publish image token metadata to ipfs
-// # Mint nft in contract (set tokenId to image token metadata ipfs hash)
+// const pPublishAssetMetadataFiles =
+//     provision("publish asset files")
+//         .task(state => tasks['ipfs-pinata'].publish({
+//             fileOrDirectoryPath: './assets/',
+//         }))
+//         .after([pSetAssetFileHashes])
+//     ;
+
+// // # Mint nft in contract (set tokenId to image token metadata ipfs hash)

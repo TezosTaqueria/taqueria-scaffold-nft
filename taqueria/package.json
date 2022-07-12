@@ -9,11 +9,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {
-    "@taqueria/plugin-contract-types": "^0.0.0-pr-938-e139ad4e",
-    "@taqueria/plugin-flextesa": "^0.0.0-pr-938-e139ad4e",
-    "@taqueria/plugin-ipfs-pinata": "^0.0.0-pr-938-e139ad4e",
-    "@taqueria/plugin-ligo": "^0.0.0-pr-938-e139ad4e",
-    "@taqueria/plugin-taquito": "^0.0.0-pr-938-e139ad4e",
+    "@taqueria/plugin-contract-types": "0.0.0-pr-938-842c1b4f",
+    "@taqueria/plugin-flextesa": "0.0.0-pr-938-842c1b4f",
+    "@taqueria/plugin-ipfs-pinata": "0.0.0-pr-938-842c1b4f",
+    "@taqueria/plugin-ligo": "0.0.0-pr-938-842c1b4f",
+    "@taqueria/plugin-taquito": "0.0.0-pr-938-842c1b4f",
     "@taquito/signer": "13.0.0",
     "@taquito/taquito": "13.0.0",
     "@taquito/utils": "13.0.0"
