@@ -55,9 +55,9 @@ export const originateContract = async ({
                 total_supply: tas.nat(0),
             },
             //fee: 20000,
-            fee: 40000, // FAST!
-            storageLimit: 300,
-            gasLimit: 1000,
+            // fee: 40000, // FAST!
+            // storageLimit: 300,
+            // gasLimit: 1000,
         });
 
     const contractAddress = (await origination.contract()).address;

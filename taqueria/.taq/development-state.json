@@ -704,6 +704,36 @@
                     "ipfsHash": "QmdSBTGoWfipAzxoMNNDpQJXrPHjpZQ5LdHhQyorYBk5aW"
                 }
             ]
+        },
+        "custom.hasFileChanged_assets_contract_metadata_json.1657591611769": {
+            "time": 1657591611769,
+            "output": true
+        },
+        "@taqueria/plugin-ipfs-pinata.publish.1657591616456": {
+            "time": 1657591616456,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "contract-metadata.json",
+                    "ipfsHash": "QmcFQgE5E9WAuUW4ejaypku6yAj6MNGquvQprGKUmiWe2f"
+                }
+            ]
+        },
+        "custom.publish_contract_metadata.1657591616465": {
+            "time": 1657591616465,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "contract-metadata.json",
+                    "ipfsHash": "QmcFQgE5E9WAuUW4ejaypku6yAj6MNGquvQprGKUmiWe2f"
+                }
+            ]
+        },
+        "custom.originate_with_storage.1657591621587": {
+            "time": 1657591621587,
+            "output": {
+                "contractAddress": "KT1JYZ2R9VEmMi8eSJ61aUFZMHB9FjCrh3WL"
+            }
         }
     }
 }
