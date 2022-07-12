@@ -18,8 +18,8 @@
     "start:taqueria:local": "cd ./taqueria && npm run start:local",
     "stop:local": "npm run stop:taqueria:local",
     "stop:taqueria:local": "cd ./taqueria && npm run stop:local",
-    "plan": "cd ./taqueria && npx ts-node ./provisioning/provision.ts --plan",
-    "apply": "cd ./taqueria && npx ts-node ./provisioning/provision.ts --apply"
+    "plan": "cd ./taqueria && npx ts-node ./provisioning/mock-provisioner-runner.ts --plan",
+    "apply": "cd ./taqueria && npx ts-node ./provisioning/mock-provisioner-runner.ts --apply"
   },
   "devDependencies": {
     "ts-node": "^10.5.0",
