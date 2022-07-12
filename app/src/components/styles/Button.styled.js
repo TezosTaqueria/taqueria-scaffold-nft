@@ -16,6 +16,7 @@ export const Button = styled.button`
 	line-height: 22px;
 	letter-spacing: 0.3px;
 	transition-duration: 0.5s;
+	width: fit-content;
 	&:hover {
 		opacity: 0.9;
 		transform: scale(0.98);

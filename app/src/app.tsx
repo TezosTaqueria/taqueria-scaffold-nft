@@ -5,6 +5,7 @@ import Edges from './components/edges/Edges';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import Hero from './components/hero/Hero';
+import Starting from './components/starting/Starting';
 import { ContainerWrapper } from './components/styles/ContainerWrapper.styled';
 import GlobalStyles from './components/styles/Global';
 const theme = {
@@ -32,6 +33,7 @@ export const App = () => {
 				<Header />
 				<Hero />
 				<About />
+				<Starting />
 				<Footer />
 			</>
 		</ThemeProvider>

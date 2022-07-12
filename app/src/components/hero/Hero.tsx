@@ -33,7 +33,7 @@ const HeroContainer = styled.div`
 	width: 100%;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	-webkit-clip-path: polygon(0 0, 100% 0%, 100% 91%, 0% 100%);
+	-webkit-clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
 	clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
 	position: relative;
 	/* &:before {

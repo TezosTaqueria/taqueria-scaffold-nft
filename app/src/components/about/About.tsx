@@ -47,8 +47,6 @@ const AboutContainer = styled.div`
 	padding-bottom: 50px;
 	position: relative;
 	z-index: 0;
-	-webkit-clip-path: polygon(0 0, 100% 0%, 100% 91%, 0% 100%);
-	clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
 `;
 const AboutConten = styled.div`
 	width: 100%;
