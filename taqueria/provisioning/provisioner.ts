@@ -24,7 +24,7 @@ const pTypes =
 
 // # Verify the contract metadata is valid
 // # Publish the contract metadata to ipfs
-const pHasFileChanged_contractMetadata = provisionHasFileChanged('../assets/contract-metadata.json');
+const pHasFileChanged_contractMetadata = provisionHasFileChanged('./assets/contract-metadata.json');
 const pPublishContractMetadata =
     provision("publish contract metadata")
         .task(state => tasks['ipfs-pinata'].publish({
@@ -61,7 +61,7 @@ const pOriginate =
         .after([pCompile, pPublishContractMetadata]);
 
 // # Find image files in assets folder
-const pHaveFilesChanged_assets = provisionHaveFilesChanged('../assets/', x => !x.endsWith('.json'));
+const pHaveFilesChanged_assets = provisionHaveFilesChanged('./assets/', x => !x.endsWith('.json'));
 const pPublishAssetFiles =
     provision("publish asset files")
         .task(state => tasks['ipfs-pinata'].publish({

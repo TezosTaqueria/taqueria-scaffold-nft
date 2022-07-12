@@ -93,7 +93,7 @@ type DevelopmentStateJson<TOutput> = {
     }
 };
 
-const developmentStateFilePath = path.join(__dirname, '../.taq/development-state.json');
+const developmentStateFilePath = path.join(process.cwd(), './.taq/development-state.json');
 
 export const provisionerInstance = createProvisioner({
     getInputState: async () => {
@@ -108,12 +108,12 @@ export const provisionerInstance = createProvisioner({
             // Assuming this is part of the new contract special state
             "main.mligo": {
                 hasChanged: async () => {
-                    const fileInfo = await getFileInfo(`../contracts/main.mligo`);
+                    const fileInfo = await getFileInfo(`./contracts/main.mligo`);
                     const last = await getLatestTaskOutput('@taqueria/plugin-ligo', 'compile');
                     return fileInfo.ctimeMs > (last?.time ?? 0);
                 },
-                artifactAbspath: path.resolve(__dirname, '../contracts/main.tz'),
-                abspath: path.resolve(__dirname, '../contracts/main.mligo'),
+                artifactAbspath: path.resolve(process.cwd(), './contracts/main.tz'),
+                abspath: path.resolve(process.cwd(), './contracts/main.mligo'),
                 relpath: 'main.mligo',
             },
             // State for the last output
