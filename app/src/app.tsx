@@ -1,6 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import About from './components/about/About';
+import ConnectingGuide from './components/connectingGuide/ConnectingGuide';
 import Edges from './components/edges/Edges';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
@@ -34,6 +35,7 @@ export const App = () => {
 				<Hero />
 				<About />
 				<Starting />
+				<ConnectingGuide />
 				<Footer />
 			</>
 		</ThemeProvider>
