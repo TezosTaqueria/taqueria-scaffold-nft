@@ -27,7 +27,6 @@ const pTypes =
         .after([pCompile])
     ;
 
-// # Verify the contract metadata is valid
 // # Publish the contract metadata to ipfs
 const pHasFileChanged_contractMetadata = provisionHasFileChanged('./assets/_collection.json');
 const pPublishContractMetadata =
@@ -67,7 +66,7 @@ const pOriginate =
 
 
 // # Publish new token asset files to ipfs
-const pHaveFilesChanged_assets = provisionHaveFilesChanged('./assets/', x => !x.endsWith('.json'));
+const pHaveFilesChanged_assets = provisionHaveFilesChanged('asset files', './assets/', x => !x.endsWith('.json'));
 const pPublishAssetFiles =
     provision("publish asset files")
         .task(state => tasks['ipfs-pinata'].publish({
@@ -77,7 +76,7 @@ const pPublishAssetFiles =
     ;
 
 // # Finalize token metadata files
-const pHaveFilesChanged_metadata = provisionHaveFilesChanged('./assets/', x => x.endsWith('.json'));
+const pHaveFilesChanged_metadata = provisionHaveFilesChanged('asset metadata files', './assets/', x => x.endsWith('.json'));
 
 const pFinalizeTokenMetadataFiles =
     provision("finalize token metadata files")
@@ -156,14 +155,13 @@ const pFinalizeTokenMetadataFiles =
         .after([pHaveFilesChanged_metadata, pPublishAssetFiles])
     ;
 
-// // # Verify the image token metadata is valid
-// // # Publish image token metadata to ipfs
-// const pPublishAssetMetadataFiles =
-//     provision("publish metadata files")
-//         .task(state => tasks['ipfs-pinata'].publish({
-//             fileOrDirectoryPath: './assets/',
-//         }))
-//         .after([pFinalizeTokenMetadataFiles])
-//     ;
+// # Publish image token metadata to ipfs
+const pPublishAssetMetadataFiles =
+    provision("publish metadata files")
+        .task(state => tasks['ipfs-pinata'].publish({
+            fileOrDirectoryPath: './assets/',
+        }))
+        .after([pFinalizeTokenMetadataFiles])
+    ;
 
 // // # Mint nft in contract (set tokenId to image token metadata ipfs hash)
