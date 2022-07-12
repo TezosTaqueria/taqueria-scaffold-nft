@@ -4,6 +4,7 @@ import TopLogo from '../../assets/taqueria-logo-footer.svg';
 import ECADLogo from '../../assets/footer-bottom-logo.svg';
 import Edges from '../edges/Edges';
 import { useMailChimp } from 'react-use-mailchimp-signup';
+import { Button } from '../styles/Button.styled';
 
 const footerNavbar = [
 	{
@@ -41,7 +42,7 @@ const Footer = () => {
 		'group[218840]': '1',
 	});
 
-	const handleInputChange = (event:any) => {
+	const handleInputChange = (event: any) => {
 		event.persist();
 		setInputs((inputs) => ({
 			...inputs,
@@ -63,16 +64,37 @@ const Footer = () => {
 				<FooterTop>
 					<FooterTopBox1>
 						<img alt='ecad-logo-top' src={TopLogo} />
-						<p>A New Way to Build on Tezos</p>
-						<p>Register for updates</p>
+						<p className='headline'>A New Way to Build on Tezos</p>
+						<p className='headline'>Register for updates</p>
+						<div className={'footerForm'}>
+							{error && <ErrorMessage>Please enter your email</ErrorMessage>}
+							{loading && <Message>...Loading</Message>}
+							{message && <Message>{message && message}</Message>}
+
+							<h5>Register for updates</h5>
+							<form className='footerInputContainer' onSubmit={handleSubmit}>
+								<input
+									type='email'
+									name='email'
+									id='mchimpEmail'
+									placeholder='Your email address'
+									onChange={handleInputChange}
+									className='footerEmail'
+								/>
+								<input type='hidden' name='tags' value='2262640' />
+								<button className={'signupButton'} type='submit'>
+									Sign up
+								</button>
+							</form>
+						</div>
 					</FooterTopBox1>
 					{footerNavbar.map((nav, index) => (
 						<FooterTopBox2 key={index}>
-							<p>{nav.title}</p>
+							<p className='navTitle'>{nav.title}</p>
 							{nav &&
 								nav.items.length > 0 &&
 								nav.items.map((item, idx2) => (
-									<a key={idx2} href={item.link}>
+									<a className='navLink' key={idx2} href={item.link}>
 										{item.text}
 									</a>
 								))}
@@ -107,16 +129,18 @@ const FooterTop = styled.div`
 	flex-direction: row;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	margin-bottom: 15px;
 `;
 const FooterTopBox1 = styled.div`
-	width: 55%;
+	width: 40%;
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 20px;
 	img {
 		width: 144px;
 		height: 47px;
 	}
-	p {
+	.headline {
 		font-style: normal;
 		font-weight: 700;
 		font-size: 14px;
@@ -129,14 +153,41 @@ const FooterTopBox1 = styled.div`
 	@media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
 		width: 100%;
 	}
+	.footerEmail {
+		border: none;
+		border-bottom: 1px solid #565656;
+		margin-right: 10px;
+	}
+	.signupButton {
+		background: ${({ theme }) => theme.colors.primary};
+		border: none;
+		padding: 10px 15px;
+		border-radius: 3px;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 12px;
+		cursor: pointer;
+		transition-duration: 0.5s;
+		&:hover {
+			opacity: 0.9;
+			transform: scale(0.98);
+			background-color: ${({ theme }) => theme.colors.secondary};
+		}
+	}
+
+	.footerInputContainer {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
 `;
 
 const FooterTopBox2 = styled.div`
-	width: 15%;
+	width: calc(20% - 20px);
 	display: flex;
 	flex-direction: column;
 	padding-left: 20px;
-	p {
+	.navTitle {
 		font-style: normal;
 		font-weight: 600;
 		font-size: 15px;
@@ -145,7 +196,7 @@ const FooterTopBox2 = styled.div`
 		margin: 0;
 		padding-bottom: 10px;
 	}
-	a {
+	.navLink {
 		font-style: normal;
 		font-weight: 400;
 		font-size: 14px;
@@ -184,10 +235,9 @@ const FooterBottom = styled.div`
 		height: 70px;
 	}
 `;
-const ButtonContainer = styled.div`
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	width: 50%;
-	margin-left: auto;
+const ErrorMessage = styled.p`
+	color: ${({ theme }) => theme.colors.secondary};
+`;
+const Message = styled.p`
+	color: ${({ theme }) => theme.colors.primary};
 `;
