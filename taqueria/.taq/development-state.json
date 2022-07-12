@@ -483,26 +483,8 @@
                 }
             ]
         },
-        "custom.hasFileChanged_assets_contract_metadata_json.1657584040715": {
-            "time": 1657584040715,
-            "output": true
-        },
-        "@taqueria/plugin-ipfs-pinata.publish.1657584042179": {
-            "time": 1657584042179,
-            "output": [
-                {
-                    "?": "✔",
-                    "filePath": "contract-metadata.json",
-                    "ipfsHash": "QmSuMbzV2bmEZuStxSqZuAdNc4eexQcTZSeQLFdREqAN7r"
-                }
-            ]
-        },
-        "custom.publish_contract_metadata.1657584042186": {
-            "time": 1657584042186,
-            "output": "┌───┬────────────────────────┬────────────────────────────────────────────────┐\n│   │ File Path              │ Ipfs Hash                                      │\n├───┼────────────────────────┼────────────────────────────────────────────────┤\n│ ✔ │ contract-metadata.json │ QmSuMbzV2bmEZuStxSqZuAdNc4eexQcTZSeQLFdREqAN7r │\n└───┴────────────────────────┴────────────────────────────────────────────────┘\n"
-        },
-        "@taqueria/plugin-ligo.compile.1657584114025": {
-            "time": 1657584114025,
+        "@taqueria/plugin-ligo.compile.1657588525806": {
+            "time": 1657588525806,
             "output": [
                 {
                     "contract": "main.mligo",
@@ -510,20 +492,8 @@
                 }
             ]
         },
-        "custom.compile_contract.1657584114032": {
-            "time": 1657584114032,
-            "output": "┌────────────┬───────────────────┐\n│ Contract   │ Artifact          │\n├────────────┼───────────────────┤\n│ main.mligo │ artifacts/main.tz │\n└────────────┴───────────────────┘\n"
-        },
-        "@taqueria/plugin-contract-types.generate types.1657584114356": {
-            "time": 1657584114356,
-            "output": null
-        },
-        "custom.generate_types.1657584114360": {
-            "time": 1657584114360,
-            "output": "generateTypes { typescriptDir: 'types' }\nGenerating Types: /home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/artifacts => /home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/types\nGenerating Types: /home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/artifacts => /home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/types\nContracts Found: \n\t- /home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/artifacts/example.tz\nContracts Found: \n\t- /home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/artifacts/main.tz\nProcessing /main.tz...\nProcessing /example.tz...\nexample.tz: Types generated\nmain.tz: Types generated\n"
-        },
-        "@taqueria/plugin-ligo.compile.1657584155302": {
-            "time": 1657584155302,
+        "custom.compile_contract.1657588525815": {
+            "time": 1657588525815,
             "output": [
                 {
                     "contract": "main.mligo",
@@ -531,35 +501,209 @@
                 }
             ]
         },
-        "custom.compile_contract.1657584155310": {
-            "time": 1657584155310,
-            "output": "┌────────────┬───────────────────┐\n│ Contract   │ Artifact          │\n├────────────┼───────────────────┤\n│ main.mligo │ artifacts/main.tz │\n└────────────┴───────────────────┘\n"
-        },
-        "@taqueria/plugin-contract-types.generate types.1657584155653": {
-            "time": 1657584155653,
+        "@taqueria/plugin-contract-types.generate types.1657588526145": {
+            "time": 1657588526145,
             "output": null
         },
-        "custom.generate_types.1657584155657": {
-            "time": 1657584155657,
-            "output": "generateTypes { typescriptDir: 'types' }\nGenerating Types: /home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/artifacts => /home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/types\nGenerating Types: /home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/artifacts => /home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/types\nContracts Found: \n\t- /home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/artifacts/example.tz\nContracts Found: \n\t- /home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/artifacts/main.tz\nProcessing /main.tz...\nProcessing /example.tz...\nexample.tz: Types generated\nmain.tz: Types generated\n"
+        "custom.generate_types.1657588526150": {
+            "time": 1657588526150,
+            "output": null
         },
-        "custom.hasFileChanged_assets_contract_metadata_json.1657584155662": {
-            "time": 1657584155662,
+        "custom.hasFileChanged_assets_contract_metadata_json.1657588526153": {
+            "time": 1657588526153,
             "output": true
         },
-        "@taqueria/plugin-ipfs-pinata.publish.1657584157605": {
-            "time": 1657584157605,
+        "@taqueria/plugin-ipfs-pinata.publish.1657588527407": {
+            "time": 1657588527407,
             "output": [
                 {
                     "?": "✔",
                     "filePath": "contract-metadata.json",
-                    "ipfsHash": "QmPiUVgQriujGF7aQMwuM3mQVQH5aeC4hF9RiAJ21BV9iV"
+                    "ipfsHash": "QmYE2C4QUCEexxKF6KeCmJGR4NeJn3Cd8CSUpqfXENnepN"
                 }
             ]
         },
-        "custom.publish_contract_metadata.1657584157614": {
-            "time": 1657584157614,
-            "output": "┌───┬────────────────────────┬────────────────────────────────────────────────┐\n│   │ File Path              │ Ipfs Hash                                      │\n├───┼────────────────────────┼────────────────────────────────────────────────┤\n│ ✔ │ contract-metadata.json │ QmPiUVgQriujGF7aQMwuM3mQVQH5aeC4hF9RiAJ21BV9iV │\n└───┴────────────────────────┴────────────────────────────────────────────────┘\n"
+        "custom.publish_contract_metadata.1657588527414": {
+            "time": 1657588527414,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "contract-metadata.json",
+                    "ipfsHash": "QmYE2C4QUCEexxKF6KeCmJGR4NeJn3Cd8CSUpqfXENnepN"
+                }
+            ]
+        },
+        "custom.hasFileChanged_assets_contract_metadata_json.1657588658733": {
+            "time": 1657588658733,
+            "output": true
+        },
+        "@taqueria/plugin-ipfs-pinata.publish.1657588660654": {
+            "time": 1657588660654,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "contract-metadata.json",
+                    "ipfsHash": "QmZwqGZz2G1yQypuXceHTLFE2WH3cDZqFsGhkZL6ynqxpx"
+                }
+            ]
+        },
+        "custom.publish_contract_metadata.1657588660667": {
+            "time": 1657588660667,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "contract-metadata.json",
+                    "ipfsHash": "QmZwqGZz2G1yQypuXceHTLFE2WH3cDZqFsGhkZL6ynqxpx"
+                }
+            ]
+        },
+        "custom.hasFileChanged_assets_contract_metadata_json.1657588794056": {
+            "time": 1657588794056,
+            "output": true
+        },
+        "@taqueria/plugin-ipfs-pinata.publish.1657588796251": {
+            "time": 1657588796251,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "contract-metadata.json",
+                    "ipfsHash": "QmboAKF15i2mtRom9jQJFod1T8bqbyEY3mmRQTSTB812SV"
+                }
+            ]
+        },
+        "custom.publish_contract_metadata.1657588796259": {
+            "time": 1657588796259,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "contract-metadata.json",
+                    "ipfsHash": "QmboAKF15i2mtRom9jQJFod1T8bqbyEY3mmRQTSTB812SV"
+                }
+            ]
+        },
+        "custom.hasFileChanged_assets_contract_metadata_json.1657588920737": {
+            "time": 1657588920737,
+            "output": true
+        },
+        "@taqueria/plugin-ipfs-pinata.publish.1657588922826": {
+            "time": 1657588922827,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "contract-metadata.json",
+                    "ipfsHash": "QmT6zLwRbi9YCsTCu1odEULTv4iXKrVTponGD6yGa5j8Vt"
+                }
+            ]
+        },
+        "custom.publish_contract_metadata.1657588922835": {
+            "time": 1657588922835,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "contract-metadata.json",
+                    "ipfsHash": "QmT6zLwRbi9YCsTCu1odEULTv4iXKrVTponGD6yGa5j8Vt"
+                }
+            ]
+        },
+        "@taqueria/plugin-flextesa.start sandbox.1657589005495": {
+            "time": 1657589005495,
+            "output": null
+        },
+        "@taqueria/plugin-flextesa.stop sandbox.1657589016336": {
+            "time": 1657589016336,
+            "output": null
+        },
+        "@taqueria/plugin-flextesa.start sandbox.1657589021713": {
+            "time": 1657589021713,
+            "output": null
+        },
+        "@taqueria/plugin-flextesa.start sandbox.1657589046793": {
+            "time": 1657589046793,
+            "output": null
+        },
+        "@taqueria/plugin-flextesa.start sandbox.1657589054529": {
+            "time": 1657589054529,
+            "output": null
+        },
+        "@taqueria/plugin-flextesa.start sandbox.1657589238473": {
+            "time": 1657589238473,
+            "output": null
+        },
+        "@taqueria/plugin-flextesa.start sandbox.1657589441456": {
+            "time": 1657589441456,
+            "output": null
+        },
+        "custom.hasFileChanged_assets_contract_metadata_json.1657589524010": {
+            "time": 1657589524010,
+            "output": true
+        },
+        "@taqueria/plugin-ipfs-pinata.publish.1657589525862": {
+            "time": 1657589525862,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "contract-metadata.json",
+                    "ipfsHash": "QmcGfgHfZV76ZojMFJgLGJx4XHRb2jsULScC8FbAgHNqLs"
+                }
+            ]
+        },
+        "custom.publish_contract_metadata.1657589525870": {
+            "time": 1657589525870,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "contract-metadata.json",
+                    "ipfsHash": "QmcGfgHfZV76ZojMFJgLGJx4XHRb2jsULScC8FbAgHNqLs"
+                }
+            ]
+        },
+        "custom.hasFileChanged_assets_contract_metadata_json.1657589666128": {
+            "time": 1657589666128,
+            "output": true
+        },
+        "@taqueria/plugin-ipfs-pinata.publish.1657589667938": {
+            "time": 1657589667938,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "contract-metadata.json",
+                    "ipfsHash": "QmWVt3QqL5SHgnBjJ2k1c9JNufQcGPrGdZZAec5G62L9rH"
+                }
+            ]
+        },
+        "custom.publish_contract_metadata.1657589667947": {
+            "time": 1657589667947,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "contract-metadata.json",
+                    "ipfsHash": "QmWVt3QqL5SHgnBjJ2k1c9JNufQcGPrGdZZAec5G62L9rH"
+                }
+            ]
+        },
+        "custom.hasFileChanged_assets_contract_metadata_json.1657589835763": {
+            "time": 1657589835763,
+            "output": true
+        },
+        "@taqueria/plugin-ipfs-pinata.publish.1657589841261": {
+            "time": 1657589841261,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "contract-metadata.json",
+                    "ipfsHash": "QmdSBTGoWfipAzxoMNNDpQJXrPHjpZQ5LdHhQyorYBk5aW"
+                }
+            ]
+        },
+        "custom.publish_contract_metadata.1657589841269": {
+            "time": 1657589841269,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "contract-metadata.json",
+                    "ipfsHash": "QmdSBTGoWfipAzxoMNNDpQJXrPHjpZQ5LdHhQyorYBk5aW"
+                }
+            ]
         }
     }
 }

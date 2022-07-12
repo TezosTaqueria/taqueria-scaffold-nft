@@ -1,7 +1,10 @@
 import { provisionerInstance, tasks } from "./mock-provision-tasks-and-state";
 import { provisionHasFileChanged } from "./provisioner-builders";
+import { originateContract } from "./taquito-access";
 const { provision } = provisionerInstance;
 
+// TODO: How to manage environments?
+const networkKind = 'flextesa';
 
 // # Provisining Steps
 const pCompile =
@@ -39,12 +42,31 @@ const pPublishContractMetadata =
     ;
 
 // # Originate the contract with the metadata ipfs hash
-// const pOriginate =
-//     provision("originate with storage")
-//         .task(async state => await tasks.taquito.originate({
-//             contract: state["main.mligo"].artifactAbspath
-//         }))
-//         .after([pCompile, pPublishContractMetadata]);
+const pOriginate =
+    provision("originate with storage")
+        .task(async state => {
+
+            const ipfsHash = (
+                await state.getLatestProvisionOutput<{
+                    filePath: string,
+                    ipfsHash: string,
+                }[]>(pPublishContractMetadata.name)
+            )?.output[0].ipfsHash;
+
+            if (!ipfsHash) {
+                throw new Error('ipfsHash is missing');
+            }
+
+            const { contractAddress } = await originateContract({
+                networkKind,
+                collectionMetadataIpfsHashUri: ipfsHash,
+            });
+
+            return {
+                contractAddress,
+            };
+        })
+        .after([pCompile, pPublishContractMetadata]);
 
 // # Find image files in assets folder
 // # Publish new image files to ipfs

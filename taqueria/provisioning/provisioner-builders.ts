@@ -11,3 +11,11 @@ export const provisionHasFileChanged = (filePath: string) => {
             return fileInfo.ctimeMs > (last?.time ?? 0);
         });
 };
+
+// export const provisionContractMethod = ({
+//     task
+// }: {task: async () => {
+
+// }}) => {
+
+// };

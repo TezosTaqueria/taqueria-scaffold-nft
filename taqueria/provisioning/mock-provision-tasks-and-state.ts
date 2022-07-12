@@ -8,8 +8,40 @@ import { getFileInfo, normalizeProvisionName } from "./helpers";
 
 
 // Mock tasks and state
-const runTask = async (cli: string) => {
-    return new Promise((resolve, reject) => {
+const getLatestTaskOutput = async <TOutput extends null | unknown[]>(plugin: string, task: string): Promise<undefined | {
+    time: number,
+    output: TOutput
+}> => {
+    // tasks: {
+    //        "@taqueria/plugin-ligo.compile.1656818763255": {
+    //            "time": 1656818763255,
+    //            "output": [
+    //                {
+    //                    "contract": "example.jsligo",
+    //                    "artifact": "artifacts/example.tz"
+    //                }
+    //            ]
+    //        },
+    //    }
+
+
+    const allStateContent = await fs.readFile(developmentStateFilePath, { encoding: 'utf-8' });
+    const allState = JSON.parse(allStateContent) as DevelopmentStateJson<TOutput>;
+
+    // @taqueria/plugin-ligo.compile
+    const taskRunKeys = Object.keys(allState.tasks)
+        .filter(x => x.startsWith(`${plugin}.${task}`));
+    const lastTaskRunKey = taskRunKeys.sort().reverse()[0];
+
+    const lastTaskResult = allState.tasks[lastTaskRunKey];
+
+    // console.log(`getLatestTaskOutput`, { plugin, task, lastTaskResult });
+    return lastTaskResult;
+};
+
+const runTask = async (plugin: string, task: string, args: string) => {
+    const cli = `taq ${task} ${args}`;
+    const result = await new Promise((resolve, reject) => {
         console.log(`runTask: ${cli}`);
         exec(cli, (error, stdout, stderr) => {
             if (error) {
@@ -24,27 +56,30 @@ const runTask = async (cli: string) => {
             resolve(stdout);
         });
     });
+
+    const runResult = await getLatestTaskOutput(plugin, task);
+    return runResult?.output;
 };
 
 export const tasks = {
     ligo: {
         compile: async (args: {
             contract: string,
-        }) => { return runTask(`taq compile ${args.contract}`) },
+        }) => { return runTask('@taqueria/plugin-ligo', 'compile', `${args.contract}`) },
     },
     taquito: {
         originate: async (args: {
             contract: string,
-        }) => { return runTask(`taq originate ${args.contract}`) }
+        }) => { return runTask('@taqueria/plugin-taquito', 'originate', `${args.contract}`) }
     },
     'contract-types': {
         'generate types': async (args: {
-        }) => { return runTask(`taq generate types`) },
+        }) => { return runTask('@taqueria/plugin-contract-types', 'generate types', ``) },
     },
     'ipfs-pinata': {
         publish: async (args: {
             fileOrDirectoryPath: string;
-        }) => { return runTask(`taq publish ${args.fileOrDirectoryPath}`) },
+        }) => { return runTask('@taqueria/plugin-ipfs-pinata', 'publish', `${args.fileOrDirectoryPath}`) },
     },
 };
 
@@ -63,43 +98,9 @@ const developmentStateFilePath = path.join(__dirname, '../.taq/development-state
 export const provisionerInstance = createProvisioner({
     getInputState: async () => {
 
-        const getLatestTaskOutput = async <TOutput extends null | unknown[]>(plugin: string, task: string): Promise<undefined | {
-            time: number,
-            output: TOutput
-        }> => {
-            // tasks: {
-            //        "@taqueria/plugin-ligo.compile.1656818763255": {
-            //            "time": 1656818763255,
-            //            "output": [
-            //                {
-            //                    "contract": "example.jsligo",
-            //                    "artifact": "artifacts/example.tz"
-            //                }
-            //            ]
-            //        },
-            //    }
-
-
-            const allStateContent = await fs.readFile(developmentStateFilePath, { encoding: 'utf-8' });
-            const allState = JSON.parse(allStateContent) as DevelopmentStateJson<TOutput>;
-
-            // @taqueria/plugin-ligo.compile
-            const taskRunKeys = Object.keys(allState.tasks)
-                .filter(x => x.startsWith(`${plugin}.${task}`));
-            const lastTaskRunKey = taskRunKeys.sort().reverse()[0];
-
-            const lastTaskResult = allState.tasks[lastTaskRunKey];
-
-            // console.log(`getLatestTaskOutput`, { plugin, task, lastTaskResult });
-            return lastTaskResult;
-        };
-
         return {
-            getLatestProvisionOutput: async (provisionName: string) => {
-                return await getLatestTaskOutput<[{
-                    contract: string;
-                    artifact: string;
-                }]>('custom', normalizeProvisionName(provisionName))
+            getLatestProvisionOutput: async <TOutput extends null | unknown[]>(provisionName: string) => {
+                return await getLatestTaskOutput<TOutput>('custom', normalizeProvisionName(provisionName))
             },
             // custom: {} as { [provisionName: string]: unknown },
 

@@ -13,7 +13,10 @@
     "@taqueria/plugin-flextesa": "^0.0.0-pr-938-e139ad4e",
     "@taqueria/plugin-ipfs-pinata": "^0.0.0-pr-938-e139ad4e",
     "@taqueria/plugin-ligo": "^0.0.0-pr-938-e139ad4e",
-    "@taqueria/plugin-taquito": "^0.0.0-pr-938-e139ad4e"
+    "@taqueria/plugin-taquito": "^0.0.0-pr-938-e139ad4e",
+    "@taquito/signer": "13.0.0",
+    "@taquito/taquito": "13.0.0",
+    "@taquito/utils": "13.0.0"
   },
   "keywords": [],
   "author": "",
