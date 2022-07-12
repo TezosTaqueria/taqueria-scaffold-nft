@@ -1,5 +1,5 @@
 import { provisionerInstance, tasks } from "./mock-provision-tasks-and-state";
-import { provisionHasFileChanged } from "./provisioner-builders";
+import { provisionHasFileChanged, provisionHaveFilesChanged } from "./provisioner-builders";
 import { originateContract } from "./taquito-access";
 const { provision } = provisionerInstance;
 
@@ -22,15 +22,7 @@ const pTypes =
         .after([pCompile])
     ;
 
-// const pOriginate =
-//     provision("originate")
-//         .task(state => tasks.taquito.originate({
-//             contract: state["main.mligo"].artifactAbspath
-//         }))
-//         .after([pCompile]);
-
 // # Verify the contract metadata is valid
-
 // # Publish the contract metadata to ipfs
 const pHasFileChanged_contractMetadata = provisionHasFileChanged('../assets/contract-metadata.json');
 const pPublishContractMetadata =
@@ -41,7 +33,7 @@ const pPublishContractMetadata =
         .after([pHasFileChanged_contractMetadata])
     ;
 
-// # Originate the contract with the metadata ipfs hash
+// # Originate the contract with the contract metadata ipfs hash
 const pOriginate =
     provision("originate with storage")
         .task(async state => {
@@ -69,6 +61,15 @@ const pOriginate =
         .after([pCompile, pPublishContractMetadata]);
 
 // # Find image files in assets folder
+const pHaveFilesChanged_assets = provisionHaveFilesChanged('../assets/', x => !x.endsWith('.json'));
+const pPublishAssetFiles =
+    provision("publish asset files")
+        .task(state => tasks['ipfs-pinata'].publish({
+            fileOrDirectoryPath: './assets/',
+        }))
+        .after([pHaveFilesChanged_assets])
+    ;
+
 // # Publish new image files to ipfs
 // # Set image hashes in image token metadata file
 // # Verify the image token metadata is valid
