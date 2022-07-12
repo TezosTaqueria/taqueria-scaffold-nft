@@ -93,7 +93,7 @@ type DevelopmentStateJson<TOutput> = {
     }
 };
 
-const developmentStateFilePath = path.join(process.cwd(), './.taq/development-state.json');
+const developmentStateFilePath = path.resolve(process.cwd(), './.taq/development-state.json');
 
 export const provisionerInstance = createProvisioner({
     getInputState: async () => {

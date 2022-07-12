@@ -32,10 +32,3 @@ export const provisionHaveFilesChanged = (dirPath: string, filter: (absFilePath:
         });
 };
 
-// export const provisionContractMethod = ({
-//     task
-// }: {task: async () => {
-
-// }}) => {
-
-// };
