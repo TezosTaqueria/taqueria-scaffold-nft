@@ -104,7 +104,6 @@ const HeroConten = styled.div`
 		width: 200px;
 		height: 200px;
 	}
-
 	p {
 		max-width: 280px;
 		padding-bottom: 20px;
