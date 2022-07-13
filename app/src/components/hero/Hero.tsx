@@ -115,6 +115,7 @@ const HeroConten = styled.div`
 	img {
 		width: 200px;
 		height: 200px;
+		margin-bottom:20px;
 	}
 	p {
 		max-width: 280px;

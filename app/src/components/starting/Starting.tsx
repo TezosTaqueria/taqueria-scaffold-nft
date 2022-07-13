@@ -49,6 +49,9 @@ const StartingConten = styled.div`
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
 	align-items: center;
 	flex-wrap: wrap;
 	@media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
