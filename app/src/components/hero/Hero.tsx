@@ -31,7 +31,7 @@ const HeroContainer = styled.div`
 	&:before {
 		content: '';
 		position: absolute;
-		bottom: -5%;
+		bottom: 3%;
 		left: 0;
 		width: 20%;
 		height: 5%;
@@ -45,7 +45,7 @@ const HeroContainer = styled.div`
 	&:after {
 		content: '';
 		position: absolute;
-		bottom: 5%;
+		bottom: 10%;
 		right: 0;
 		width: 20%;
 		height: 5%;
@@ -58,7 +58,7 @@ const HeroContainer = styled.div`
 	}
 	.leftPurpleLine {
 		position: absolute;
-		bottom: -1.5%;
+		bottom: 1.5%;
 		left: 12.5%;
 		width: 10%;
 		height: 5%;
@@ -71,7 +71,7 @@ const HeroContainer = styled.div`
 	}
 	.rightPurpleLine {
 		position: absolute;
-		bottom: 1.5%;
+		bottom: 11.5%;
 		right: 12.5%;
 		width: 10%;
 		height: 5%;
