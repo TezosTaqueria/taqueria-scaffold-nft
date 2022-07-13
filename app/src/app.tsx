@@ -6,6 +6,7 @@ import Edges from './components/edges/Edges';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import Hero from './components/hero/Hero';
+import { NftBrowser } from './components/nft/NftBrowser';
 import Starting from './components/starting/Starting';
 import { ContainerWrapper } from './components/styles/ContainerWrapper.styled';
 import GlobalStyles from './components/styles/Global';
@@ -32,12 +33,30 @@ export const App = () => {
 			<>
 				<GlobalStyles />
 				<Header />
+                <AppRouter/>
+			</>
+		</ThemeProvider>
+	);
+};
+
+
+const AppRouter = () => {
+
+    if(window.location.href.includes('browse')){
+        return (
+            <>
+                <NftBrowser/>
+            </>
+        );
+    }
+
+    return (
+        <>
 				<Hero />
 				<About />
 				<Starting />
 				<ConnectingGuide />
 				<Footer />
-			</>
-		</ThemeProvider>
-	);
+        </>
+    );
 };

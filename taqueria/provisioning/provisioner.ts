@@ -254,7 +254,7 @@ const pMintTokens =
                 const batch = remaining.splice(0, 50);
                 const call = contract.methodsObject.mint(batch.map(x => ({
                     token_id: tas.nat(x.tokenId),
-                    ipfs_hash: tas.bytes(char2Bytes(x.ipfsHash)),
+                    ipfs_hash: tas.bytes(char2Bytes(`ipfs://${x.ipfsHash}`)),
                     owner: tas.address(userAddress),
                 })));
 

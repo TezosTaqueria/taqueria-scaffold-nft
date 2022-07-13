@@ -13,7 +13,7 @@ const Hero = () => {
 						<img alt='taqueria-logo' src={HeroLogo} />
 						<h1>Taqueria NFT Scaffold</h1>
 						<p>Congratulations on launching your first NFT project on Tezos</p>
-						<Button>Quick Start</Button>
+						<Button onClick={()=>{window.location.href = '/browse'}}>Quick Start</Button>
 					</HeroConten>
 				</Edges>
 			</HeroContentContainer>

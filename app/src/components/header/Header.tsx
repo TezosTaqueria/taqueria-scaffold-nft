@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { ConnectButton } from '../connect-button';
+import { ConnectButton } from './ConnectButton';
 import Logo from '../../assets/ecad-logo.svg';
 import Edges from '../edges/Edges';
 

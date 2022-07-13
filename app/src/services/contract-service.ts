@@ -1,10 +1,11 @@
 import { TezosToolkit } from '@taquito/taquito';
 import { BeaconWallet } from "@taquito/beacon-wallet";
-import { NetworkType } from "@airgap/beacon-sdk";
-import { ExampleCode } from '../types/example.code';
-import { ExampleWalletType } from '../types/example.types';
+import { MainWalletType } from '../types/main.types';
 import { tas } from '../types/type-aliases';
 import { UpdateProgressCallback } from '../utils/hooks';
+import { NftType } from './types';
+import { settings } from './settings';
+import { bytes2Char } from '@taquito/utils';
 
 const createContractService = () => {
     // localhost:4242 - flextesa local network
@@ -18,10 +19,7 @@ const createContractService = () => {
     // };
 
     // Testnet
-    const network = {
-        type: NetworkType.GHOSTNET,
-        rpcUrl: "https://rpc.ghostnet.teztnets.xyz"
-    };
+    const network = settings.network;
 
     const Tezos = new TezosToolkit(network.rpcUrl);
 
@@ -30,8 +28,10 @@ const createContractService = () => {
         userAddress: undefined as undefined | string,
         userBalance: undefined as undefined | number,
         contractAddress: undefined as undefined | string,
-        contract: undefined as undefined | ExampleWalletType,
+        contract: undefined as undefined | MainWalletType,
     };
+
+    // state.contractAddress = settings.contractAddress;
 
     const service = {
         getUserAddress: async () => state.userAddress,
@@ -60,64 +60,124 @@ const createContractService = () => {
 
             console.log('connectWallet DONE');
         },
-        loadContract: async (updateProgress: UpdateProgressCallback, contractAddress: string) => {
+        loadContract: async (updateProgress: UpdateProgressCallback) => {
             if (!state.isConnected) { throw new Error('Not connected'); }
 
             updateProgress('Loading Contract');
 
+            const contractAddress = settings.contractAddress;
+
             state.contractAddress = contractAddress;
-            state.contract = await Tezos.wallet.at<ExampleWalletType>(contractAddress);
+            state.contract = await Tezos.wallet.at<MainWalletType>(contractAddress);
 
             console.log('setup', { state });
         },
-        originateContract: async (updateProgress: UpdateProgressCallback) => {
-            if (!state.isConnected) { throw new Error('Not connected'); }
+        // originateContract: async (updateProgress: UpdateProgressCallback) => {
+        //     if (!state.isConnected) { throw new Error('Not connected'); }
 
-            // Originate contract
-            updateProgress('Originating Contract');
+        //     // Originate contract
+        //     updateProgress('Originating Contract');
 
-            const origination = await Tezos.wallet.originate<ExampleWalletType>({
-                code: ExampleCode.code,
-                storage: tas.int(42),
-            }).send();
+        //     const origination = await Tezos.wallet.originate<MainWalletType>({
+        //         code: MainCode.code,
+        //         storage: tas.int(42),
+        //     }).send();
 
-            updateProgress('Confirming Contract');
-            const contractAddress = (await origination.contract()).address;
-            state.contractAddress = contractAddress;
-            state.contract = await Tezos.wallet.at<ExampleWalletType>(contractAddress);
-        },
-        getBalance: async (updateProgress: UpdateProgressCallback): Promise<number> => {
+        //     updateProgress('Confirming Contract');
+        //     const contractAddress = (await origination.contract()).address;
+        //     state.contractAddress = contractAddress;
+        //     state.contract = await Tezos.wallet.at<MainWalletType>(contractAddress);
+        // },
+        // getBalance: async (updateProgress: UpdateProgressCallback): Promise<number> => {
+        //     if (!state.contract) { throw new Error('Contract is not setup'); }
+
+        //     updateProgress('Getting Balance');
+
+        //     const storage = await state.contract.storage();
+        //     console.log('getBalance storage', { storage });
+        //     return tas.number(storage);
+        // },
+        // increment: async (updateProgress: UpdateProgressCallback, amount: number): Promise<number> => {
+        //     if (!state.contract) { throw new Error('Contract is not setup'); }
+
+        //     updateProgress('Sending Transaction');
+        //     const sendResult = await state.contract.methodsObject.increment(tas.int(amount)).send();
+
+        //     updateProgress('Confirming Transaction');
+        //     await sendResult.confirmation(5);
+
+        //     // Read state after update
+        //     return service.getBalance(updateProgress);
+        // },
+        // decrement: async (updateProgress: UpdateProgressCallback, amount: number): Promise<number> => {
+        //     if (!state.contract) { throw new Error('Contract is not setup'); }
+
+        //     updateProgress('Sending Transaction');
+        //     const sendResult = await state.contract.methodsObject.decrement(tas.int(amount)).send();
+
+        //     updateProgress('Confirming Transaction');
+        //     await sendResult.confirmation(5);
+
+        //     // Read state after update
+        //     return service.getBalance(updateProgress);
+        // },
+
+        getNfts: async (updateProgress: UpdateProgressCallback): Promise<NftType[]> => {
             if (!state.contract) { throw new Error('Contract is not setup'); }
 
-            updateProgress('Getting Balance');
-
+            updateProgress('Getting Minted Nfts');
             const storage = await state.contract.storage();
-            console.log('getBalance storage', { storage });
-            return tas.number(storage);
-        },
-        increment: async (updateProgress: UpdateProgressCallback, amount: number): Promise<number> => {
-            if (!state.contract) { throw new Error('Contract is not setup'); }
+            const tokenIds = [...new Array(settings.tokenIdMax - settings.tokenIdMin + 1)].map((_, i) => settings.tokenIdMin + i);
 
-            updateProgress('Sending Transaction');
-            const sendResult = await state.contract.methodsObject.increment(tas.int(amount)).send();
+            const getIpfsUrl = (ipfsHashUrl: undefined | string) => {
+                if (!ipfsHashUrl) { return undefined; }
+                return ipfsHashUrl.replace(`ipfs://`, `https://ecad-test.mypinata.cloud/ipfs/`);
+            };
 
-            updateProgress('Confirming Transaction');
-            await sendResult.confirmation(5);
+            const getToken = async (tokenId: number) => {
+                try {
+                    console.log('getToken - START', { tokenId });
 
-            // Read state after update
-            return service.getBalance(updateProgress);
-        },
-        decrement: async (updateProgress: UpdateProgressCallback, amount: number): Promise<number> => {
-            if (!state.contract) { throw new Error('Contract is not setup'); }
+                    const tokenMetadata = await storage.token_metadata.get(tas.nat(tokenId));
+                    console.log('getToken - Got metadata from contract', { tokenId, tokenMetadata });
 
-            updateProgress('Sending Transaction');
-            const sendResult = await state.contract.methodsObject.decrement(tas.int(amount)).send();
+                    const ipfsHashUrl = bytes2Char(tokenMetadata.token_info.get(''));
+                    console.log('getToken - Got ipfsHashUrl from contract', { tokenId, ipfsHashUrl });
 
-            updateProgress('Confirming Transaction');
-            await sendResult.confirmation(5);
 
-            // Read state after update
-            return service.getBalance(updateProgress);
+                    const tokenJson = await (await fetch(getIpfsUrl(ipfsHashUrl)!)).json() as {
+                        tokenId: number;
+                        name: string;
+                        description: string;
+                        displayUri?: string;
+                        thumbnailUri?: string;
+                    };
+                    console.log('getToken - Got tokenJson from ipfs', { tokenId, tokenJson });
+
+                    const token: NftType = {
+                        tokenId,
+                        ipfsHashUrl,
+                        name: tokenJson.name,
+                        description: tokenJson.description,
+                        image: {
+                            imageUrl: getIpfsUrl(tokenJson.displayUri),
+                            thumbnailUrl: getIpfsUrl(tokenJson.thumbnailUri),
+                        },
+                    };
+                    console.log('getToken - DONE', { tokenId, token });
+
+                    return token;
+                } catch (err) {
+                    console.log(`tokenId ${tokenId}: not found`, { err });
+                    return undefined;
+                }
+            };
+
+            const tokens = (await Promise.all(tokenIds.map(async (tokenId) => {
+                return await getToken(tokenId);
+            }))).filter(x => x).map(x => x!);
+
+            return tokens;
         },
 
     };

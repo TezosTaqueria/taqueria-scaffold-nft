@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { ContractService } from '../services/contract-service';
-import { UpdateProgressCallback, useAsyncWorker } from '../utils/hooks';
-import { Button } from './styles/Button.styled';
+import { ContractService } from '../../services/contract-service';
+import { UpdateProgressCallback, useAsyncWorker } from '../../utils/hooks';
+import { Button } from '../styles/Button.styled';
 
 export const ConnectButton = () => {
 	const [isWalletReady, setIsWalletReady] = useState(false);
