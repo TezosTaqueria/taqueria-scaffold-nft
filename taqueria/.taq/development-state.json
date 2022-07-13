@@ -1,260 +1,8 @@
 {
     "operations": {},
     "tasks": {
-        "@taqueria/plugin-ligo.compile.1656790380137": {
-            "time": 1656790380137,
-            "output": [
-                {
-                    "contract": "example.jsligo",
-                    "artifact": "Not compiled"
-                }
-            ]
-        },
-        "@taqueria/plugin-contract-types.generate types.1656790380406": {
-            "time": 1656790380406,
-            "output": null
-        },
-        "@taqueria/plugin-ligo.compile.1656790729668": {
-            "time": 1656790729668,
-            "output": [
-                {
-                    "contract": "example.jsligo",
-                    "artifact": "Not compiled"
-                }
-            ]
-        },
-        "@taqueria/plugin-contract-types.generate types.1656790729939": {
-            "time": 1656790729939,
-            "output": null
-        },
-        "@taqueria/plugin-ligo.compile.1656790905389": {
-            "time": 1656790905389,
-            "output": [
-                {
-                    "contract": "example.jsligo",
-                    "artifact": "Not compiled"
-                }
-            ]
-        },
-        "@taqueria/plugin-contract-types.generate types.1656790905656": {
-            "time": 1656790905656,
-            "output": null
-        },
-        "@taqueria/plugin-ligo.compile.1656791622472": {
-            "time": 1656791622472,
-            "output": [
-                {
-                    "contract": "example.jsligo",
-                    "artifact": "Not compiled"
-                }
-            ]
-        },
-        "@taqueria/plugin-contract-types.generate types.1656791622746": {
-            "time": 1656791622746,
-            "output": null
-        },
-        "@taqueria/plugin-ligo.compile.1656791956749": {
-            "time": 1656791956749,
-            "output": [
-                {
-                    "contract": "example.jsligo",
-                    "artifact": "Not compiled"
-                }
-            ]
-        },
-        "@taqueria/plugin-contract-types.generate types.1656791957024": {
-            "time": 1656791957024,
-            "output": null
-        },
-        "@taqueria/plugin-ligo.compile.1656792189201": {
-            "time": 1656792189201,
-            "output": [
-                {
-                    "contract": "example.jsligo",
-                    "artifact": "Not compiled"
-                }
-            ]
-        },
-        "@taqueria/plugin-contract-types.generate types.1656792189484": {
-            "time": 1656792189484,
-            "output": null
-        },
-        "@taqueria/plugin-ligo.compile.1656792295071": {
-            "time": 1656792295071,
-            "output": [
-                {
-                    "contract": "example.jsligo",
-                    "artifact": "Not compiled"
-                }
-            ]
-        },
-        "@taqueria/plugin-contract-types.generate types.1656792295349": {
-            "time": 1656792295349,
-            "output": null
-        },
-        "@taqueria/plugin-flextesa.start sandbox.1656793015540": {
-            "time": 1656793015540,
-            "output": null
-        },
-        "@taqueria/plugin-flextesa.start sandbox.1656793027045": {
-            "time": 1656793027045,
-            "output": null
-        },
-        "@taqueria/plugin-flextesa.start sandbox.1656793144584": {
-            "time": 1656793144584,
-            "output": null
-        },
-        "@taqueria/plugin-flextesa.stop sandbox.1656793162339": {
-            "time": 1656793162339,
-            "output": null
-        },
-        "@taqueria/plugin-flextesa.stop sandbox.1656793165857": {
-            "time": 1656793165857,
-            "output": null
-        },
-        "@taqueria/plugin-flextesa.start sandbox.1656793191288": {
-            "time": 1656793191288,
-            "output": null
-        },
-        "@taqueria/plugin-flextesa.start sandbox.1656793194420": {
-            "time": 1656793194420,
-            "output": null
-        },
-        "@taqueria/plugin-flextesa.start sandbox.1656793323481": {
-            "time": 1656793323481,
-            "output": null
-        },
-        "@taqueria/plugin-flextesa.start sandbox.1656794127050": {
-            "time": 1656794127050,
-            "output": null
-        },
-        "@taqueria/plugin-flextesa.stop sandbox.1656794285693": {
-            "time": 1656794285693,
-            "output": null
-        },
-        "@taqueria/plugin-ligo.compile.1656818169383": {
-            "time": 1656818169383,
-            "output": [
-                {
-                    "contract": "example.jsligo",
-                    "artifact": "Not compiled"
-                }
-            ]
-        },
-        "@taqueria/plugin-ligo.compile.1656818176716": {
-            "time": 1656818176716,
-            "output": [
-                {
-                    "contract": "example.jsligo",
-                    "artifact": "Not compiled"
-                }
-            ]
-        },
-        "@taqueria/plugin-ligo.compile.1656818220077": {
-            "time": 1656818220077,
-            "output": [
-                {
-                    "contract": "example.jsligo",
-                    "artifact": "Not compiled"
-                }
-            ]
-        },
-        "@taqueria/plugin-ligo.compile.1656818372775": {
-            "time": 1656818372775,
-            "output": [
-                {
-                    "contract": "example.jsligo",
-                    "artifact": "Not compiled"
-                }
-            ]
-        },
-        "@taqueria/plugin-ligo.compile.1656818408474": {
-            "time": 1656818408474,
-            "output": [
-                {
-                    "contract": "example.jsligo",
-                    "artifact": "Not compiled"
-                }
-            ]
-        },
-        "@taqueria/plugin-ligo.compile.1656818468213": {
-            "time": 1656818468213,
-            "output": [
-                {
-                    "contract": "example.jsligo",
-                    "artifact": "Not compiled"
-                }
-            ]
-        },
-        "@taqueria/plugin-ligo.compile.1656818754550": {
-            "time": 1656818754550,
-            "output": [
-                {
-                    "contract": "example.jsligo",
-                    "artifact": "artifacts/example.tz"
-                }
-            ]
-        },
-        "@taqueria/plugin-ligo.compile.1656818763255": {
-            "time": 1656818763255,
-            "output": [
-                {
-                    "contract": "example.jsligo",
-                    "artifact": "artifacts/example.tz"
-                }
-            ]
-        },
-        "@taqueria/plugin-ligo.compile.1656818780110": {
-            "time": 1656818780110,
-            "output": [
-                {
-                    "contract": "example.jsligo",
-                    "artifact": "artifacts/example.tz"
-                }
-            ]
-        },
-        "@taqueria/plugin-ligo.compile.1656818832407": {
-            "time": 1656818832407,
-            "output": [
-                {
-                    "contract": "example.jsligo",
-                    "artifact": "artifacts/example.tz"
-                }
-            ]
-        },
-        "@taqueria/plugin-ligo.compile.1656820498316": {
-            "time": 1656820498316,
-            "output": [
-                {
-                    "contract": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/contracts/example.jsligo",
-                    "artifact": "Not compiled"
-                }
-            ]
-        },
-        "@taqueria/plugin-ligo.compile.1656820691645": {
-            "time": 1656820691645,
-            "output": [
-                {
-                    "contract": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/contracts/example.jsligo",
-                    "artifact": "Not compiled"
-                }
-            ]
-        },
-        "@taqueria/plugin-ligo.compile.1656820775957": {
-            "time": 1656820775957,
-            "output": [
-                {
-                    "contract": "example.jsligo",
-                    "artifact": "artifacts/example.tz"
-                }
-            ]
-        },
-        "@taqueria/plugin-contract-types.generate types.1656821225033": {
-            "time": 1656821225033,
-            "output": null
-        },
-        "@taqueria/plugin-ligo.compile.1656821415806": {
-            "time": 1656821415806,
+        "@taqueria/plugin-ligo.compile.1657671126426": {
+            "time": 1657671126426,
             "output": [
                 {
                     "contract": "main.mligo",
@@ -262,24 +10,8 @@
                 }
             ]
         },
-        "@taqueria/plugin-contract-types.generate types.1656821520266": {
-            "time": 1656821520266,
-            "output": null
-        },
-        "@taqueria/plugin-contract-types.generate types.1656821576407": {
-            "time": 1656821576407,
-            "output": null
-        },
-        "@taqueria/plugin-contract-types.generate types.1656821597834": {
-            "time": 1656821597834,
-            "output": null
-        },
-        "@taqueria/plugin-contract-types.generate types.1656822707282": {
-            "time": 1656822707282,
-            "output": null
-        },
-        "@taqueria/plugin-ligo.compile.1656823038577": {
-            "time": 1656823038577,
+        "custom.compile_contract.1657671126434": {
+            "time": 1657671126434,
             "output": [
                 {
                     "contract": "main.mligo",
@@ -287,637 +19,309 @@
                 }
             ]
         },
-        "@taqueria/plugin-contract-types.generate types.1656823038917": {
-            "time": 1656823038917,
+        "@taqueria/plugin-contract-types.generate types.1657671126774": {
+            "time": 1657671126774,
             "output": null
         },
-        "@taqueria/plugin-ipfs-pinata.ipfs.1656824315818": {
-            "time": 1656824315818,
+        "custom.generate_types.1657671126778": {
+            "time": 1657671126778,
             "output": null
         },
-        "@taqueria/plugin-ipfs-pinata.ipfs.1656824378583": {
-            "time": 1656824378583,
-            "output": null
+        "custom.hasFileChanged_assets_collection_json.1657671126781": {
+            "time": 1657671126781,
+            "output": []
         },
-        "@taqueria/plugin-ipfs-pinata.ipfs.1656824639642": {
-            "time": 1656824639642,
-            "output": null
+        "@taqueria/plugin-ipfs-pinata.publish.1657671127684": {
+            "time": 1657671127684,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmVk289qyW6KdETPhFt1GuggA9acQMMMEXxndaz9kD44EJ"
+                }
+            ]
         },
-        "@taqueria/plugin-ipfs-pinata.publish.1656824959363": {
-            "time": 1656824959363,
-            "output": null
+        "custom.publish_contract_metadata.1657671127693": {
+            "time": 1657671127693,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmVk289qyW6KdETPhFt1GuggA9acQMMMEXxndaz9kD44EJ"
+                }
+            ]
         },
-        "@taqueria/plugin-ipfs-pinata.publish.1656825368495": {
-            "time": 1656825368495,
-            "output": null
+        "custom.originate_with_storage.1657671129478": {
+            "time": 1657671129478,
+            "output": [
+                {
+                    "contractAddress": "KT1UTE7Z9hUxQuX29GxEjJjLtJRgSYkno4dc"
+                }
+            ]
         },
-        "@taqueria/plugin-ipfs-pinata.publish.1656825645716": {
-            "time": 1656825645716,
-            "output": null
+        "custom.haveFilesChanged_asset_files.1657671129483": {
+            "time": 1657671129483,
+            "output": [
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp",
+                    "changeTimeMs": 1657667426737.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                    "changeTimeMs": 1657667430077.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.txt",
+                    "changeTimeMs": 1657667433457.754
+                }
+            ]
         },
-        "@taqueria/plugin-ipfs-pinata.publish.1656826688585": {
-            "time": 1656826688585,
-            "output": null
+        "@taqueria/plugin-ipfs-pinata.publish.1657671130559": {
+            "time": 1657671130559,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.txt",
+                    "ipfsHash": "Qme3VHhxvhogzcLoFvrtQs3AxKjJd4Dk546i1yGsnVDEjv"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                    "ipfsHash": "QmWS345jBJQhxSK32uZrZ7RmsMqRS7G7pC6kQwW5zX7CSv"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "ipfsHash": "QmWsrUKRAhhQsttGFKfq5LFtswW5BjD8r347Qs34x8SYNu"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmVk289qyW6KdETPhFt1GuggA9acQMMMEXxndaz9kD44EJ"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                    "ipfsHash": "QmYbHpJPQ5NKAsb3MofgG52AgcmGgsFt6xXauXDJYz8JVv"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.json",
+                    "ipfsHash": "QmYqhL8wGN9co1jcskTmu34Bcy7ukULQqXo3r8BAErtES1"
+                }
+            ]
         },
-        "@taqueria/plugin-ipfs-pinata.publish.1656826759543": {
-            "time": 1656826759543,
-            "output": null
+        "custom.publish_asset_files.1657671130572": {
+            "time": 1657671130572,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.txt",
+                    "ipfsHash": "Qme3VHhxvhogzcLoFvrtQs3AxKjJd4Dk546i1yGsnVDEjv"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                    "ipfsHash": "QmWS345jBJQhxSK32uZrZ7RmsMqRS7G7pC6kQwW5zX7CSv"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "ipfsHash": "QmWsrUKRAhhQsttGFKfq5LFtswW5BjD8r347Qs34x8SYNu"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmVk289qyW6KdETPhFt1GuggA9acQMMMEXxndaz9kD44EJ"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                    "ipfsHash": "QmYbHpJPQ5NKAsb3MofgG52AgcmGgsFt6xXauXDJYz8JVv"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.json",
+                    "ipfsHash": "QmYqhL8wGN9co1jcskTmu34Bcy7ukULQqXo3r8BAErtES1"
+                }
+            ]
         },
-        "@taqueria/plugin-ipfs-pinata.publish.1656827796969": {
-            "time": 1656827796969,
-            "output": null
+        "custom.haveFilesChanged_asset_metadata_files.1657671130577": {
+            "time": 1657671130577,
+            "output": [
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                    "changeTimeMs": 1657669499647.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                    "changeTimeMs": 1657667423807.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.json",
+                    "changeTimeMs": 1657669503117.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "changeTimeMs": 1657666226697.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "changeTimeMs": 1657666091047.754
+                }
+            ]
         },
-        "@taqueria/plugin-ipfs-pinata.publish.1656828854978": {
-            "time": 1656828854978,
-            "output": null
-        },
-        "@taqueria/plugin-ipfs-pinata.publish.1656830005350": {
-            "time": 1656830005350,
-            "output": null
-        },
-        "@taqueria/plugin-ipfs-pinata.publish.1656831000768": {
-            "time": 1656831000768,
-            "output": {
-                "data": {
-                    "failures": [],
-                    "fileIpfsHashes": [
+        "custom.finalize_token_metadata_files.1657671130586": {
+            "time": 1657671130586,
+            "output": [
+                {
+                    "mainAssetFiles": [
                         {
-                            "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/art/contract-metadata.json",
-                            "ipfsHash": "QmbSF4bauCvggVoVDZw536xVphjaD8BH39Fkc2pu6qybDg"
+                            "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                            "tokenId": 1,
+                            "ext": ".webp",
+                            "baseFileName": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001",
+                            "descriptionFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                            "metadataFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                            "thumbFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp"
+                        },
+                        {
+                            "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.txt",
+                            "tokenId": 2,
+                            "ext": ".txt",
+                            "baseFileName": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002",
+                            "descriptionFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                            "metadataFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.json"
                         }
                     ]
                 }
-            }
-        },
-        "@taqueria/plugin-ipfs-pinata.publish.1656832069952": {
-            "time": 1656832069952,
-            "output": {
-                "render": "table",
-                "data": [
-                    {
-                        "?": "✔",
-                        "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/art/contract-metadata.json",
-                        "ipfsHash": "QmQ9q2bhpuC4mj1K2VbggfMACMWg3yhgZZvvpcDuJLCFtt"
-                    }
-                ]
-            }
-        },
-        "@taqueria/plugin-ipfs-pinata.publish.1656832695391": {
-            "time": 1656832695391,
-            "output": {
-                "render": "table",
-                "data": [
-                    {
-                        "?": "✔",
-                        "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/art/contract-metadata.json",
-                        "ipfsHash": "QmQ9q2bhpuC4mj1K2VbggfMACMWg3yhgZZvvpcDuJLCFtt"
-                    }
-                ]
-            }
-        },
-        "@taqueria/plugin-ipfs-pinata.publish.1656832865450": {
-            "time": 1656832865450,
-            "output": [
-                {
-                    "?": "✔",
-                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/art/contract-metadata.json",
-                    "ipfsHash": "QmQ9q2bhpuC4mj1K2VbggfMACMWg3yhgZZvvpcDuJLCFtt"
-                }
             ]
         },
-        "@taqueria/plugin-ipfs-pinata.publish.1656832954035": {
-            "time": 1656832954035,
+        "@taqueria/plugin-ipfs-pinata.publish.1657671138658": {
+            "time": 1657671138658,
             "output": [
                 {
-                    "?": "✔",
-                    "filePath": "contract-metadata.json",
-                    "ipfsHash": "QmQ9q2bhpuC4mj1K2VbggfMACMWg3yhgZZvvpcDuJLCFtt"
-                }
-            ]
-        },
-        "@taqueria/plugin-ipfs-pinata.publish.1656833369385": {
-            "time": 1656833369385,
-            "output": [
+                    "?": "❌",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "error": {}
+                },
                 {
-                    "?": "✔",
-                    "filePath": "contract-metadata.json",
-                    "ipfsHash": "QmQdG5UbLTJi1U1SdhrxBXmbJmiJGEftGgez6c4m7NJ5sT"
-                }
-            ]
-        },
-        "@taqueria/plugin-ipfs-pinata.publish.1656833405017": {
-            "time": 1656833405017,
-            "output": [
+                    "?": "❌",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "error": {}
+                },
                 {
-                    "?": "✔",
-                    "filePath": "contract-metadata.json",
-                    "ipfsHash": "QmQdG5UbLTJi1U1SdhrxBXmbJmiJGEftGgez6c4m7NJ5sT"
-                }
-            ]
-        },
-        "@taqueria/plugin-ipfs-pinata.publish.1656833443763": {
-            "time": 1656833443763,
-            "output": [
-                {
-                    "?": "✔",
-                    "filePath": "contract-metadata-02.json",
-                    "ipfsHash": "QmQdG5UbLTJi1U1SdhrxBXmbJmiJGEftGgez6c4m7NJ5sT"
+                    "?": "❌",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp",
+                    "error": {}
                 },
                 {
                     "?": "✔",
-                    "filePath": "contract-metadata.json",
-                    "ipfsHash": "QmV9tDT643FE2M8SgRwHryVPxxR3xjU2FMeRz2HE4sLKTa"
-                }
-            ]
-        },
-        "@taqueria/plugin-ipfs-pinata.publish.1656833472244": {
-            "time": 1656833472245,
-            "output": [
-                {
-                    "?": "✔",
-                    "filePath": "contract-metadata.json",
-                    "ipfsHash": "QmSuMbzV2bmEZuStxSqZuAdNc4eexQcTZSeQLFdREqAN7r"
-                }
-            ]
-        },
-        "@taqueria/plugin-ligo.compile.1657583184753": {
-            "time": 1657583184754,
-            "output": [
-                {
-                    "contract": "main.mligo",
-                    "artifact": "artifacts/main.tz"
-                }
-            ]
-        },
-        "@taqueria/plugin-contract-types.generate types.1657583185117": {
-            "time": 1657583185117,
-            "output": null
-        },
-        "@taqueria/plugin-ipfs-pinata.publish.1657583186552": {
-            "time": 1657583186552,
-            "output": [
-                {
-                    "?": "✔",
-                    "filePath": "contract-metadata.json",
-                    "ipfsHash": "QmSuMbzV2bmEZuStxSqZuAdNc4eexQcTZSeQLFdREqAN7r"
-                }
-            ]
-        },
-        "@taqueria/plugin-ipfs-pinata.publish.1657583672452": {
-            "time": 1657583672452,
-            "output": [
-                {
-                    "?": "✔",
-                    "filePath": "contract-metadata.json",
-                    "ipfsHash": "QmSuMbzV2bmEZuStxSqZuAdNc4eexQcTZSeQLFdREqAN7r"
-                }
-            ]
-        },
-        "@taqueria/plugin-ipfs-pinata.publish.1657583772190": {
-            "time": 1657583772190,
-            "output": [
-                {
-                    "?": "✔",
-                    "filePath": "contract-metadata.json",
-                    "ipfsHash": "QmSuMbzV2bmEZuStxSqZuAdNc4eexQcTZSeQLFdREqAN7r"
-                }
-            ]
-        },
-        "@taqueria/plugin-ligo.compile.1657588525806": {
-            "time": 1657588525806,
-            "output": [
-                {
-                    "contract": "main.mligo",
-                    "artifact": "artifacts/main.tz"
-                }
-            ]
-        },
-        "custom.compile_contract.1657588525815": {
-            "time": 1657588525815,
-            "output": [
-                {
-                    "contract": "main.mligo",
-                    "artifact": "artifacts/main.tz"
-                }
-            ]
-        },
-        "@taqueria/plugin-contract-types.generate types.1657588526145": {
-            "time": 1657588526145,
-            "output": null
-        },
-        "custom.generate_types.1657588526150": {
-            "time": 1657588526150,
-            "output": null
-        },
-        "custom.hasFileChanged_assets_contract_metadata_json.1657588526153": {
-            "time": 1657588526153,
-            "output": true
-        },
-        "@taqueria/plugin-ipfs-pinata.publish.1657588527407": {
-            "time": 1657588527407,
-            "output": [
-                {
-                    "?": "✔",
-                    "filePath": "contract-metadata.json",
-                    "ipfsHash": "QmYE2C4QUCEexxKF6KeCmJGR4NeJn3Cd8CSUpqfXENnepN"
-                }
-            ]
-        },
-        "custom.publish_contract_metadata.1657588527414": {
-            "time": 1657588527414,
-            "output": [
-                {
-                    "?": "✔",
-                    "filePath": "contract-metadata.json",
-                    "ipfsHash": "QmYE2C4QUCEexxKF6KeCmJGR4NeJn3Cd8CSUpqfXENnepN"
-                }
-            ]
-        },
-        "custom.hasFileChanged_assets_contract_metadata_json.1657588658733": {
-            "time": 1657588658733,
-            "output": true
-        },
-        "@taqueria/plugin-ipfs-pinata.publish.1657588660654": {
-            "time": 1657588660654,
-            "output": [
-                {
-                    "?": "✔",
-                    "filePath": "contract-metadata.json",
-                    "ipfsHash": "QmZwqGZz2G1yQypuXceHTLFE2WH3cDZqFsGhkZL6ynqxpx"
-                }
-            ]
-        },
-        "custom.publish_contract_metadata.1657588660667": {
-            "time": 1657588660667,
-            "output": [
-                {
-                    "?": "✔",
-                    "filePath": "contract-metadata.json",
-                    "ipfsHash": "QmZwqGZz2G1yQypuXceHTLFE2WH3cDZqFsGhkZL6ynqxpx"
-                }
-            ]
-        },
-        "custom.hasFileChanged_assets_contract_metadata_json.1657588794056": {
-            "time": 1657588794056,
-            "output": true
-        },
-        "@taqueria/plugin-ipfs-pinata.publish.1657588796251": {
-            "time": 1657588796251,
-            "output": [
-                {
-                    "?": "✔",
-                    "filePath": "contract-metadata.json",
-                    "ipfsHash": "QmboAKF15i2mtRom9jQJFod1T8bqbyEY3mmRQTSTB812SV"
-                }
-            ]
-        },
-        "custom.publish_contract_metadata.1657588796259": {
-            "time": 1657588796259,
-            "output": [
-                {
-                    "?": "✔",
-                    "filePath": "contract-metadata.json",
-                    "ipfsHash": "QmboAKF15i2mtRom9jQJFod1T8bqbyEY3mmRQTSTB812SV"
-                }
-            ]
-        },
-        "custom.hasFileChanged_assets_contract_metadata_json.1657588920737": {
-            "time": 1657588920737,
-            "output": true
-        },
-        "@taqueria/plugin-ipfs-pinata.publish.1657588922826": {
-            "time": 1657588922827,
-            "output": [
-                {
-                    "?": "✔",
-                    "filePath": "contract-metadata.json",
-                    "ipfsHash": "QmT6zLwRbi9YCsTCu1odEULTv4iXKrVTponGD6yGa5j8Vt"
-                }
-            ]
-        },
-        "custom.publish_contract_metadata.1657588922835": {
-            "time": 1657588922835,
-            "output": [
-                {
-                    "?": "✔",
-                    "filePath": "contract-metadata.json",
-                    "ipfsHash": "QmT6zLwRbi9YCsTCu1odEULTv4iXKrVTponGD6yGa5j8Vt"
-                }
-            ]
-        },
-        "@taqueria/plugin-flextesa.start sandbox.1657589005495": {
-            "time": 1657589005495,
-            "output": null
-        },
-        "@taqueria/plugin-flextesa.stop sandbox.1657589016336": {
-            "time": 1657589016336,
-            "output": null
-        },
-        "@taqueria/plugin-flextesa.start sandbox.1657589021713": {
-            "time": 1657589021713,
-            "output": null
-        },
-        "@taqueria/plugin-flextesa.start sandbox.1657589046793": {
-            "time": 1657589046793,
-            "output": null
-        },
-        "@taqueria/plugin-flextesa.start sandbox.1657589054529": {
-            "time": 1657589054529,
-            "output": null
-        },
-        "@taqueria/plugin-flextesa.start sandbox.1657589238473": {
-            "time": 1657589238473,
-            "output": null
-        },
-        "@taqueria/plugin-flextesa.start sandbox.1657589441456": {
-            "time": 1657589441456,
-            "output": null
-        },
-        "custom.hasFileChanged_assets_contract_metadata_json.1657589524010": {
-            "time": 1657589524010,
-            "output": true
-        },
-        "@taqueria/plugin-ipfs-pinata.publish.1657589525862": {
-            "time": 1657589525862,
-            "output": [
-                {
-                    "?": "✔",
-                    "filePath": "contract-metadata.json",
-                    "ipfsHash": "QmcGfgHfZV76ZojMFJgLGJx4XHRb2jsULScC8FbAgHNqLs"
-                }
-            ]
-        },
-        "custom.publish_contract_metadata.1657589525870": {
-            "time": 1657589525870,
-            "output": [
-                {
-                    "?": "✔",
-                    "filePath": "contract-metadata.json",
-                    "ipfsHash": "QmcGfgHfZV76ZojMFJgLGJx4XHRb2jsULScC8FbAgHNqLs"
-                }
-            ]
-        },
-        "custom.hasFileChanged_assets_contract_metadata_json.1657589666128": {
-            "time": 1657589666128,
-            "output": true
-        },
-        "@taqueria/plugin-ipfs-pinata.publish.1657589667938": {
-            "time": 1657589667938,
-            "output": [
-                {
-                    "?": "✔",
-                    "filePath": "contract-metadata.json",
-                    "ipfsHash": "QmWVt3QqL5SHgnBjJ2k1c9JNufQcGPrGdZZAec5G62L9rH"
-                }
-            ]
-        },
-        "custom.publish_contract_metadata.1657589667947": {
-            "time": 1657589667947,
-            "output": [
-                {
-                    "?": "✔",
-                    "filePath": "contract-metadata.json",
-                    "ipfsHash": "QmWVt3QqL5SHgnBjJ2k1c9JNufQcGPrGdZZAec5G62L9rH"
-                }
-            ]
-        },
-        "custom.hasFileChanged_assets_contract_metadata_json.1657589835763": {
-            "time": 1657589835763,
-            "output": true
-        },
-        "@taqueria/plugin-ipfs-pinata.publish.1657589841261": {
-            "time": 1657589841261,
-            "output": [
-                {
-                    "?": "✔",
-                    "filePath": "contract-metadata.json",
-                    "ipfsHash": "QmdSBTGoWfipAzxoMNNDpQJXrPHjpZQ5LdHhQyorYBk5aW"
-                }
-            ]
-        },
-        "custom.publish_contract_metadata.1657589841269": {
-            "time": 1657589841269,
-            "output": [
-                {
-                    "?": "✔",
-                    "filePath": "contract-metadata.json",
-                    "ipfsHash": "QmdSBTGoWfipAzxoMNNDpQJXrPHjpZQ5LdHhQyorYBk5aW"
-                }
-            ]
-        },
-        "custom.hasFileChanged_assets_contract_metadata_json.1657591611769": {
-            "time": 1657591611769,
-            "output": true
-        },
-        "@taqueria/plugin-ipfs-pinata.publish.1657591616456": {
-            "time": 1657591616456,
-            "output": [
-                {
-                    "?": "✔",
-                    "filePath": "contract-metadata.json",
-                    "ipfsHash": "QmcFQgE5E9WAuUW4ejaypku6yAj6MNGquvQprGKUmiWe2f"
-                }
-            ]
-        },
-        "custom.publish_contract_metadata.1657591616465": {
-            "time": 1657591616465,
-            "output": [
-                {
-                    "?": "✔",
-                    "filePath": "contract-metadata.json",
-                    "ipfsHash": "QmcFQgE5E9WAuUW4ejaypku6yAj6MNGquvQprGKUmiWe2f"
-                }
-            ]
-        },
-        "custom.originate_with_storage.1657591621587": {
-            "time": 1657591621587,
-            "output": {
-                "contractAddress": "KT1JYZ2R9VEmMi8eSJ61aUFZMHB9FjCrh3WL"
-            }
-        },
-        "@taqueria/plugin-ipfs-pinata.publish.1657637687293": {
-            "time": 1657637687293,
-            "output": [
-                {
-                    "?": "✔",
-                    "filePath": "contract-metadata.json",
-                    "ipfsHash": "QmcFQgE5E9WAuUW4ejaypku6yAj6MNGquvQprGKUmiWe2f"
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                    "ipfsHash": "QmWS345jBJQhxSK32uZrZ7RmsMqRS7G7pC6kQwW5zX7CSv"
                 },
                 {
                     "?": "✔",
-                    "filePath": "test.txt",
-                    "ipfsHash": "Qma9Ld5bpMrckvk5w4pJw3y9sGz7CexyxYxDo7ZP15Cy87"
-                }
-            ]
-        },
-        "custom.publish_asset_files.1657637687301": {
-            "time": 1657637687301,
-            "output": [
-                {
-                    "?": "✔",
-                    "filePath": "contract-metadata.json",
-                    "ipfsHash": "QmcFQgE5E9WAuUW4ejaypku6yAj6MNGquvQprGKUmiWe2f"
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                    "ipfsHash": "QmYbHpJPQ5NKAsb3MofgG52AgcmGgsFt6xXauXDJYz8JVv"
                 },
                 {
                     "?": "✔",
-                    "filePath": "test.txt",
-                    "ipfsHash": "Qma9Ld5bpMrckvk5w4pJw3y9sGz7CexyxYxDo7ZP15Cy87"
-                }
-            ]
-        },
-        "custom.haveFilesChanged_assets_.1657639709915": {
-            "time": 1657639709915,
-            "output": [
-                {
-                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/test.txt",
-                    "changeTimeMs": 1657637494500.2544
-                }
-            ]
-        },
-        "@taqueria/plugin-ipfs-pinata.publish.1657639711392": {
-            "time": 1657639711392,
-            "output": [
-                {
-                    "?": "✔",
-                    "filePath": "contract-metadata.json",
-                    "ipfsHash": "QmcFQgE5E9WAuUW4ejaypku6yAj6MNGquvQprGKUmiWe2f"
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
                 },
                 {
                     "?": "✔",
-                    "filePath": "test.txt",
-                    "ipfsHash": "Qma9Ld5bpMrckvk5w4pJw3y9sGz7CexyxYxDo7ZP15Cy87"
-                }
-            ]
-        },
-        "custom.publish_asset_files.1657639711402": {
-            "time": 1657639711402,
-            "output": [
-                {
-                    "?": "✔",
-                    "filePath": "contract-metadata.json",
-                    "ipfsHash": "QmcFQgE5E9WAuUW4ejaypku6yAj6MNGquvQprGKUmiWe2f"
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.json",
+                    "ipfsHash": "QmYqhL8wGN9co1jcskTmu34Bcy7ukULQqXo3r8BAErtES1"
                 },
                 {
                     "?": "✔",
-                    "filePath": "test.txt",
-                    "ipfsHash": "Qma9Ld5bpMrckvk5w4pJw3y9sGz7CexyxYxDo7ZP15Cy87"
-                }
-            ]
-        },
-        "custom.haveFilesChanged_assets_.1657644695128": {
-            "time": 1657644695128,
-            "output": [
-                {
-                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/test.txt",
-                    "changeTimeMs": 1657644681757.754
-                }
-            ]
-        },
-        "@taqueria/plugin-ipfs-pinata.publish.1657644697948": {
-            "time": 1657644697948,
-            "output": [
-                {
-                    "?": "✔",
-                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/contract-metadata.json",
-                    "ipfsHash": "QmcFQgE5E9WAuUW4ejaypku6yAj6MNGquvQprGKUmiWe2f"
-                },
-                {
-                    "?": "✔",
-                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/test.txt",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.txt",
                     "ipfsHash": "Qme3VHhxvhogzcLoFvrtQs3AxKjJd4Dk546i1yGsnVDEjv"
                 }
             ]
         },
-        "custom.publish_asset_files.1657644697958": {
-            "time": 1657644697958,
+        "custom.publish_metadata_files.1657671138667": {
+            "time": 1657671138667,
             "output": [
                 {
-                    "?": "✔",
-                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/contract-metadata.json",
-                    "ipfsHash": "QmcFQgE5E9WAuUW4ejaypku6yAj6MNGquvQprGKUmiWe2f"
+                    "?": "❌",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "error": {}
+                },
+                {
+                    "?": "❌",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "error": {}
+                },
+                {
+                    "?": "❌",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp",
+                    "error": {}
                 },
                 {
                     "?": "✔",
-                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/test.txt",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                    "ipfsHash": "QmWS345jBJQhxSK32uZrZ7RmsMqRS7G7pC6kQwW5zX7CSv"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                    "ipfsHash": "QmYbHpJPQ5NKAsb3MofgG52AgcmGgsFt6xXauXDJYz8JVv"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.json",
+                    "ipfsHash": "QmYqhL8wGN9co1jcskTmu34Bcy7ukULQqXo3r8BAErtES1"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.txt",
                     "ipfsHash": "Qme3VHhxvhogzcLoFvrtQs3AxKjJd4Dk546i1yGsnVDEjv"
                 }
             ]
         },
-        "custom.haveFilesChanged_assets_.1657644859417": {
-            "time": 1657644859417,
+        "custom.mint_tokens.1657671148749": {
+            "time": 1657671148749,
             "output": [
                 {
-                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/test.txt",
-                    "changeTimeMs": 1657644854277.754
-                }
-            ]
-        },
-        "@taqueria/plugin-ipfs-pinata.publish.1657644860618": {
-            "time": 1657644860618,
-            "output": [
-                {
-                    "?": "✔",
-                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/test.txt",
-                    "ipfsHash": "Qma9Ld5bpMrckvk5w4pJw3y9sGz7CexyxYxDo7ZP15Cy87"
-                },
-                {
-                    "?": "✔",
-                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/contract-metadata.json",
-                    "ipfsHash": "QmcFQgE5E9WAuUW4ejaypku6yAj6MNGquvQprGKUmiWe2f"
-                }
-            ]
-        },
-        "custom.publish_asset_files.1657644860627": {
-            "time": 1657644860627,
-            "output": [
-                {
-                    "?": "✔",
-                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/test.txt",
-                    "ipfsHash": "Qma9Ld5bpMrckvk5w4pJw3y9sGz7CexyxYxDo7ZP15Cy87"
-                },
-                {
-                    "?": "✔",
-                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/contract-metadata.json",
-                    "ipfsHash": "QmcFQgE5E9WAuUW4ejaypku6yAj6MNGquvQprGKUmiWe2f"
-                }
-            ]
-        },
-        "custom.haveFilesChanged_assets_.1657644898227": {
-            "time": 1657644898227,
-            "output": [
-                {
-                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/test.txt",
-                    "changeTimeMs": 1657644889777.754
-                }
-            ]
-        },
-        "@taqueria/plugin-ipfs-pinata.publish.1657644899377": {
-            "time": 1657644899377,
-            "output": [
-                {
-                    "?": "✔",
-                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/test.txt",
-                    "ipfsHash": "Qme3VHhxvhogzcLoFvrtQs3AxKjJd4Dk546i1yGsnVDEjv"
-                },
-                {
-                    "?": "✔",
-                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/contract-metadata.json",
-                    "ipfsHash": "QmcFQgE5E9WAuUW4ejaypku6yAj6MNGquvQprGKUmiWe2f"
-                }
-            ]
-        },
-        "custom.publish_asset_files.1657644899387": {
-            "time": 1657644899387,
-            "output": [
-                {
-                    "?": "✔",
-                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/test.txt",
-                    "ipfsHash": "Qme3VHhxvhogzcLoFvrtQs3AxKjJd4Dk546i1yGsnVDEjv"
-                },
-                {
-                    "?": "✔",
-                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/contract-metadata.json",
-                    "ipfsHash": "QmcFQgE5E9WAuUW4ejaypku6yAj6MNGquvQprGKUmiWe2f"
+                    "contractAddress": "KT1UTE7Z9hUxQuX29GxEjJjLtJRgSYkno4dc",
+                    "mintedTokens": [
+                        {
+                            "tokenId": 1,
+                            "ipfsHash": "QmWS345jBJQhxSK32uZrZ7RmsMqRS7G7pC6kQwW5zX7CSv"
+                        },
+                        {
+                            "tokenId": 2,
+                            "ipfsHash": "QmYqhL8wGN9co1jcskTmu34Bcy7ukULQqXo3r8BAErtES1"
+                        }
+                    ]
                 }
             ]
         }

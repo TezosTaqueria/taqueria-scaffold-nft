@@ -2,6 +2,14 @@
 import fs from "fs/promises";
 import path from "path";
 
+export const readJsonFile = async<T>(filePath: string) => {
+    try {
+        const content = await fs.readFile(filePath, { encoding: 'utf-8' });
+        return JSON.parse(content) as T;
+    } catch { return; }
+};
+
+
 export const getFileInfo = async (filePath: string) => {
     return await fs.stat(path.resolve(process.cwd(), filePath));
 }

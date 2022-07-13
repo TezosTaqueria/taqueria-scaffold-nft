@@ -1,0 +1,14 @@
+{
+    "version": "v1.0.0",
+    "name": "Taqueria Nft Scaffold",
+    "description": "Using the Taqueria Nft Scaffold will make all your wildest dreams come true.",
+    "authors": [
+        "ECAD Labs"
+    ],
+    "interfaces": [
+        "TZIP-012",
+        "TZIP-016",
+        "TZIP-021"
+    ],
+    "tokenCategory": "collectibles"
+}

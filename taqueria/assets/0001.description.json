@@ -1,0 +1,14 @@
+{
+    "name": "1kb-webp",
+    "description": "This is the best 1kb file I have ever seen!",
+    "attributes": [
+        {
+            "name": "phat",
+            "value": "1kb"
+        },
+        {
+            "name": "awesomeness",
+            "value": "100%"
+        }
+    ]
+}

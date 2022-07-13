@@ -16,7 +16,8 @@
     "@taqueria/plugin-taquito": "0.0.0-pr-938-842c1b4f",
     "@taquito/signer": "13.0.0",
     "@taquito/taquito": "13.0.0",
-    "@taquito/utils": "13.0.0"
+    "@taquito/utils": "13.0.0",
+    "image-size": "^1.0.2"
   },
   "keywords": [],
   "author": "",

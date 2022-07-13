@@ -1,0 +1,31 @@
+{
+  "type": "TaqueriaNftScaffold",
+  "creators": [
+    "ECAD Labs Inc."
+  ],
+  "contributors": [
+    "Rick Love"
+  ],
+  "publishers": [
+    "ECAD Labs Inc."
+  ],
+  "externalUri": "https://ecadlabs.com",
+  "tags": [
+    "ECAD"
+  ],
+  "royalties": {
+    "decimals": 2,
+    "shares": {}
+  },
+  "decimals": 0,
+  "isBooleanAmount": true,
+  "language": "en",
+  "date": "2022-07-12T23:45:03.125Z",
+  "artifactUri": "ipfs://Qme3VHhxvhogzcLoFvrtQs3AxKjJd4Dk546i1yGsnVDEjv",
+  "displayUri": "ipfs://Qme3VHhxvhogzcLoFvrtQs3AxKjJd4Dk546i1yGsnVDEjv",
+  "formats": [
+    {
+      "uri": "ipfs://Qme3VHhxvhogzcLoFvrtQs3AxKjJd4Dk546i1yGsnVDEjv"
+    }
+  ]
+}
