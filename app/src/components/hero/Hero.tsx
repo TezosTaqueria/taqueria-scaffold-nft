@@ -31,7 +31,7 @@ const HeroContainer = styled.div`
 	&:before {
 		content: '';
 		position: absolute;
-		bottom: 3%;
+		bottom: -3%;
 		left: 0;
 		width: 20%;
 		height: 5%;
@@ -45,12 +45,12 @@ const HeroContainer = styled.div`
 	&:after {
 		content: '';
 		position: absolute;
-		bottom: 10%;
+		bottom: 4%;
 		right: 0;
 		width: 20%;
 		height: 5%;
 		background-color: ${({ theme }) => theme.colors.primary};
-		transform: matrix(1, -0.1, 0, 0.99, 0, 0);
+		transform: matrix(1, -0.1, 0, 0.9, 0, 0);
 		z-index: 2;
 		@media (max-width: 500px) {
 			display: none;
@@ -58,7 +58,7 @@ const HeroContainer = styled.div`
 	}
 	.leftPurpleLine {
 		position: absolute;
-		bottom: 1.5%;
+		bottom: -4.5%;
 		left: 12.5%;
 		width: 10%;
 		height: 5%;
@@ -71,7 +71,7 @@ const HeroContainer = styled.div`
 	}
 	.rightPurpleLine {
 		position: absolute;
-		bottom: 11.5%;
+		bottom: 5.5%;
 		right: 12.5%;
 		width: 10%;
 		height: 5%;
