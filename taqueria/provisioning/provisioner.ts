@@ -244,12 +244,12 @@ const pMintTokens =
                 tokenId: x.tokenId,
                 ipfsHash: ipfsHashesMap.get(x.metadataFilePath)!,
             })).filter(x => x.ipfsHash)
-                .filter(x => oldMintedTokens.some(o => o.tokenId === x.tokenId));
+                .filter(x => !oldMintedTokens.some(o => o.tokenId === x.tokenId));
 
             const contract = await loadContract(networkKind, contractAddress);
             const { userAddress } = await getTezosSettings(networkKind);
 
-            const remaining = tokensToMint;
+            const remaining = [...tokensToMint];
             while (remaining.length) {
                 const batch = remaining.splice(0, 50);
                 const call = contract.methodsObject.mint(batch.map(x => ({
@@ -261,8 +261,8 @@ const pMintTokens =
                 const result = await call.send({
                     //fee: 20000,
                     fee: 40000, // FAST!
-                    storageLimit: 300 * tokensToMint.length,
-                    gasLimit: 1000 * tokensToMint.length,
+                    // storageLimit: 300 * batch.length,
+                    // gasLimit: 1000 * batch.length,
                 });
 
                 await result.confirmation(2);
