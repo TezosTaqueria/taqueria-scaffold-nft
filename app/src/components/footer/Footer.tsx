@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import TopLogo from '../../assets/taqueria-logo-footer.svg';
 import ECADLogo from '../../assets/footer-bottom-logo.svg';
-import Edges from '../edges/Edges';
+import Edges from '../edge/Edges';
 import { useMailChimp } from 'react-use-mailchimp-signup';
 
 const footerNavbar = [

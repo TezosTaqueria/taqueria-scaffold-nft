@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import HeroLogo from '../../assets/Taqueria_icon_hero.svg';
-import Edges from '../edges/Edges';
+import Edges from '../edge/Edges';
 import { Button } from '../styles/Button.styled';
 
 const Hero = () => {

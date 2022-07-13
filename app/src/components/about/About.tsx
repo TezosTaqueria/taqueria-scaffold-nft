@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import KeyLogo from '../../assets/key-logo.svg';
 import BoxLogo from '../../assets/box-logo.svg';
 
-import Edges from '../edges/Edges';
+import Edges from '../edge/Edges';
 
 const About = () => {
 	return (

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { AppAdmin } from '../../app-admin';
 import Logo from '../../assets/ecad-logo.svg';
-import Edges from '../edges/Edges';
+import Edges from '../edge/Edges';
 
 const Header = () => {
 	return (
