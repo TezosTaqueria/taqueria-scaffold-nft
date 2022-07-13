@@ -41,6 +41,9 @@ const HeroContainer = styled.div`
 		@media (max-width: 500px) {
 			display: none;
 		}
+		@media (min-width: 1600px) {
+			display: none;
+		}
 	}
 	&:after {
 		content: '';
@@ -53,6 +56,9 @@ const HeroContainer = styled.div`
 		transform: matrix(1, -0.1, 0, 0.9, 0, 0);
 		z-index: 2;
 		@media (max-width: 500px) {
+			display: none;
+		}
+		@media (min-width: 1600px) {
 			display: none;
 		}
 	}
@@ -68,6 +74,9 @@ const HeroContainer = styled.div`
 		@media (max-width: 500px) {
 			display: none;
 		}
+		@media (min-width: 1600px) {
+			display: none;
+		}
 	}
 	.rightPurpleLine {
 		position: absolute;
@@ -79,6 +88,9 @@ const HeroContainer = styled.div`
 		transform: matrix(1, -0.1, 0, 0.99, 0, 0);
 		z-index: 3;
 		@media (max-width: 500px) {
+			display: none;
+		}
+		@media (min-width: 1600px) {
 			display: none;
 		}
 	}
