@@ -4,7 +4,6 @@ import TopLogo from '../../assets/taqueria-logo-footer.svg';
 import ECADLogo from '../../assets/footer-bottom-logo.svg';
 import Edges from '../edges/Edges';
 import { useMailChimp } from 'react-use-mailchimp-signup';
-import { Button } from '../styles/Button.styled';
 
 const footerNavbar = [
 	{
