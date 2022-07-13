@@ -19,8 +19,8 @@ const createContractService = () => {
 
     // Testnet
     const network = {
-        type: NetworkType.ITHACANET,
-        rpcUrl: "https://ithacanet.ecadinfra.com/"
+        type: NetworkType.GHOSTNET,
+        rpcUrl: "https://rpc.ghostnet.teztnets.xyz"
     };
 
     const Tezos = new TezosToolkit(network.rpcUrl);
