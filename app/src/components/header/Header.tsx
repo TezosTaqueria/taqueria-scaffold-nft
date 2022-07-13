@@ -26,7 +26,7 @@ export default Header;
 const HeaderContainer = styled.div`
 	background-color: ${({ theme }) => theme.colors.bgLight};
 	width: 100%;
-	
+
 	border-bottom: 2px solid rgba(252, 175, 23, 0.1);
 `;
 const HeaderConten = styled.div`
@@ -41,8 +41,8 @@ const HeaderConten = styled.div`
 const LogoContainer = styled.div`
 	width: 50%;
 	img {
-		width: 213px;
-		height: 69px;
+		width: 200px;
+		height: 50px;
 	}
 `;
 const ButtonContainer = styled.div`
