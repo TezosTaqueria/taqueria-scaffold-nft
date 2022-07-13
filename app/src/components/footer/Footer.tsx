@@ -183,7 +183,7 @@ const FooterTopBox1 = styled.div`
 const FooterTopBox2 = styled.div`
 	display: flex;
 	flex-direction: column;
-	padding-left: 30px;
+	padding-left: 70px;
 	.navTitle {
 		font-style: normal;
 		font-weight: 600;
