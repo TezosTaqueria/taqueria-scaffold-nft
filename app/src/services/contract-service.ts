@@ -6,6 +6,7 @@ import { UpdateProgressCallback } from '../utils/hooks';
 import { NftType } from './types';
 import { settings } from './settings';
 import { bytes2Char } from '@taquito/utils';
+import { TransportStatus } from '@airgap/beacon-wallet';
 
 const createContractService = () => {
     // localhost:4242 - flextesa local network
@@ -37,7 +38,7 @@ const createContractService = () => {
         getUserAddress: async () => state.userAddress,
         getUserBalance: async () => state.userBalance,
         getContractAddress: async () => state.contractAddress,
-        connectWallet: async (updateProgress: UpdateProgressCallback) => {
+        connectWallet: async (updateProgress: UpdateProgressCallback, options?: { reconnectOnly?: boolean }) => {
             console.log('connectWallet START');
 
             updateProgress('Requesting Permissions');
@@ -45,9 +46,12 @@ const createContractService = () => {
             const wallet = new BeaconWallet({
                 name: "Example Dapp",
             });
-            await wallet.requestPermissions({
-                network,
-            });
+
+            if (!options?.reconnectOnly) {
+                await wallet.requestPermissions({
+                    network,
+                });
+            }
 
             updateProgress('Obtaining User Info');
 

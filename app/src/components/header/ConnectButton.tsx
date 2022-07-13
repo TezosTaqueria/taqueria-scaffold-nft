@@ -5,15 +5,30 @@ import { Button } from '../styles/Button.styled';
 
 export const ConnectButton = () => {
 	const [isWalletReady, setIsWalletReady] = useState(false);
+	const [userAddress, setUserAddress] = useState(undefined as undefined | string);
 	const { loading, error, progress, doWork } = useAsyncWorker();
 
 	const connectWallet = () => {
 		doWork(async (stopIfUnmounted, updateProgress) => {
 			await ContractService.connectWallet(updateProgress);
+			const userAddress = await ContractService.getUserAddress();
+
 			stopIfUnmounted();
-			setIsWalletReady(true);
+			setIsWalletReady(!!userAddress);
+			setUserAddress(userAddress);
 		});
 	};
+
+	useEffect(() => {
+		// Try to connect
+		doWork(async (stopIfUnmounted, updateProgress) => {
+			await ContractService.connectWallet(updateProgress, {reconnectOnly: true});
+			const userAddress = await ContractService.getUserAddress();
+			stopIfUnmounted();
+			setIsWalletReady(!!userAddress);
+			setUserAddress(userAddress);
+		});
+	}, []);
 
 	return (
 		<div>
@@ -34,6 +49,7 @@ export const ConnectButton = () => {
 			{isWalletReady && (
 				<>
 					<h3>Connected</h3>
+					<h5>{userAddress}</h5>
 				</>
 			)}
 		</div>

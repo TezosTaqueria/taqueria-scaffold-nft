@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ContractService } from "../../services/contract-service";
 import { NftType } from "../../services/types";
+import { delay } from "../../utils/delay";
 import { useAsyncWorker } from "../../utils/hooks";
 import { Button } from "../styles/Button.styled";
 
@@ -12,6 +13,15 @@ export const NftBrowser = () => {
 
     const loadNfts = () => {
         doWork(async (stopIfUnmounted, updateProgress) => {
+            let attempt = 0;
+            while(attempt < 5){
+                if(await ContractService.getUserAddress()){
+                    break;
+                }
+                attempt++;
+                await delay(100 * Math.pow(2,attempt));
+            }
+
             await ContractService.loadContract(updateProgress);
 
             const resultNfts = await ContractService.getNfts(updateProgress);

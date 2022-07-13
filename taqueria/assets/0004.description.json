@@ -1,0 +1,14 @@
+{
+    "name": "What'sit?",
+    "description": "Fried Chicken vs Dog",
+    "attributes": [
+        {
+            "name": "emotion",
+            "value": "confusion"
+        },
+        {
+            "name": "awesomeness",
+            "value": "100%"
+        }
+    ]
+}
