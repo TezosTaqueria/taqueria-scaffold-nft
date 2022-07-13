@@ -34,8 +34,8 @@ const HeaderConten = styled.div`
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 `;
 
 const LogoContainer = styled.div`
