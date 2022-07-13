@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { AppAdmin } from '../../app-admin';
+import { ConnectButton } from '../connect-button';
 import Logo from '../../assets/ecad-logo.svg';
 import Edges from '../edges/Edges';
 
@@ -13,7 +13,7 @@ const Header = () => {
 						<img alt='ECAD_Logo' src={Logo} />
 					</LogoContainer>
 					<ButtonContainer>
-						<AppAdmin />
+						<ConnectButton />
 					</ButtonContainer>
 				</HeaderConten>
 			</Edges>
