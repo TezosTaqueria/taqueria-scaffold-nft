@@ -109,13 +109,13 @@ const HeroConten = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding-top: 100px;
+	padding-top: 50px;
 	padding-bottom: 100px;
 	text-align: center;
 	img {
 		width: 200px;
 		height: 200px;
-		margin-bottom:20px;
+		margin-bottom: 20px;
 	}
 	p {
 		max-width: 280px;

@@ -64,13 +64,12 @@ const Footer = () => {
 					<FooterTopBox1>
 						<img alt='ecad-logo-top' src={TopLogo} />
 						<p className='headline'>A New Way to Build on Tezos</p>
-						<p className='headline'>Register for updates</p>
 						<div className={'footerForm'}>
 							{error && <ErrorMessage>Please enter your email</ErrorMessage>}
 							{loading && <Message>...Loading</Message>}
 							{message && <Message>{message && message}</Message>}
 
-							<h5>Register for updates</h5>
+							<p className='headline'>Register for updates</p>
 							<form className='footerInputContainer' onSubmit={handleSubmit}>
 								<input
 									type='email'
