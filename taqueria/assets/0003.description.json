@@ -1,0 +1,14 @@
+{
+    "name": "Eye see you",
+    "description": "Spooky!",
+    "attributes": [
+        {
+            "name": "emotion",
+            "value": "fear"
+        },
+        {
+            "name": "awesomeness",
+            "value": "100%"
+        }
+    ]
+}

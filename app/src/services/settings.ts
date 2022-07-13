@@ -10,6 +10,6 @@ export const settings = {
     
     contractAddress: 'KT1KWUAwm5JTaa1cxr3CD1SJ7UtdwAenyQUz',
     tokenIdMin: 1,
-    tokenIdMax: 2,
+    tokenIdMax: 3,
 };
             
