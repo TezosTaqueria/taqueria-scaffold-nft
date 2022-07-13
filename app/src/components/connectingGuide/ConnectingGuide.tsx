@@ -12,7 +12,7 @@ const ConnectingGuide = () => {
 			<Edges>
 				<ConnectingConten>
 					<ConnectingCard>
-						<h1>Connecting Your Tezos Wallet to the NFT Projec</h1>
+						<h1>Connecting Your Tezos Wallet to the NFT Project</h1>
 						<p>
 							If you already have a Tezos wallet, get started with this NFT
 							project by clicking on Connect in the top right hand connect your
