@@ -6,7 +6,7 @@ export default function Edges(props) {
 }
 
 const Section = styled.section`
-	width: ${(props) => (props.small ? '600px' : '1600px')};
+	width: 1300px;
 	max-width: 92%;
 	margin: 0 auto;
 
