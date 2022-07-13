@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export default function Edges(props) {
+export default function Edges(props:{ children: JSX.Element|JSX.Element[] }) {
 	return <Section {...props}>{props.children}</Section>;
 }
 
-const Section = styled.section`
+const Section = styled.section<{small?:boolean}>`
 	width: ${(props) => (props.small ? '600px' : '1600px')};
 	max-width: 92%;
 	margin: 0 auto;
