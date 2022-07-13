@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { AppAdmin } from '../../app-admin';
-import Logo from '../../assets/ecad-logo.svg';
+import Logo from '../../assets/Taqueria_magenta_beta.svg';
 import Edges from '../edge/Edges';
 
 const Header = () => {
@@ -26,8 +26,7 @@ export default Header;
 const HeaderContainer = styled.div`
 	background-color: ${({ theme }) => theme.colors.bgLight};
 	width: 100%;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	
 	border-bottom: 2px solid rgba(252, 175, 23, 0.1);
 `;
 const HeaderConten = styled.div`
@@ -35,8 +34,8 @@ const HeaderConten = styled.div`
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding-top: 25px;
-	padding-bottom: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 `;
 
 const LogoContainer = styled.div`
