@@ -130,7 +130,7 @@ const FooterTop = styled.div`
 	margin-bottom: 15px;
 `;
 const FooterTopBox1 = styled.div`
-	width: 40%;
+	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 20px;
@@ -181,10 +181,9 @@ const FooterTopBox1 = styled.div`
 `;
 
 const FooterTopBox2 = styled.div`
-	width: calc(20% - 20px);
 	display: flex;
 	flex-direction: column;
-	padding-left: 20px;
+	padding-left: 30px;
 	.navTitle {
 		font-style: normal;
 		font-weight: 600;
@@ -211,6 +210,8 @@ const FooterTopBox2 = styled.div`
 	}
 	@media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
 		width: unset;
+		padding-left: 0px;
+		padding-right: 20px;
 	}
 `;
 
