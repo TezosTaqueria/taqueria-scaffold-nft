@@ -20,7 +20,7 @@
   "decimals": 0,
   "isBooleanAmount": true,
   "language": "en",
-  "date": "2022-07-13T02:06:09.497Z",
+  "date": "2022-07-13T02:23:41.761Z",
   "name": "1kb-webp",
   "description": "This is the best 1kb file I have ever seen!",
   "attributes": [
@@ -43,6 +43,15 @@
         "value": "32x32",
         "unit": "px"
       }
+    },
+    {
+      "uri": "ipfs://QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC",
+      "mimeType": "image/webp",
+      "dimensions": {
+        "value": "32x32",
+        "unit": "px"
+      }
     }
-  ]
+  ],
+  "thumbnailUri": "ipfs://QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
 }

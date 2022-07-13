@@ -20,12 +20,29 @@
   "decimals": 0,
   "isBooleanAmount": true,
   "language": "en",
-  "date": "2022-07-12T23:45:03.125Z",
-  "artifactUri": "ipfs://Qme3VHhxvhogzcLoFvrtQs3AxKjJd4Dk546i1yGsnVDEjv",
-  "displayUri": "ipfs://Qme3VHhxvhogzcLoFvrtQs3AxKjJd4Dk546i1yGsnVDEjv",
+  "date": "2022-07-13T02:42:52.838Z",
+  "name": "10kb-png",
+  "description": "Now 10x the size!!",
+  "attributes": [
+    {
+      "name": "phat",
+      "value": "10kb"
+    },
+    {
+      "name": "awesomeness",
+      "value": "100%"
+    }
+  ],
+  "artifactUri": "ipfs://QmZpE8whBWCBUVrewQx9GQNJuCLhm6C2HRuP1CCue5ZVsj",
+  "displayUri": "ipfs://QmZpE8whBWCBUVrewQx9GQNJuCLhm6C2HRuP1CCue5ZVsj",
   "formats": [
     {
-      "uri": "ipfs://Qme3VHhxvhogzcLoFvrtQs3AxKjJd4Dk546i1yGsnVDEjv"
+      "uri": "ipfs://QmZpE8whBWCBUVrewQx9GQNJuCLhm6C2HRuP1CCue5ZVsj",
+      "mimeType": "image/png",
+      "dimensions": {
+        "value": "128x128",
+        "unit": "px"
+      }
     }
   ]
 }

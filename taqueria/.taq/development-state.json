@@ -515,6 +515,1314 @@
                     ]
                 }
             ]
+        },
+        "custom.haveFilesChanged_asset_files.1657679017954": {
+            "time": 1657679017954,
+            "output": [
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp",
+                    "changeTimeMs": 1657667426737.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                    "changeTimeMs": 1657667430077.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.png",
+                    "changeTimeMs": 1657678984647.754
+                }
+            ]
+        },
+        "@taqueria/plugin-ipfs-pinata.publish.1657679021739": {
+            "time": 1657679021739,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                    "ipfsHash": "QmcsrS1HToXBwcsRYD7DqfbuyjCfMwG2P3B59NMKUi3Pjq"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                    "ipfsHash": "QmYbHpJPQ5NKAsb3MofgG52AgcmGgsFt6xXauXDJYz8JVv"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmVk289qyW6KdETPhFt1GuggA9acQMMMEXxndaz9kD44EJ"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "ipfsHash": "QmWsrUKRAhhQsttGFKfq5LFtswW5BjD8r347Qs34x8SYNu"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.png",
+                    "ipfsHash": "QmZpE8whBWCBUVrewQx9GQNJuCLhm6C2HRuP1CCue5ZVsj"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                    "ipfsHash": "QmekaEAs6xTPyPWJP3D8P9os2iwuJN6ySwBr2UDnUq1ejB"
+                }
+            ]
+        },
+        "custom.publish_asset_files.1657679021748": {
+            "time": 1657679021748,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                    "ipfsHash": "QmcsrS1HToXBwcsRYD7DqfbuyjCfMwG2P3B59NMKUi3Pjq"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                    "ipfsHash": "QmYbHpJPQ5NKAsb3MofgG52AgcmGgsFt6xXauXDJYz8JVv"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmVk289qyW6KdETPhFt1GuggA9acQMMMEXxndaz9kD44EJ"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "ipfsHash": "QmWsrUKRAhhQsttGFKfq5LFtswW5BjD8r347Qs34x8SYNu"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.png",
+                    "ipfsHash": "QmZpE8whBWCBUVrewQx9GQNJuCLhm6C2HRuP1CCue5ZVsj"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                    "ipfsHash": "QmekaEAs6xTPyPWJP3D8P9os2iwuJN6ySwBr2UDnUq1ejB"
+                }
+            ]
+        },
+        "custom.haveFilesChanged_asset_metadata_files.1657679021754": {
+            "time": 1657679021754,
+            "output": [
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                    "changeTimeMs": 1657669499647.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                    "changeTimeMs": 1657677969487.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                    "changeTimeMs": 1657679013217.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "changeTimeMs": 1657677960107.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "changeTimeMs": 1657666091047.754
+                }
+            ]
+        },
+        "custom.finalize_token_metadata_files.1657679021763": {
+            "time": 1657679021763,
+            "output": [
+                {
+                    "mainAssetFiles": [
+                        {
+                            "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                            "tokenId": 1,
+                            "ext": ".webp",
+                            "baseFileName": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001",
+                            "descriptionFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                            "metadataFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                            "thumbFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp"
+                        },
+                        {
+                            "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.png",
+                            "tokenId": 2,
+                            "ext": ".png",
+                            "baseFileName": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002",
+                            "descriptionFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                            "metadataFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.json"
+                        }
+                    ]
+                }
+            ]
+        },
+        "@taqueria/plugin-ipfs-pinata.publish.1657679024289": {
+            "time": 1657679024289,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                    "ipfsHash": "QmYbHpJPQ5NKAsb3MofgG52AgcmGgsFt6xXauXDJYz8JVv"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.png",
+                    "ipfsHash": "QmZpE8whBWCBUVrewQx9GQNJuCLhm6C2HRuP1CCue5ZVsj"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmVk289qyW6KdETPhFt1GuggA9acQMMMEXxndaz9kD44EJ"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "ipfsHash": "QmWsrUKRAhhQsttGFKfq5LFtswW5BjD8r347Qs34x8SYNu"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                    "ipfsHash": "QmekaEAs6xTPyPWJP3D8P9os2iwuJN6ySwBr2UDnUq1ejB"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                    "ipfsHash": "Qmcx9uRUesHH6Lgx6QUKrMSNfreDxdofEfPPjCi8qFmM9C"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.json",
+                    "ipfsHash": "QmPxuU1k4qidbxZ16NiKT5YKUTyaWaveirhbMTASu3d876"
+                }
+            ]
+        },
+        "custom.publish_metadata_files.1657679024298": {
+            "time": 1657679024298,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                    "ipfsHash": "QmYbHpJPQ5NKAsb3MofgG52AgcmGgsFt6xXauXDJYz8JVv"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.png",
+                    "ipfsHash": "QmZpE8whBWCBUVrewQx9GQNJuCLhm6C2HRuP1CCue5ZVsj"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmVk289qyW6KdETPhFt1GuggA9acQMMMEXxndaz9kD44EJ"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "ipfsHash": "QmWsrUKRAhhQsttGFKfq5LFtswW5BjD8r347Qs34x8SYNu"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                    "ipfsHash": "QmekaEAs6xTPyPWJP3D8P9os2iwuJN6ySwBr2UDnUq1ejB"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                    "ipfsHash": "Qmcx9uRUesHH6Lgx6QUKrMSNfreDxdofEfPPjCi8qFmM9C"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.json",
+                    "ipfsHash": "QmPxuU1k4qidbxZ16NiKT5YKUTyaWaveirhbMTASu3d876"
+                }
+            ]
+        },
+        "custom.mint_tokens.1657679024346": {
+            "time": 1657679024346,
+            "output": [
+                {
+                    "contractAddress": "KT19NrxxDP58Et2oWTBkW3S7h7FwrA1x7g26",
+                    "mintedTokens": []
+                }
+            ]
+        },
+        "custom.hasFileChanged_assets_collection_json.1657679073325": {
+            "time": 1657679073325,
+            "output": []
+        },
+        "@taqueria/plugin-ipfs-pinata.publish.1657679074251": {
+            "time": 1657679074251,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmVk289qyW6KdETPhFt1GuggA9acQMMMEXxndaz9kD44EJ"
+                }
+            ]
+        },
+        "custom.publish_contract_metadata.1657679074260": {
+            "time": 1657679074260,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmVk289qyW6KdETPhFt1GuggA9acQMMMEXxndaz9kD44EJ"
+                }
+            ]
+        },
+        "custom.originate_with_storage.1657679079384": {
+            "time": 1657679079384,
+            "output": [
+                {
+                    "contractAddress": "KT1KWUAwm5JTaa1cxr3CD1SJ7UtdwAenyQUz"
+                }
+            ]
+        },
+        "custom.haveFilesChanged_asset_metadata_files.1657679079399": {
+            "time": 1657679079399,
+            "output": [
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                    "changeTimeMs": 1657669499647.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                    "changeTimeMs": 1657679021747.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                    "changeTimeMs": 1657679013217.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.json",
+                    "changeTimeMs": 1657679021747.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "changeTimeMs": 1657679068687.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "changeTimeMs": 1657666091047.754
+                }
+            ]
+        },
+        "custom.finalize_token_metadata_files.1657679079406": {
+            "time": 1657679079406,
+            "output": [
+                {
+                    "mainAssetFiles": [
+                        {
+                            "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                            "tokenId": 1,
+                            "ext": ".webp",
+                            "baseFileName": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001",
+                            "descriptionFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                            "metadataFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                            "thumbFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp"
+                        },
+                        {
+                            "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.png",
+                            "tokenId": 2,
+                            "ext": ".png",
+                            "baseFileName": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002",
+                            "descriptionFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                            "metadataFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.json"
+                        }
+                    ]
+                }
+            ]
+        },
+        "@taqueria/plugin-ipfs-pinata.publish.1657679080857": {
+            "time": 1657679080857,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                    "ipfsHash": "QmYbHpJPQ5NKAsb3MofgG52AgcmGgsFt6xXauXDJYz8JVv"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.json",
+                    "ipfsHash": "QmPxuU1k4qidbxZ16NiKT5YKUTyaWaveirhbMTASu3d876"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                    "ipfsHash": "QmekaEAs6xTPyPWJP3D8P9os2iwuJN6ySwBr2UDnUq1ejB"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                    "ipfsHash": "Qmcx9uRUesHH6Lgx6QUKrMSNfreDxdofEfPPjCi8qFmM9C"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmVk289qyW6KdETPhFt1GuggA9acQMMMEXxndaz9kD44EJ"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "ipfsHash": "QmWsrUKRAhhQsttGFKfq5LFtswW5BjD8r347Qs34x8SYNu"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.png",
+                    "ipfsHash": "QmZpE8whBWCBUVrewQx9GQNJuCLhm6C2HRuP1CCue5ZVsj"
+                }
+            ]
+        },
+        "custom.publish_metadata_files.1657679080866": {
+            "time": 1657679080866,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                    "ipfsHash": "QmYbHpJPQ5NKAsb3MofgG52AgcmGgsFt6xXauXDJYz8JVv"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.json",
+                    "ipfsHash": "QmPxuU1k4qidbxZ16NiKT5YKUTyaWaveirhbMTASu3d876"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                    "ipfsHash": "QmekaEAs6xTPyPWJP3D8P9os2iwuJN6ySwBr2UDnUq1ejB"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                    "ipfsHash": "Qmcx9uRUesHH6Lgx6QUKrMSNfreDxdofEfPPjCi8qFmM9C"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmVk289qyW6KdETPhFt1GuggA9acQMMMEXxndaz9kD44EJ"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "ipfsHash": "QmWsrUKRAhhQsttGFKfq5LFtswW5BjD8r347Qs34x8SYNu"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.png",
+                    "ipfsHash": "QmZpE8whBWCBUVrewQx9GQNJuCLhm6C2HRuP1CCue5ZVsj"
+                }
+            ]
+        },
+        "custom.mint_tokens.1657679089268": {
+            "time": 1657679089268,
+            "output": [
+                {
+                    "contractAddress": "KT1KWUAwm5JTaa1cxr3CD1SJ7UtdwAenyQUz",
+                    "mintedTokens": [
+                        {
+                            "tokenId": 1,
+                            "ipfsHash": "Qmcx9uRUesHH6Lgx6QUKrMSNfreDxdofEfPPjCi8qFmM9C"
+                        },
+                        {
+                            "tokenId": 2,
+                            "ipfsHash": "QmPxuU1k4qidbxZ16NiKT5YKUTyaWaveirhbMTASu3d876"
+                        }
+                    ]
+                }
+            ]
+        },
+        "custom.haveFilesChanged_asset_metadata_files.1657679535925": {
+            "time": 1657679535925,
+            "output": [
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                    "changeTimeMs": 1657669499647.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                    "changeTimeMs": 1657679021747.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                    "changeTimeMs": 1657679521157.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.json",
+                    "changeTimeMs": 1657679021747.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "changeTimeMs": 1657679068687.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "changeTimeMs": 1657666091047.754
+                }
+            ]
+        },
+        "custom.finalize_token_metadata_files.1657679535933": {
+            "time": 1657679535933,
+            "output": [
+                {
+                    "mainAssetFiles": [
+                        {
+                            "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                            "tokenId": 1,
+                            "ext": ".webp",
+                            "baseFileName": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001",
+                            "descriptionFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                            "metadataFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                            "thumbFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp"
+                        },
+                        {
+                            "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.png",
+                            "tokenId": 2,
+                            "ext": ".png",
+                            "baseFileName": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002",
+                            "descriptionFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                            "metadataFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.json"
+                        }
+                    ]
+                }
+            ]
+        },
+        "@taqueria/plugin-ipfs-pinata.publish.1657679540519": {
+            "time": 1657679540519,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                    "ipfsHash": "QmYbHpJPQ5NKAsb3MofgG52AgcmGgsFt6xXauXDJYz8JVv"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.png",
+                    "ipfsHash": "QmZpE8whBWCBUVrewQx9GQNJuCLhm6C2HRuP1CCue5ZVsj"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmVk289qyW6KdETPhFt1GuggA9acQMMMEXxndaz9kD44EJ"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "ipfsHash": "QmWsrUKRAhhQsttGFKfq5LFtswW5BjD8r347Qs34x8SYNu"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                    "ipfsHash": "Qmcx9uRUesHH6Lgx6QUKrMSNfreDxdofEfPPjCi8qFmM9C"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.json",
+                    "ipfsHash": "Qmdj9ZPR1qyxCCU7UWW2PZgeVM6WGE3jKc9zAvqAux43pY"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                    "ipfsHash": "QmUivbm87iKmbNX687VgMWbcz2MUmZr8PByWy7DNPuQhss"
+                }
+            ]
+        },
+        "custom.publish_metadata_files.1657679540532": {
+            "time": 1657679540532,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                    "ipfsHash": "QmYbHpJPQ5NKAsb3MofgG52AgcmGgsFt6xXauXDJYz8JVv"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.png",
+                    "ipfsHash": "QmZpE8whBWCBUVrewQx9GQNJuCLhm6C2HRuP1CCue5ZVsj"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmVk289qyW6KdETPhFt1GuggA9acQMMMEXxndaz9kD44EJ"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "ipfsHash": "QmWsrUKRAhhQsttGFKfq5LFtswW5BjD8r347Qs34x8SYNu"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                    "ipfsHash": "Qmcx9uRUesHH6Lgx6QUKrMSNfreDxdofEfPPjCi8qFmM9C"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.json",
+                    "ipfsHash": "Qmdj9ZPR1qyxCCU7UWW2PZgeVM6WGE3jKc9zAvqAux43pY"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                    "ipfsHash": "QmUivbm87iKmbNX687VgMWbcz2MUmZr8PByWy7DNPuQhss"
+                }
+            ]
+        },
+        "custom.mint_tokens.1657679540585": {
+            "time": 1657679540585,
+            "output": [
+                {
+                    "contractAddress": "KT1KWUAwm5JTaa1cxr3CD1SJ7UtdwAenyQUz",
+                    "mintedTokens": []
+                }
+            ]
+        },
+        "custom.udpate_app_settings.1657679540591": {
+            "time": 1657679540591,
+            "output": null
+        },
+        "custom.haveFilesChanged_asset_metadata_files.1657679567751": {
+            "time": 1657679567751,
+            "output": [
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                    "changeTimeMs": 1657669499647.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                    "changeTimeMs": 1657679021747.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                    "changeTimeMs": 1657679521157.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.json",
+                    "changeTimeMs": 1657679535917.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "changeTimeMs": 1657679068687.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "changeTimeMs": 1657666091047.754
+                }
+            ]
+        },
+        "custom.finalize_token_metadata_files.1657679567760": {
+            "time": 1657679567760,
+            "output": [
+                {
+                    "mainAssetFiles": [
+                        {
+                            "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                            "tokenId": 1,
+                            "ext": ".webp",
+                            "baseFileName": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001",
+                            "descriptionFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                            "metadataFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                            "thumbFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp"
+                        },
+                        {
+                            "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.png",
+                            "tokenId": 2,
+                            "ext": ".png",
+                            "baseFileName": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002",
+                            "descriptionFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                            "metadataFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.json"
+                        }
+                    ]
+                }
+            ]
+        },
+        "@taqueria/plugin-ipfs-pinata.publish.1657679569060": {
+            "time": 1657679569060,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.json",
+                    "ipfsHash": "Qmdj9ZPR1qyxCCU7UWW2PZgeVM6WGE3jKc9zAvqAux43pY"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                    "ipfsHash": "Qmcx9uRUesHH6Lgx6QUKrMSNfreDxdofEfPPjCi8qFmM9C"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.png",
+                    "ipfsHash": "QmZpE8whBWCBUVrewQx9GQNJuCLhm6C2HRuP1CCue5ZVsj"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                    "ipfsHash": "QmUivbm87iKmbNX687VgMWbcz2MUmZr8PByWy7DNPuQhss"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmVk289qyW6KdETPhFt1GuggA9acQMMMEXxndaz9kD44EJ"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "ipfsHash": "QmWsrUKRAhhQsttGFKfq5LFtswW5BjD8r347Qs34x8SYNu"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                    "ipfsHash": "QmYbHpJPQ5NKAsb3MofgG52AgcmGgsFt6xXauXDJYz8JVv"
+                }
+            ]
+        },
+        "custom.publish_metadata_files.1657679569071": {
+            "time": 1657679569071,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.json",
+                    "ipfsHash": "Qmdj9ZPR1qyxCCU7UWW2PZgeVM6WGE3jKc9zAvqAux43pY"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                    "ipfsHash": "Qmcx9uRUesHH6Lgx6QUKrMSNfreDxdofEfPPjCi8qFmM9C"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.png",
+                    "ipfsHash": "QmZpE8whBWCBUVrewQx9GQNJuCLhm6C2HRuP1CCue5ZVsj"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                    "ipfsHash": "QmUivbm87iKmbNX687VgMWbcz2MUmZr8PByWy7DNPuQhss"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmVk289qyW6KdETPhFt1GuggA9acQMMMEXxndaz9kD44EJ"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "ipfsHash": "QmWsrUKRAhhQsttGFKfq5LFtswW5BjD8r347Qs34x8SYNu"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                    "ipfsHash": "QmYbHpJPQ5NKAsb3MofgG52AgcmGgsFt6xXauXDJYz8JVv"
+                }
+            ]
+        },
+        "custom.mint_tokens.1657679569119": {
+            "time": 1657679569119,
+            "output": [
+                {
+                    "contractAddress": "KT1KWUAwm5JTaa1cxr3CD1SJ7UtdwAenyQUz",
+                    "mintedTokens": []
+                }
+            ]
+        },
+        "custom.haveFilesChanged_asset_metadata_files.1657679648088": {
+            "time": 1657679648088,
+            "output": [
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                    "changeTimeMs": 1657669499647.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                    "changeTimeMs": 1657679021747.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                    "changeTimeMs": 1657679644447.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.json",
+                    "changeTimeMs": 1657679535917.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "changeTimeMs": 1657679068687.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "changeTimeMs": 1657666091047.754
+                }
+            ]
+        },
+        "custom.finalize_token_metadata_files.1657679648099": {
+            "time": 1657679648099,
+            "output": [
+                {
+                    "mainAssetFiles": [
+                        {
+                            "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                            "tokenId": 1,
+                            "ext": ".webp",
+                            "baseFileName": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001",
+                            "descriptionFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                            "metadataFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                            "thumbFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp"
+                        },
+                        {
+                            "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.png",
+                            "tokenId": 2,
+                            "ext": ".png",
+                            "baseFileName": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002",
+                            "descriptionFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                            "metadataFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.json"
+                        }
+                    ]
+                }
+            ]
+        },
+        "@taqueria/plugin-ipfs-pinata.publish.1657679650108": {
+            "time": 1657679650108,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                    "ipfsHash": "QmYbHpJPQ5NKAsb3MofgG52AgcmGgsFt6xXauXDJYz8JVv"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                    "ipfsHash": "Qmcx9uRUesHH6Lgx6QUKrMSNfreDxdofEfPPjCi8qFmM9C"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                    "ipfsHash": "QmekaEAs6xTPyPWJP3D8P9os2iwuJN6ySwBr2UDnUq1ejB"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.png",
+                    "ipfsHash": "QmZpE8whBWCBUVrewQx9GQNJuCLhm6C2HRuP1CCue5ZVsj"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "ipfsHash": "QmWsrUKRAhhQsttGFKfq5LFtswW5BjD8r347Qs34x8SYNu"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmVk289qyW6KdETPhFt1GuggA9acQMMMEXxndaz9kD44EJ"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.json",
+                    "ipfsHash": "QmcHEP4LMT23AsyQ2DPBc7e9J1eXvViZqy3aFkoQAX2h7J"
+                }
+            ]
+        },
+        "custom.publish_metadata_files.1657679650118": {
+            "time": 1657679650118,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                    "ipfsHash": "QmYbHpJPQ5NKAsb3MofgG52AgcmGgsFt6xXauXDJYz8JVv"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                    "ipfsHash": "Qmcx9uRUesHH6Lgx6QUKrMSNfreDxdofEfPPjCi8qFmM9C"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                    "ipfsHash": "QmekaEAs6xTPyPWJP3D8P9os2iwuJN6ySwBr2UDnUq1ejB"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.png",
+                    "ipfsHash": "QmZpE8whBWCBUVrewQx9GQNJuCLhm6C2HRuP1CCue5ZVsj"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "ipfsHash": "QmWsrUKRAhhQsttGFKfq5LFtswW5BjD8r347Qs34x8SYNu"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmVk289qyW6KdETPhFt1GuggA9acQMMMEXxndaz9kD44EJ"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.json",
+                    "ipfsHash": "QmcHEP4LMT23AsyQ2DPBc7e9J1eXvViZqy3aFkoQAX2h7J"
+                }
+            ]
+        },
+        "custom.mint_tokens.1657679650170": {
+            "time": 1657679650170,
+            "output": [
+                {
+                    "contractAddress": "KT1KWUAwm5JTaa1cxr3CD1SJ7UtdwAenyQUz",
+                    "mintedTokens": []
+                }
+            ]
+        },
+        "custom.udpate_app_settings.1657679650177": {
+            "time": 1657679650177,
+            "output": null
+        },
+        "custom.haveFilesChanged_asset_metadata_files.1657680077477": {
+            "time": 1657680077477,
+            "output": [
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                    "changeTimeMs": 1657669499647.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                    "changeTimeMs": 1657679021747.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                    "changeTimeMs": 1657679644447.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.json",
+                    "changeTimeMs": 1657679648087.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "changeTimeMs": 1657679068687.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "changeTimeMs": 1657666091047.754
+                }
+            ]
+        },
+        "custom.finalize_token_metadata_files.1657680077488": {
+            "time": 1657680077488,
+            "output": [
+                {
+                    "mainAssetFiles": [
+                        {
+                            "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                            "tokenId": 1,
+                            "ext": ".webp",
+                            "baseFileName": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001",
+                            "descriptionFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                            "metadataFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                            "thumbFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp"
+                        },
+                        {
+                            "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.png",
+                            "tokenId": 2,
+                            "ext": ".png",
+                            "baseFileName": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002",
+                            "descriptionFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                            "metadataFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.json"
+                        }
+                    ]
+                }
+            ]
+        },
+        "@taqueria/plugin-ipfs-pinata.publish.1657680078634": {
+            "time": 1657680078634,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                    "ipfsHash": "QmYbHpJPQ5NKAsb3MofgG52AgcmGgsFt6xXauXDJYz8JVv"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.json",
+                    "ipfsHash": "QmcHEP4LMT23AsyQ2DPBc7e9J1eXvViZqy3aFkoQAX2h7J"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.png",
+                    "ipfsHash": "QmZpE8whBWCBUVrewQx9GQNJuCLhm6C2HRuP1CCue5ZVsj"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                    "ipfsHash": "QmekaEAs6xTPyPWJP3D8P9os2iwuJN6ySwBr2UDnUq1ejB"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmVk289qyW6KdETPhFt1GuggA9acQMMMEXxndaz9kD44EJ"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "ipfsHash": "QmWsrUKRAhhQsttGFKfq5LFtswW5BjD8r347Qs34x8SYNu"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                    "ipfsHash": "Qmcx9uRUesHH6Lgx6QUKrMSNfreDxdofEfPPjCi8qFmM9C"
+                }
+            ]
+        },
+        "custom.publish_metadata_files.1657680078645": {
+            "time": 1657680078645,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                    "ipfsHash": "QmYbHpJPQ5NKAsb3MofgG52AgcmGgsFt6xXauXDJYz8JVv"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.json",
+                    "ipfsHash": "QmcHEP4LMT23AsyQ2DPBc7e9J1eXvViZqy3aFkoQAX2h7J"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.png",
+                    "ipfsHash": "QmZpE8whBWCBUVrewQx9GQNJuCLhm6C2HRuP1CCue5ZVsj"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                    "ipfsHash": "QmekaEAs6xTPyPWJP3D8P9os2iwuJN6ySwBr2UDnUq1ejB"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmVk289qyW6KdETPhFt1GuggA9acQMMMEXxndaz9kD44EJ"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "ipfsHash": "QmWsrUKRAhhQsttGFKfq5LFtswW5BjD8r347Qs34x8SYNu"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                    "ipfsHash": "Qmcx9uRUesHH6Lgx6QUKrMSNfreDxdofEfPPjCi8qFmM9C"
+                }
+            ]
+        },
+        "custom.mint_tokens.1657680078699": {
+            "time": 1657680078699,
+            "output": [
+                {
+                    "contractAddress": "KT1KWUAwm5JTaa1cxr3CD1SJ7UtdwAenyQUz",
+                    "mintedTokens": []
+                }
+            ]
+        },
+        "custom.udpate_app_settings.1657680078707": {
+            "time": 1657680078707,
+            "output": null
+        },
+        "custom.haveFilesChanged_asset_metadata_files.1657680172824": {
+            "time": 1657680172824,
+            "output": [
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                    "changeTimeMs": 1657669499647.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                    "changeTimeMs": 1657679021747.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                    "changeTimeMs": 1657680169287.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.json",
+                    "changeTimeMs": 1657679648087.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "changeTimeMs": 1657679068687.754
+                },
+                {
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "changeTimeMs": 1657666091047.754
+                }
+            ]
+        },
+        "custom.finalize_token_metadata_files.1657680172839": {
+            "time": 1657680172839,
+            "output": [
+                {
+                    "mainAssetFiles": [
+                        {
+                            "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                            "tokenId": 1,
+                            "ext": ".webp",
+                            "baseFileName": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001",
+                            "descriptionFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                            "metadataFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                            "thumbFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp"
+                        },
+                        {
+                            "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.png",
+                            "tokenId": 2,
+                            "ext": ".png",
+                            "baseFileName": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002",
+                            "descriptionFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                            "metadataFilePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.json"
+                        }
+                    ]
+                }
+            ]
+        },
+        "@taqueria/plugin-ipfs-pinata.publish.1657680176420": {
+            "time": 1657680176420,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                    "ipfsHash": "Qmcx9uRUesHH6Lgx6QUKrMSNfreDxdofEfPPjCi8qFmM9C"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                    "ipfsHash": "QmYbHpJPQ5NKAsb3MofgG52AgcmGgsFt6xXauXDJYz8JVv"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "ipfsHash": "QmWsrUKRAhhQsttGFKfq5LFtswW5BjD8r347Qs34x8SYNu"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.png",
+                    "ipfsHash": "QmZpE8whBWCBUVrewQx9GQNJuCLhm6C2HRuP1CCue5ZVsj"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmVk289qyW6KdETPhFt1GuggA9acQMMMEXxndaz9kD44EJ"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.json",
+                    "ipfsHash": "QmX3ej8PJAUmkpHR87yfp5z2rNAbmiQ93rvHiwUJGySikt"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                    "ipfsHash": "QmSDz1WPq4RZNXH6ZZ9SZF9g2ypB7x717ZReaZQSV7K2tp"
+                }
+            ]
+        },
+        "custom.publish_metadata_files.1657680176430": {
+            "time": 1657680176430,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                    "ipfsHash": "Qmcx9uRUesHH6Lgx6QUKrMSNfreDxdofEfPPjCi8qFmM9C"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                    "ipfsHash": "QmYbHpJPQ5NKAsb3MofgG52AgcmGgsFt6xXauXDJYz8JVv"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "ipfsHash": "QmWsrUKRAhhQsttGFKfq5LFtswW5BjD8r347Qs34x8SYNu"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.png",
+                    "ipfsHash": "QmZpE8whBWCBUVrewQx9GQNJuCLhm6C2HRuP1CCue5ZVsj"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmVk289qyW6KdETPhFt1GuggA9acQMMMEXxndaz9kD44EJ"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.json",
+                    "ipfsHash": "QmX3ej8PJAUmkpHR87yfp5z2rNAbmiQ93rvHiwUJGySikt"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/rick/projects/crypto/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                    "ipfsHash": "QmSDz1WPq4RZNXH6ZZ9SZF9g2ypB7x717ZReaZQSV7K2tp"
+                }
+            ]
+        },
+        "custom.mint_tokens.1657680176484": {
+            "time": 1657680176484,
+            "output": [
+                {
+                    "contractAddress": "KT1KWUAwm5JTaa1cxr3CD1SJ7UtdwAenyQUz",
+                    "mintedTokens": []
+                }
+            ]
+        },
+        "custom.udpate_app_settings.1657680176493": {
+            "time": 1657680176493,
+            "output": null
         }
     }
 }

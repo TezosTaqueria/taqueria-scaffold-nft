@@ -1,0 +1,14 @@
+{
+    "name": "10kb-png",
+    "description": "Now 10x the size!!",
+    "attributes": [
+        {
+            "name": "phat",
+            "value": "10kb"
+        },
+        {
+            "name": "awesomeness",
+            "value": "100%"
+        }
+    ]
+}
