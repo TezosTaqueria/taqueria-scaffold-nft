@@ -3,6 +3,7 @@ import { ContractService } from '../../services/contract-service';
 import { UpdateProgressCallback, useAsyncWorker } from '../../utils/hooks';
 import { Button } from '../styles/Button.styled';
 
+// @refresh reset
 export const ConnectButton = () => {
 	const [isWalletReady, setIsWalletReady] = useState(false);
 	const [userAddress, setUserAddress] = useState(undefined as undefined | string);
