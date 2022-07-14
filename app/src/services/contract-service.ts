@@ -75,6 +75,10 @@ const createContractService = () => {
             state.contract = await Tezos.wallet.at<MainWalletType>(contractAddress);
 
             console.log('setup', { state });
+
+            return {
+                contractAddress
+            };
         },
         // originateContract: async (updateProgress: UpdateProgressCallback) => {
         //     if (!state.isConnected) { throw new Error('Not connected'); }

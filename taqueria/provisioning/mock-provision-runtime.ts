@@ -94,8 +94,9 @@ export const createProvisioner = <TInputState>({
             p._isActive = depsRan && (await p.when?.(inputState) ?? true);
         }
 
+        // : ${p._order}
         const report = provisions
-            .map(p => `${p._isActive ? '🟢' : '⚪'} ${p.name.padEnd(32, ' ')} : ${p._order}`)
+            .map(p => `${p._isActive ? '▶' : '🆗'} ${p.name.padEnd(32, ' ')}`)
             .join('\n');
         console.log(report);
         return {
@@ -113,13 +114,13 @@ export const createProvisioner = <TInputState>({
             const depsRan = !p._afterProvisions?.length || p._afterProvisions.some(p2 => p2._isActive);
             const isActive = depsRan && (await p.when?.(inputState) ?? true);
             if (!isActive) {
-                console.log(`⚪ skip '${p.name}'`);
+                console.log(`🆗 skip '${p.name}'`);
                 continue;
             }
 
             p._isActive = isActive;
 
-            console.log(`🟢 run '${p.name}'`);
+            console.log(`▶ run '${p.name}'`);
 
             const pOutput = await p.task?.(inputState);
 

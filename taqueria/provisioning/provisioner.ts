@@ -60,6 +60,10 @@ const pOriginate =
                 collectionMetadataIpfsHashUri: ipfsHash,
             });
 
+            console.log(`    
+    📝 contractAddress: ${contractAddress}
+`);
+
             return [{
                 contractAddress,
             }];
