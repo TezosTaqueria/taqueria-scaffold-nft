@@ -20,27 +20,27 @@
   "decimals": 0,
   "isBooleanAmount": true,
   "language": "en",
-  "date": "2022-07-13T02:42:52.838Z",
-  "name": "10kb-png",
-  "description": "Now 10x the size!!",
+  "date": "2022-07-14T05:13:16.745Z",
+  "name": "What's it?",
+  "description": "Fried Chicken vs Puppies",
   "attributes": [
     {
-      "name": "phat",
-      "value": "10kb"
+      "name": "emotion",
+      "value": "confusion"
     },
     {
       "name": "awesomeness",
       "value": "100%"
     }
   ],
-  "artifactUri": "ipfs://QmZpE8whBWCBUVrewQx9GQNJuCLhm6C2HRuP1CCue5ZVsj",
-  "displayUri": "ipfs://QmZpE8whBWCBUVrewQx9GQNJuCLhm6C2HRuP1CCue5ZVsj",
+  "artifactUri": "ipfs://Qme5FVzv7sLohGhDcxAABoEusrzybzr4znmCsfZpu92kPE",
+  "displayUri": "ipfs://Qme5FVzv7sLohGhDcxAABoEusrzybzr4znmCsfZpu92kPE",
   "formats": [
     {
-      "uri": "ipfs://QmZpE8whBWCBUVrewQx9GQNJuCLhm6C2HRuP1CCue5ZVsj",
+      "uri": "ipfs://Qme5FVzv7sLohGhDcxAABoEusrzybzr4znmCsfZpu92kPE",
       "mimeType": "image/png",
       "dimensions": {
-        "value": "128x128",
+        "value": "198x198",
         "unit": "px"
       }
     }

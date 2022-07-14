@@ -20,27 +20,27 @@
   "decimals": 0,
   "isBooleanAmount": true,
   "language": "en",
-  "date": "2022-07-13T02:42:52.838Z",
-  "name": "10kb-png",
-  "description": "Now 10x the size!!",
+  "date": "2022-07-13T02:45:20.703Z",
+  "name": "Eye see you",
+  "description": "Spooky!",
   "attributes": [
     {
-      "name": "phat",
-      "value": "10kb"
+      "name": "emotion",
+      "value": "fear"
     },
     {
       "name": "awesomeness",
       "value": "100%"
     }
   ],
-  "artifactUri": "ipfs://QmZpE8whBWCBUVrewQx9GQNJuCLhm6C2HRuP1CCue5ZVsj",
-  "displayUri": "ipfs://QmZpE8whBWCBUVrewQx9GQNJuCLhm6C2HRuP1CCue5ZVsj",
+  "artifactUri": "ipfs://QmQnvH3qDoWgaL5tHiiSJ6MzHEEH6YokRBNVR39gjKeytx",
+  "displayUri": "ipfs://QmQnvH3qDoWgaL5tHiiSJ6MzHEEH6YokRBNVR39gjKeytx",
   "formats": [
     {
-      "uri": "ipfs://QmZpE8whBWCBUVrewQx9GQNJuCLhm6C2HRuP1CCue5ZVsj",
-      "mimeType": "image/png",
+      "uri": "ipfs://QmQnvH3qDoWgaL5tHiiSJ6MzHEEH6YokRBNVR39gjKeytx",
+      "mimeType": "image/gif",
       "dimensions": {
-        "value": "128x128",
+        "value": "343x480",
         "unit": "px"
       }
     }

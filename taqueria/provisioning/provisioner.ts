@@ -254,7 +254,7 @@ const pMintTokens =
                 const batch = remaining.splice(0, 50);
                 const call = contract.methodsObject.mint(batch.map(x => ({
                     token_id: tas.nat(x.tokenId),
-                    ipfs_hash: tas.bytes(char2Bytes(x.ipfsHash)),
+                    ipfs_hash: tas.bytes(char2Bytes(`ipfs://${x.ipfsHash}`)),
                     owner: tas.address(userAddress),
                 })));
 
@@ -274,3 +274,59 @@ const pMintTokens =
             }];
         })
         .after([pOriginate, pPublishAssetMetadataFiles]);
+
+
+const pUpdateAppSettings =
+    provision("udpate app settings")
+        .task(async state => {
+
+            // Copy type files
+            const typesFilePaths = await getDirectoryFiles('./types');
+            for (const f of typesFilePaths) {
+                const destFilePath = f.replace('/taqueria/', '/app/src/');
+                const destDir = path.dirname(destFilePath);
+                await fs.mkdir(destDir, { recursive: true });
+                await fs.copyFile(f, destFilePath);
+            }
+
+            // Create settings
+            const contractAddress = (
+                await state.getLatestProvisionOutput<{
+                    contractAddress: string,
+                }[]>(pOriginate.name)
+            )?.output[0].contractAddress;
+
+            if (!contractAddress) {
+                throw new Error('contractAddress is missing');
+            }
+
+            const {
+                mainAssetFiles,
+            } = await getMainAssetFiles();
+
+            const settingsTs = `
+import { NetworkType } from "@airgap/beacon-sdk";
+
+export const settings = {
+    ${networkKind === 'flextesa' ? `
+    network: {
+        type: NetworkType.CUSTOM,
+        rpcUrl: "/"
+    },
+    ` : `
+    network: {
+        type: NetworkType.GHOSTNET,
+        rpcUrl: "https://rpc.ghostnet.teztnets.xyz"
+    },
+`}
+    contractAddress: '${contractAddress}',
+    tokenIdMin: ${mainAssetFiles.reduce((out, x) => { out = Math.min(out, x.tokenId); return out; }, Number.MAX_SAFE_INTEGER)},
+    tokenIdMax: ${mainAssetFiles.reduce((out, x) => { out = Math.max(out, x.tokenId); return out; }, 0)},
+};
+            `;
+
+            await fs.writeFile(path.resolve(process.cwd(), '../app/src/services/settings.ts'), settingsTs);
+
+            return null;
+        })
+        .after([pTypes, pOriginate, pMintTokens]);
