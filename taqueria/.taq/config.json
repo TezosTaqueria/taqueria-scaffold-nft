@@ -32,9 +32,7 @@
             "sandboxes": [
                 "local"
             ],
-            "storage": {
-                "example.tz": 42
-            }
+            "storage": {}
         }
     },
     "accounts": {
