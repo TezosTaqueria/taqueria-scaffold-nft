@@ -12,7 +12,7 @@
     "@taqueria/plugin-contract-types": "0.0.0-pr-938-3956cc4e",
     "@taqueria/plugin-flextesa": "0.0.0-pr-938-3956cc4e",
     "@taqueria/plugin-ipfs-pinata": "0.0.0-pr-938-3956cc4e",
-    "@taqueria/plugin-ligo": "0.0.0-pr-938-3956cc4e",
+    "@taqueria/plugin-ligo": "0.0.0-pr-938-842c1b4f",
     "@taqueria/plugin-taquito": "0.0.0-pr-938-3956cc4e",
     "@taquito/signer": "13.0.0",
     "@taquito/taquito": "13.0.0",
