@@ -1,7 +1,19 @@
-### Compile the sample contract and Run the app
+### Run taqueria provisioner and start app
+
+- Add your pinataJwtToken
+    - Create file `./taqueria/.env`
+    - Get pinata jwt token form your pinata account on the pinata website:
+        - `https://app.pinata.cloud/signin`
+    - Add pinata jwt token in file
+
+        ```
+        pinataJwtToken=eyJhbGc...
+        ```
 
 - `npm run setup`
-- `npm run start`
+- `npm run start:taqueria:local`
+- `npm run apply`
+- `npm run start:app`
 
 ### File Structure
 

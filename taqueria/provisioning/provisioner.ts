@@ -49,7 +49,7 @@ const pOriginate =
                     filePath: string,
                     ipfsHash: string,
                 }[]>(pPublishContractMetadata.name)
-            )?.output[0]?.ipfsHash;
+            )?.output?.[0]?.ipfsHash;
 
             if (!ipfsHash) {
                 throw new Error('ipfsHash is missing');
