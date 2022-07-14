@@ -2,8 +2,7 @@
   "private": true,
   "name": "@local/contract",
   "scripts": {
-    "build": "taq compile && taq generate types ../app/src/types",
-    "start:local": "npm run build && taq start sandbox local && taq deploy",
+    "start:local": "taq start sandbox local",
     "stop:local": "taq stop sandbox local"
   },
   "version": "1.0.0",
