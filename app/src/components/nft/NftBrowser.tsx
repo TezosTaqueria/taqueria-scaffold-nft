@@ -49,25 +49,27 @@ export const NftBrowser = () => {
 
     return (
         <>
-            <h3>Browse Nfts</h3>
-			
-            {loading && (
-				<div className='loading'>
-					loading... {progress.message}{' '}
-					{(progress.ratioComplete * 100).toFixed(0)}%
-				</div>
-			)}
-			{error && <div className='error'>{error.message}</div>}
+            <div style={{padding: 32}}>
+                <h3>Browse Nfts</h3>
+                
+                {loading && (
+                    <div className='loading'>
+                        loading... {progress.message}{' '}
+                        {(progress.ratioComplete * 100).toFixed(0)}%
+                    </div>
+                )}
+                {error && <div className='error'>{error.message}</div>}
 
-            {!loading && !nfts && (
-                <Button onClick={loadNfts}>Load Nfts</Button>
-            )}
-            <div style={{display:'flex', flexDirection:'row', flexWrap: 'wrap' }}>
-                {nfts?.map(x=>(
-                    <React.Fragment key={x.tokenId}>
-                        <NftItem item={x}/>
-                    </React.Fragment>
-                ))}
+                {!loading && !nfts && (
+                    <Button onClick={loadNfts}>Load Nfts</Button>
+                )}
+                <div style={{display:'flex', flexDirection:'row', flexWrap: 'wrap' }}>
+                    {nfts?.map(x=>(
+                        <React.Fragment key={x.tokenId}>
+                            <NftItem item={x}/>
+                        </React.Fragment>
+                    ))}
+                </div>
             </div>
         </>
     );
@@ -83,7 +85,7 @@ const NftItem = ({
         <div style={{
             display:'flex', flexDirection:'column', alignItems:'center', 
             padding: 4, margin: 4, 
-            boxShadow: '2px 2px 4px 2px #FFCCCC',
+            boxShadow: '2px 2px 2px 2px #FCAF17',
             width: 240, height: 240 }}>
             <div>
                 {item.name}
