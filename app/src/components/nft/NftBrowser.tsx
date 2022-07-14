@@ -50,7 +50,7 @@ export const NftBrowser = () => {
     return (
         <>
             <div style={{padding: 32}}>
-                <h3>Browse Nfts</h3>
+                <h3>Nfts</h3>
                 
                 {loading && (
                     <div className='loading'>
