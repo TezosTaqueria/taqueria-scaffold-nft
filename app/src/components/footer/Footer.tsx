@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import TopLogo from '../../assets/taqueria-logo-footer.svg';
 import ECADLogo from '../../assets/footer-bottom-logo.svg';
-import Edges from '../edges/Edges';
+import Edges from '../edge/Edges';
 import { useMailChimp } from 'react-use-mailchimp-signup';
-import { Button } from '../styles/Button.styled';
 
 const footerNavbar = [
 	{
@@ -65,13 +64,12 @@ const Footer = () => {
 					<FooterTopBox1>
 						<img alt='ecad-logo-top' src={TopLogo} />
 						<p className='headline'>A New Way to Build on Tezos</p>
-						<p className='headline'>Register for updates</p>
 						<div className={'footerForm'}>
 							{error && <ErrorMessage>Please enter your email</ErrorMessage>}
 							{loading && <Message>...Loading</Message>}
 							{message && <Message>{message && message}</Message>}
 
-							<h5>Register for updates</h5>
+							<p className='headline'>Register for updates</p>
 							<form className='footerInputContainer' onSubmit={handleSubmit}>
 								<input
 									type='email'
@@ -132,7 +130,7 @@ const FooterTop = styled.div`
 	margin-bottom: 15px;
 `;
 const FooterTopBox1 = styled.div`
-	width: 40%;
+	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 20px;
@@ -183,10 +181,9 @@ const FooterTopBox1 = styled.div`
 `;
 
 const FooterTopBox2 = styled.div`
-	width: calc(20% - 20px);
 	display: flex;
 	flex-direction: column;
-	padding-left: 20px;
+	padding-left: 70px;
 	.navTitle {
 		font-style: normal;
 		font-weight: 600;
@@ -213,6 +210,8 @@ const FooterTopBox2 = styled.div`
 	}
 	@media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
 		width: unset;
+		padding-left: 0px;
+		padding-right: 20px;
 	}
 `;
 

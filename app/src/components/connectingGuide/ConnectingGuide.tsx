@@ -4,7 +4,7 @@ import ConnectingBeaconImage from '../../assets/connecting-first-image.png';
 import ConnectingConfirmImage from '../../assets/connecting-second-image.png';
 import ArrowLogo from '../../assets/arrow-logo.svg';
 
-import Edges from '../edges/Edges';
+import Edges from '../edge/Edges';
 
 const ConnectingGuide = () => {
 	return (
