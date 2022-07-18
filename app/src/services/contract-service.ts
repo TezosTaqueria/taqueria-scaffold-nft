@@ -171,6 +171,7 @@ const createContractService = () => {
                             imageUrl: getIpfsUrl(tokenJson.displayUri),
                             thumbnailUrl: getIpfsUrl(tokenJson.thumbnailUri),
                         },
+                        metadata: tokenJson,
                     };
                     console.log('getToken - DONE', { tokenId, token });
 

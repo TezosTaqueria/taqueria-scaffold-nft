@@ -7,4 +7,6 @@ export type NftType = {
         imageUrl?: string;
         thumbnailUrl?: string;
     };
+
+    metadata: unknown;
 };

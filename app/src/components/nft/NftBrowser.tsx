@@ -1,16 +1,28 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { ContractService } from "../../services/contract-service";
 import { NftType } from "../../services/types";
 import { delay } from "../../utils/delay";
+import { useHistory } from "../../utils/history";
 import { useAsyncWorker } from "../../utils/hooks";
 import { Button, ButtonSmall } from "../styles/Button.styled";
 
 // @refresh reset
+
 export const NftBrowser = () => {
 
     const [nfts, setNfts]  = useState(undefined as undefined | NftType[]);
     const [contractAddress, setContractAddress]  = useState(undefined as undefined | string);
     const { loading, error, progress, doWork } = useAsyncWorker();
+
+    const [activeTokenId, setActiveTokenId] = useState(undefined as undefined | number);
+    const { location, history } = useHistory();
+
+    useEffect(() => {
+        console.log(`href changed`,{ href: location.href, actualHref: window.location.href });
+
+        const tokenId = Number(location.href.match(/browse\/nft\/([^/]+)$/)?.[1]);
+        setActiveTokenId(tokenId);
+    }, [location.href]);
 
     const loadNfts = () => {
         doWork(async (stopIfUnmounted, updateProgress) => {
@@ -51,6 +63,18 @@ export const NftBrowser = () => {
 		loadNfts();
     },[]);
 
+    const showTokenDetails = (tokenId: number) => {
+        // setActiveTokenId(tokenId);
+        history.pushState(null, '', `/browse/nft/${tokenId}`);
+    };
+
+    const closeTokenDetails = () => {
+        // setActiveTokenId(undefined);
+        history.pushState(null, '', `/browse`);
+    };
+
+    const activeToken = nfts?.find(x => x.tokenId === activeTokenId);
+
     return (
         <>
             <div style={{padding: 32}}>
@@ -68,13 +92,18 @@ export const NftBrowser = () => {
                 {!loading && !nfts && (
                     <Button onClick={loadNfts}>Load Nfts</Button>
                 )}
-                <div style={{display:'flex', flexDirection:'row', flexWrap: 'wrap' }}>
-                    {nfts?.map(x=>(
-                        <React.Fragment key={x.tokenId}>
-                            <NftItem item={x}/>
-                        </React.Fragment>
-                    ))}
-                </div>
+                {!activeToken && (
+                    <div style={{display:'flex', flexDirection:'row', flexWrap: 'wrap' }}>
+                        {nfts?.map(x=>(
+                            <React.Fragment key={x.tokenId}>
+                                <NftItem item={x} onShowTokenDetails={x => showTokenDetails(x)}/>
+                            </React.Fragment>
+                        ))}
+                    </div>
+                )}
+                {activeToken && (
+                    <NftItem item={activeToken} onCloseTokenDetails={closeTokenDetails}/>
+                )}
             </div>
         </>
     );
@@ -82,45 +111,66 @@ export const NftBrowser = () => {
 
 const NftItem = ({
     item,
-}:{
+    onShowTokenDetails,
+    onCloseTokenDetails,
+}: {
     item: NftType;
+    onShowTokenDetails?: (tokenId: number) => void;
+    onCloseTokenDetails?: () => void;
 }) => {
 
+    const showDetails = !!onCloseTokenDetails;
+
     return (
-        <div style={{
-            display:'flex', flexDirection:'column', alignItems:'stretch', 
-            padding: 4, margin: 4, 
-            boxShadow: '2px 2px 2px 2px #FCAF17',
-            width: 240, height: 240 }}>
+        <>
             <div style={{
-                display: 'flex',
-                flexDirection: 'row',
-                justifyContent: 'space-between',
-            }}>
-                <div>
-                    {item.name}
+                display:'flex', flexDirection:'column', alignItems:'stretch', 
+                padding: 4, margin: 4, 
+                boxShadow: '2px 2px 2px 2px #FCAF17',
+                width: 240, height: 240 }}>
+                <div style={{
+                    display: 'flex',
+                    flexDirection: 'row',
+                    justifyContent: 'space-between',
+                }}>
+                    <div>
+                        {item.name}
+                    </div>
+                    <div>
+                        #{item.tokenId}
+                    </div>
                 </div>
                 <div>
-                    #{item.tokenId}
+                    <img alt='nft' style={{ maxWidth:160, maxHeight:160 }} src={item.image.thumbnailUrl ?? item.image.imageUrl}/>
                 </div>
-            </div>
-            <div>
-                <img alt='nft' style={{ maxWidth:160, maxHeight:160 }} src={item.image.thumbnailUrl ?? item.image.imageUrl}/>
-            </div>
-            <div>
-                {item.description}
-            </div>
-            <div style={{flex: 1}}/>
-            <div style={{
-                display: 'flex',
-                flexDirection: 'row',
-            }}>
+                <div>
+                    {item.description}
+                </div>
                 <div style={{flex: 1}}/>
-                {/* TODO: Nft Details */}
-                <ButtonSmall 
-                    onClick={()=>window.location.href = `/nft/${item.tokenId}`}
-                >Details</ButtonSmall>
+                {onShowTokenDetails && (
+                    <div style={{
+                        display: 'flex',
+                        flexDirection: 'row',
+                    }}>
+                        <div style={{flex: 1}}/>
+                        <ButtonSmall 
+                            onClick={() => onShowTokenDetails(item.tokenId)}
+                        >Details</ButtonSmall>
+                    </div>
+                )}
+            
             </div>
-        </div>
+            {showDetails && (
+                <>
+                    <div style={{
+                        whiteSpace: 'pre',
+                        padding: 4, margin: 4, marginTop: 16,
+                        boxShadow: '2px 2px 2px 2px #FCAF17',
+                    }}>
+                        {JSON.stringify(item.metadata, null, 4)}
+                    </div>
+                </>
+            )}
+        </>
     );
 };
