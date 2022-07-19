@@ -156,14 +156,15 @@
                                              COMPARE ;
                                              NEQ ;
                                              IF { DROP 4 ; PUSH string "AMOUNT_CAN_ONLY_BE_1" ; FAILWITH }
-                                                { DUP 4 ;
+                                                { DUP 2 ;
+                                                  SENDER ;
+                                                  DUP 5 ;
+                                                  PAIR 3 ;
+                                                  DUP 5 ;
                                                   CAR ;
                                                   CDR ;
                                                   CDR ;
-                                                  DUP 3 ;
-                                                  SENDER ;
-                                                  DUP 6 ;
-                                                  PAIR 3 ;
+                                                  SWAP ;
                                                   MEM ;
                                                   NOT ;
                                                   DUP 4 ;

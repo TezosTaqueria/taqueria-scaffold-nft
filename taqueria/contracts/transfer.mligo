@@ -9,8 +9,8 @@ let apply_transfer (((from, s), transfer): (address * storage) * transfer_to): a
         then (failwith "AMOUNT_CAN_ONLY_BE_1": address * storage)
         else
             // checks is sender is allowed to request a transfer
-            let operator = { owner = from; operator = Tezos.sender; token_id = token_id } in
-            if Tezos.sender <> from && not Big_map.mem operator s.operators
+            let operator = { owner = from; operator = Tezos.get_sender (); token_id = token_id } in
+            if Tezos.get_sender () <> from && not Big_map.mem operator s.operators
             then (failwith "FA2_NOT_OPERATOR": address * storage)
             else
                 // removes the token from the sender's account
