@@ -8,8 +8,8 @@ export const settings = {
         rpcUrl: "/"
     },
     
-    contractAddress: 'KT1DJvULTL71b924defPy7D8Y119jrqjHwXt',
+    contractAddress: 'KT1TqUqEGxtk68xj41zAmqcSGNkwL2cz2gfV',
     tokenIdMin: 1,
-    tokenIdMax: 5,
+    tokenIdMax: 4,
 };
             
