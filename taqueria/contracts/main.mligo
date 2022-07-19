@@ -5,7 +5,7 @@
 #include "./balance_of.mligo"
 
 let main (action, storage : parameter * storage) : return =
-    if Tezos.amount <> 0tez
+    if Tezos.get_amount () <> 0tez
     then (failwith "NO_XTZ_AMOUNT": return)
     else
         match action with

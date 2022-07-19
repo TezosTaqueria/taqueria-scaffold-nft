@@ -4,19 +4,19 @@
 
 (* Updates the admin's address *)
 let update_admin (p, s: address * storage): storage =
-    if Tezos.sender <> s.admin
+    if Tezos.get_sender () <> s.admin
     then (failwith "NOT_AN_ADMIN": storage)
     else { s with admin = p }
 
 (* Updates the metadata *)
 let update_metadata (p, s: bytes * storage): storage =
-    if Tezos.sender <> s.admin
+    if Tezos.get_sender () <> s.admin
     then (failwith "NOT_AN_ADMIN": storage)
     else { s with metadata = Big_map.update "contents" (Some (p)) s.metadata }
 
 (* Updates the token metadata *)
 let update_token_metadata (p, s: (token_id * bytes) * storage): storage =
-    if Tezos.sender <> s.admin
+    if Tezos.get_sender () <> s.admin
     then (failwith "NOT_AN_ADMIN": storage)
     else 
         let (token_id, metadata) = p in
