@@ -93,6 +93,8 @@ export const tasks = {
 type DevelopmentStateJson<TOutput> = {
     tasks: {
         [name: string]: {
+            task: string,
+            plugin: string,
             time: number,
             output: TOutput
         }
@@ -156,6 +158,8 @@ export const provisionerInstance = createProvisioner({
 
         const timestamp = Date.now();
         allState.tasks[`custom.${normalizeProvisionName(provisionName)}.${timestamp}`] = {
+            task: `custom.${normalizeProvisionName(provisionName)}`,
+            plugin: 'custom',
             time: timestamp,
             output: provisionOutput
         };
