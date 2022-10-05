@@ -20,10 +20,20 @@
         {
             "name": "@taqueria/plugin-ipfs-pinata",
             "type": "npm"
+        },
+        {
+            "name": "@taqueria/plugin-jest",
+            "type": "npm"
         }
     ],
     "contractsDir": "contracts",
     "artifactsDir": "artifacts",
+    "contracts": {
+        "./main.mligo": {
+            "sourceFile": "./main.mligo",
+            "hash": "1bbbe139820ef1e5223dee5e35b57480ed3b59e97170c9c252304f1d5c7b983e"
+        }
+    },
     "network": {},
     "sandbox": {
         "local": {
@@ -75,11 +85,5 @@
         "john": "3_000_000_000",
         "jane": "3_000_000_000",
         "joe": "3_000_000_000"
-    },
-    "contracts": {
-        "./main.mligo": {
-            "sourceFile": "./main.mligo",
-            "hash": "1bbbe139820ef1e5223dee5e35b57480ed3b59e97170c9c252304f1d5c7b983e"
-        }
     }
 }

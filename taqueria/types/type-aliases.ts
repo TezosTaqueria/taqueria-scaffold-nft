@@ -1,6 +1,5 @@
-
-import { BigNumber } from 'bignumber.js';
 import { MichelsonMap } from '@taquito/taquito';
+import { BigNumber } from 'bignumber.js';
 
 export type unit = (true | undefined) & { __type: 'unit' };
 
@@ -36,14 +35,14 @@ const createBigNumberTypeTas = <T extends BigNumber>() => {
     return (value: number | BigNumber | string): T => new BigNumber(value) as T;
 };
 
-type asMapParamOf<K, V> = K extends string ? { [key: string]: V } | Array<{ key: K, value: V }>
-    : K extends number ? { [key: number]: V } | Array<{ key: K, value: V }>
-    : Array<{ key: K, value: V }>;
+type asMapParamOf<K, V> = K extends string ? { [key: string]: V } | Array<{ key: K; value: V }>
+    : K extends number ? { [key: number]: V } | Array<{ key: K; value: V }>
+    : Array<{ key: K; value: V }>;
 
 function asMap<K extends MapKey, V>(value: asMapParamOf<K, V>): MMap<K, V> {
     const m = new MichelsonMap<K, V>();
     if (Array.isArray(value)) {
-        const vArray = value as Array<{ key: K, value: V }>;
+        const vArray = value as Array<{ key: K; value: V }>;
         vArray.forEach(x => m.set(x.key, x.value));
     } else {
         const vObject = value as { [key: string]: V };
@@ -83,4 +82,5 @@ export const tas = {
 
     // To number
     number: (value: string | BigNumber) => Number(value + ''),
+    unit: () => true as unit,
 };

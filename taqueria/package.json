@@ -11,6 +11,7 @@
     "@taqueria/plugin-contract-types": "^0.20.2",
     "@taqueria/plugin-flextesa": "^0.20.2",
     "@taqueria/plugin-ipfs-pinata": "^0.20.2",
+    "@taqueria/plugin-jest": "^0.20.2",
     "@taqueria/plugin-ligo": "^0.20.2",
     "@taqueria/plugin-taquito": "^0.20.2",
     "@taquito/signer": "13.0.0",
