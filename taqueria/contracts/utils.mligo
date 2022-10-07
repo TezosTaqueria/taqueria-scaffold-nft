@@ -1,3 +1,5 @@
+let into_some (type a) (p: a): a option = Some p
+
 (*
     UTILS functions reserved for admin
 *)
@@ -55,3 +57,9 @@ let mint (p, s: (mint_param list) * storage): storage =
             )
             p
             s
+
+(* Pauses/Unpauses the contract *)
+let pause (s: storage): storage =
+    if Tezos.get_sender () <> s.admin
+    then (failwith "NOT_AN_ADMIN": storage)
+    else { s with paused = not s.paused }

@@ -86,6 +86,7 @@ type parameter =
     | Update_admin of address
     | Update_metadata of bytes
     | Update_token_metadata of (token_id * bytes)
+    | Pause
 
 // storage type
 type ledger = ((address * token_id), nat) big_map
@@ -103,6 +104,7 @@ type storage =
     token_metadata      : (token_id, token_metadata) big_map;
     total_supply        : nat;
     admin               : address;
+    paused              : bool;
 }
 
 type return = (operation list) * storage
