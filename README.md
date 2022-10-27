@@ -1,4 +1,4 @@
-| Scaffold Details                                                             |
+| Scaffold Details   |                                                         |
 |--------------------|---------------------------------------------------------|
 | Complexity         | Advanced                                                |
 | Automated Tests    | No                                                      |
