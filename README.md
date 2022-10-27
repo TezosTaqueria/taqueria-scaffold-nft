@@ -7,9 +7,7 @@
 | Wallet Integration | Yes                                                     |
 | Repository         | https://github.com/ecadlabs/taqueria-scaffold-nft       |
 
-:::warning
-The NFT-Scaffold project is currently in alpha. It is not ready for production use and will be undergoing frequent updates as we work to implement Taqueria State and other features that have not yet been released
-:::
+:warning: The NFT-Scaffold project is currently in alpha. It is not ready for production use and will be undergoing frequent updates as we work to implement Taqueria State and other features that have not yet been released
 
 ## Quickstart
 
