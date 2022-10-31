@@ -11,7 +11,7 @@
 
 ## Quickstart
 
-In a rush? You can follow the steps below to get up and running immediatley:
+In a rush? You can follow the steps below to get up and running immediately:
 
 ### Scaffold and Initialize the Project
 
@@ -29,7 +29,7 @@ In a rush? You can follow the steps below to get up and running immediatley:
 
 ## Overview
 
-The NFT scaffold provides a minimal contract and react Dapp for publishing and viewing unique NFTs. 
+The NFT scaffold provides a minimal contract and React dApp for publishing and viewing unique NFTs. 
 This would be a good beginning point for an artist who wants to sell unique artpieces on their own website. 
 
 ## Requirements
@@ -44,19 +44,19 @@ This would be a good beginning point for an artist who wants to sell unique artp
 
 ### Adding Artwork Assets
 
-To add artwork and minting it's token:
+To add artwork and minting its token:
 
 1. Add the artwork asset file (image, video, etc) to the assets directory
-    - /taqueria/assets
+    - `/taqueria/assets`
     - Make sure to name the asset file with the next token id: 
     - i.e. `0042.jpg`
-1. Add a thumbnail image for the nft to the same assets directory
+1. Add a thumbnail image for the NFT to the same assets directory
     - use the filename with the same token id with `.thumb`
     - the thumbnail image does not need to be the same file type as the main asset
     - i.e. `0042.thumb.png`
-1. Publish the artwork asset to ipfs and mint the nft to the contract by running the provisioner
+1. Publish the artwork asset to IPFS and mint the NFT to the contract by running the provisioner
     - `npm run apply`
-1. Run the Dapp and the new nft should now be visible in the NFT List
+1. Run the dApp and the new NFT should now be visible in the NFT List
 
 
 ## Project Overview
@@ -105,9 +105,7 @@ cd ..
 npm run start:taqueria:local
 ```
 
-:::note
-Taqueria's provisioning system is work-in-progress. However, the provisioning system prototype will closely resemble the version that will be shipped with Taqueria later this year
-:::
+:warning: Taqueria's provisioning system is a work-in-progress. However, the provisioning system prototype will closely resemble the version that will be shipped with Taqueria later this year
 
 7. Apply the Provisions
 
@@ -121,13 +119,13 @@ npm run apply
 npm run start:app
 ```
 
-Use the Dapp (served in your browser at [http://localhost:3000](http://localhost:3000)) by connecting a wallet and using the web UI
+Use the dApp (served in your browser at [http://localhost:3000](http://localhost:3000)) by connecting a wallet and using the web UI
 
 ## Project Structure
 
 - `app`
     
-    - Minimal create react app
+    - Minimal create React app
     - Call contract methods
     - Access contract storage
 
@@ -147,8 +145,8 @@ Use the Dapp (served in your browser at [http://localhost:3000](http://localhost
 
 ### React Dapp
 
-The react Dapp allows browsing the NFTs that have been minted to the contract. 
-This is a minimal react project and needs to be extended to support marketplace features like selling or browsing owned NFTs.
+The React dApp allows browsing the NFTs that have been minted to the contract. 
+This is a minimal React project and needs to be extended to support marketplace features like selling or browsing owned NFTs.
 
 ### Build and Start the React Dapp
 
