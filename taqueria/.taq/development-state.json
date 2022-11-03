@@ -1,4 +1,135 @@
 {
     "operations": {},
-    "tasks": {}
+    "tasks": {
+        "@taqueria/plugin-ligo.compile.1667466044944": {
+            "task": "compile",
+            "plugin": "@taqueria/plugin-ligo",
+            "time": 1667466044964,
+            "output": [
+                {
+                    "contract": "main.mligo",
+                    "artifact": "artifacts/main.tz"
+                },
+                {
+                    "contract": "main.storages.mligo",
+                    "artifact": "artifacts/main.default_storage.tz\n"
+                }
+            ]
+        },
+        "@taqueria/plugin-ligo.compile.1667466234781": {
+            "task": "compile",
+            "plugin": "@taqueria/plugin-ligo",
+            "time": 1667466234782,
+            "output": [
+                {
+                    "contract": "main.mligo",
+                    "artifact": "artifacts/main.tz"
+                },
+                {
+                    "contract": "main.storages.mligo",
+                    "artifact": "artifacts/main.default_storage.tz\n"
+                }
+            ]
+        },
+        "@taqueria/plugin-ligo.compile.1667466295226": {
+            "task": "compile",
+            "plugin": "@taqueria/plugin-ligo",
+            "time": 1667466295227,
+            "output": [
+                {
+                    "contract": "main.mligo",
+                    "artifact": "artifacts/main.tz"
+                },
+                {
+                    "contract": "main.storages.mligo",
+                    "artifact": "artifacts/main.default_storage.tz\n"
+                }
+            ]
+        },
+        "@taqueria/plugin-ligo.compile.1667466405709": {
+            "task": "compile",
+            "plugin": "@taqueria/plugin-ligo",
+            "time": 1667466405710,
+            "output": [
+                {
+                    "contract": "main.mligo",
+                    "artifact": "artifacts/main.tz"
+                },
+                {
+                    "contract": "main.storages.mligo",
+                    "artifact": "artifacts/main.default_storage.tz\n"
+                }
+            ]
+        },
+        "@taqueria/plugin-ligo.compile.1667466820938": {
+            "task": "compile",
+            "plugin": "@taqueria/plugin-ligo",
+            "time": 1667466820939,
+            "output": [
+                {
+                    "contract": "main.mligo",
+                    "artifact": "artifacts/main.tz"
+                },
+                {
+                    "contract": "main.storages.mligo",
+                    "artifact": "artifacts/main.default_storage.tz\n"
+                }
+            ]
+        },
+        "@taqueria/plugin-ligo.test.1667467685264": {
+            "task": "test",
+            "plugin": "@taqueria/plugin-ligo",
+            "time": 1667467685266,
+            "output": [
+                {
+                    "contract": "tests/main.test.mligo",
+                    "testResults": "Everything at the top-level was executed.\n- test exited with value ().\n\n🎉 All tests passed 🎉"
+                }
+            ]
+        },
+        "@taqueria/plugin-ligo.test.1667467766887": {
+            "task": "test",
+            "plugin": "@taqueria/plugin-ligo",
+            "time": 1667467766890,
+            "output": [
+                {
+                    "contract": "tests/main.test.mligo",
+                    "testResults": "Everything at the top-level was executed.\n- test exited with value ().\n\n🎉 All tests passed 🎉"
+                }
+            ]
+        },
+        "@taqueria/plugin-ligo.test.1667467783225": {
+            "task": "test",
+            "plugin": "@taqueria/plugin-ligo",
+            "time": 1667467783226,
+            "output": [
+                {
+                    "contract": "tests/main.test.mligo",
+                    "testResults": "Everything at the top-level was executed.\n- test exited with value ().\n\n🎉 All tests passed 🎉"
+                }
+            ]
+        },
+        "@taqueria/plugin-ligo.test.1667483581709": {
+            "task": "test",
+            "plugin": "@taqueria/plugin-ligo",
+            "time": 1667483581711,
+            "output": [
+                {
+                    "contract": "tests/main.test.mligo",
+                    "testResults": "Everything at the top-level was executed.\n- test exited with value ().\n\n🎉 All tests passed 🎉"
+                }
+            ]
+        },
+        "@taqueria/plugin-ligo.test.1667483716903": {
+            "task": "test",
+            "plugin": "@taqueria/plugin-ligo",
+            "time": 1667483716904,
+            "output": [
+                {
+                    "contract": "tests/main.test.mligo",
+                    "testResults": "Everything at the top-level was executed.\n- test exited with value ().\n\n🎉 All tests passed 🎉"
+                }
+            ]
+        }
+    }
 }

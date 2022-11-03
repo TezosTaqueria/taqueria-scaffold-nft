@@ -26,3 +26,14 @@ let main (action, storage : parameter * storage) : return =
             | Update_metadata p -> ([]: operation list), update_metadata (p, storage)
             | Update_token_metadata p -> ([]: operation list), update_token_metadata (p, storage)
             | Pause -> ([]: operation list), pause storage
+
+[@view] let get_balance ((user, token_id), s: (address * token_id) * storage): nat =
+    match Big_map.find_opt (user, token_id) s.ledger with
+    | None -> 0n
+    | Some blnc -> blnc
+
+[@view] let get_total_supply ((), s: unit * storage): nat =
+    s.total_supply
+
+[@view] let get_paused ((), s: unit * storage): bool =
+    s.paused
