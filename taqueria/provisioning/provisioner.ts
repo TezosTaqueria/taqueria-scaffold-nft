@@ -281,7 +281,7 @@ const pMintTokens =
 
 
 const pUpdateAppSettings =
-    provision("udpate app settings")
+    provision("update app settings")
         .task(async state => {
 
             // Copy type files
