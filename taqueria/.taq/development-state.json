@@ -1,4 +1,1446 @@
 {
     "operations": {},
-    "tasks": {}
+    "tasks": {
+        "@taqueria/plugin-ligo.compile.1667506571221": {
+            "task": "compile",
+            "plugin": "@taqueria/plugin-ligo",
+            "time": 1667506571221,
+            "output": [
+                {
+                    "contract": "main.mligo",
+                    "artifact": "Not compiled"
+                }
+            ]
+        },
+        "custom.compile_contract.1667506571253": {
+            "task": "custom.compile_contract",
+            "plugin": "custom",
+            "time": 1667506571253,
+            "output": [
+                {
+                    "contract": "main.mligo",
+                    "artifact": "Not compiled"
+                }
+            ]
+        },
+        "custom.generate_types.1667506571706": {
+            "task": "custom.generate_types",
+            "plugin": "custom",
+            "time": 1667506571706
+        },
+        "custom.hasFileChanged_assets_collection_json.1667506571708": {
+            "task": "custom.hasFileChanged_assets_collection_json",
+            "plugin": "custom",
+            "time": 1667506571708,
+            "output": []
+        },
+        "custom.publish_contract_metadata.1667506573276": {
+            "task": "custom.publish_contract_metadata",
+            "plugin": "custom",
+            "time": 1667506573276,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmVk289qyW6KdETPhFt1GuggA9acQMMMEXxndaz9kD44EJ"
+                }
+            ]
+        },
+        "custom.originate_with_storage.1667506576736": {
+            "task": "custom.originate_with_storage",
+            "plugin": "custom",
+            "time": 1667506576736,
+            "output": [
+                {
+                    "contractAddress": "KT1AsRhcqx3rSfGzRqAztgRyjQsh2cNuJKYX"
+                }
+            ]
+        },
+        "custom.haveFilesChanged_asset_files.1667506576739": {
+            "task": "custom.haveFilesChanged_asset_files",
+            "plugin": "custom",
+            "time": 1667506576739,
+            "output": [
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp",
+                    "changeTimeMs": 1667488290178.454
+                },
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                    "changeTimeMs": 1667488290182.454
+                },
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0002.png",
+                    "changeTimeMs": 1667488290182.454
+                },
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0003.gif",
+                    "changeTimeMs": 1667488290182.454
+                },
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0004.png",
+                    "changeTimeMs": 1667488290182.454
+                }
+            ]
+        },
+        "custom.publish_asset_files.1667506578789": {
+            "task": "custom.publish_asset_files",
+            "plugin": "custom",
+            "time": 1667506578789,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                    "ipfsHash": "QmSDz1WPq4RZNXH6ZZ9SZF9g2ypB7x717ZReaZQSV7K2tp"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                    "ipfsHash": "Qmcx9uRUesHH6Lgx6QUKrMSNfreDxdofEfPPjCi8qFmM9C"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0003.description.json",
+                    "ipfsHash": "QmeogqnJrYNiGoh7KmUB6x1GoMaBjuTzbqujc3Q48axSSx"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                    "ipfsHash": "QmYbHpJPQ5NKAsb3MofgG52AgcmGgsFt6xXauXDJYz8JVv"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0002.png",
+                    "ipfsHash": "QmZpE8whBWCBUVrewQx9GQNJuCLhm6C2HRuP1CCue5ZVsj"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0002.json",
+                    "ipfsHash": "QmX3ej8PJAUmkpHR87yfp5z2rNAbmiQ93rvHiwUJGySikt"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0003.json",
+                    "ipfsHash": "QmRGr2TQGpnm4RaGfdyjSrAhjmokTqK9RNxm4fMbPcaAtB"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0003.gif",
+                    "ipfsHash": "QmQnvH3qDoWgaL5tHiiSJ6MzHEEH6YokRBNVR39gjKeytx"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0004.json",
+                    "ipfsHash": "QmZhSAWrN3261hpVRp7kmbB7Uq37D35qr7gJQAYCHcankN"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0004.png",
+                    "ipfsHash": "Qme5FVzv7sLohGhDcxAABoEusrzybzr4znmCsfZpu92kPE"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0004.description.json",
+                    "ipfsHash": "QmZrfJBWDdNmhsffBWXDNMHqeBFSQhhuPmDWBiPSG2SE5S"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "ipfsHash": "QmWsrUKRAhhQsttGFKfq5LFtswW5BjD8r347Qs34x8SYNu"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmVk289qyW6KdETPhFt1GuggA9acQMMMEXxndaz9kD44EJ"
+                }
+            ]
+        },
+        "custom.haveFilesChanged_asset_metadata_files.1667506578793": {
+            "task": "custom.haveFilesChanged_asset_metadata_files",
+            "plugin": "custom",
+            "time": 1667506578793,
+            "output": [
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                    "changeTimeMs": 1667488290178.454
+                },
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                    "changeTimeMs": 1667488290178.454
+                },
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                    "changeTimeMs": 1667488290182.454
+                },
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0002.json",
+                    "changeTimeMs": 1667488290182.454
+                },
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0003.description.json",
+                    "changeTimeMs": 1667488290182.454
+                },
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0003.json",
+                    "changeTimeMs": 1667488290182.454
+                },
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0004.description.json",
+                    "changeTimeMs": 1667488290182.454
+                },
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0004.json",
+                    "changeTimeMs": 1667488290182.454
+                },
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "changeTimeMs": 1667488290182.454
+                },
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "changeTimeMs": 1667488290182.454
+                }
+            ]
+        },
+        "custom.finalize_token_metadata_files.1667506578801": {
+            "task": "custom.finalize_token_metadata_files",
+            "plugin": "custom",
+            "time": 1667506578801,
+            "output": [
+                {
+                    "mainAssetFiles": [
+                        {
+                            "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                            "tokenId": 1,
+                            "ext": ".webp",
+                            "baseFileName": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001",
+                            "descriptionFilePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                            "metadataFilePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                            "thumbFilePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp"
+                        },
+                        {
+                            "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0002.png",
+                            "tokenId": 2,
+                            "ext": ".png",
+                            "baseFileName": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0002",
+                            "descriptionFilePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                            "metadataFilePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0002.json"
+                        },
+                        {
+                            "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0003.gif",
+                            "tokenId": 3,
+                            "ext": ".gif",
+                            "baseFileName": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0003",
+                            "descriptionFilePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0003.description.json",
+                            "metadataFilePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0003.json"
+                        },
+                        {
+                            "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0004.png",
+                            "tokenId": 4,
+                            "ext": ".png",
+                            "baseFileName": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0004",
+                            "descriptionFilePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0004.description.json",
+                            "metadataFilePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0004.json"
+                        }
+                    ]
+                }
+            ]
+        },
+        "custom.publish_metadata_files.1667506580621": {
+            "task": "custom.publish_metadata_files",
+            "plugin": "custom",
+            "time": 1667506580621,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                    "ipfsHash": "QmYbHpJPQ5NKAsb3MofgG52AgcmGgsFt6xXauXDJYz8JVv"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0002.png",
+                    "ipfsHash": "QmZpE8whBWCBUVrewQx9GQNJuCLhm6C2HRuP1CCue5ZVsj"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0003.json",
+                    "ipfsHash": "QmRGr2TQGpnm4RaGfdyjSrAhjmokTqK9RNxm4fMbPcaAtB"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0003.description.json",
+                    "ipfsHash": "QmeogqnJrYNiGoh7KmUB6x1GoMaBjuTzbqujc3Q48axSSx"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                    "ipfsHash": "Qmcx9uRUesHH6Lgx6QUKrMSNfreDxdofEfPPjCi8qFmM9C"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                    "ipfsHash": "QmSDz1WPq4RZNXH6ZZ9SZF9g2ypB7x717ZReaZQSV7K2tp"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0002.json",
+                    "ipfsHash": "QmX3ej8PJAUmkpHR87yfp5z2rNAbmiQ93rvHiwUJGySikt"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0003.gif",
+                    "ipfsHash": "QmQnvH3qDoWgaL5tHiiSJ6MzHEEH6YokRBNVR39gjKeytx"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0004.description.json",
+                    "ipfsHash": "QmZrfJBWDdNmhsffBWXDNMHqeBFSQhhuPmDWBiPSG2SE5S"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmVk289qyW6KdETPhFt1GuggA9acQMMMEXxndaz9kD44EJ"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0004.json",
+                    "ipfsHash": "QmZhSAWrN3261hpVRp7kmbB7Uq37D35qr7gJQAYCHcankN"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0004.png",
+                    "ipfsHash": "Qme5FVzv7sLohGhDcxAABoEusrzybzr4znmCsfZpu92kPE"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "ipfsHash": "QmWsrUKRAhhQsttGFKfq5LFtswW5BjD8r347Qs34x8SYNu"
+                }
+            ]
+        },
+        "custom.mint_tokens.1667506587360": {
+            "task": "custom.mint_tokens",
+            "plugin": "custom",
+            "time": 1667506587360,
+            "output": [
+                {
+                    "contractAddress": "KT1AsRhcqx3rSfGzRqAztgRyjQsh2cNuJKYX",
+                    "mintedTokens": [
+                        {
+                            "tokenId": 1,
+                            "ipfsHash": "Qmcx9uRUesHH6Lgx6QUKrMSNfreDxdofEfPPjCi8qFmM9C"
+                        },
+                        {
+                            "tokenId": 2,
+                            "ipfsHash": "QmX3ej8PJAUmkpHR87yfp5z2rNAbmiQ93rvHiwUJGySikt"
+                        },
+                        {
+                            "tokenId": 3,
+                            "ipfsHash": "QmRGr2TQGpnm4RaGfdyjSrAhjmokTqK9RNxm4fMbPcaAtB"
+                        },
+                        {
+                            "tokenId": 4,
+                            "ipfsHash": "QmZhSAWrN3261hpVRp7kmbB7Uq37D35qr7gJQAYCHcankN"
+                        }
+                    ]
+                }
+            ]
+        },
+        "custom.udpate_app_settings.1667506587365": {
+            "task": "custom.udpate_app_settings",
+            "plugin": "custom",
+            "time": 1667506587365,
+            "output": null
+        },
+        "custom.haveFilesChanged_asset_files.1667506680943": {
+            "task": "custom.haveFilesChanged_asset_files",
+            "plugin": "custom",
+            "time": 1667506680943,
+            "output": [
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp",
+                    "changeTimeMs": 1667488290178.454
+                },
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                    "changeTimeMs": 1667488290182.454
+                },
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0002.png",
+                    "changeTimeMs": 1667488290182.454
+                },
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0003.gif",
+                    "changeTimeMs": 1667488290182.454
+                },
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0004.png",
+                    "changeTimeMs": 1667488290182.454
+                },
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0005.png",
+                    "changeTimeMs": 1667506654586.578
+                }
+            ]
+        },
+        "custom.publish_asset_files.1667506685905": {
+            "task": "custom.publish_asset_files",
+            "plugin": "custom",
+            "time": 1667506685905,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0002.json",
+                    "ipfsHash": "QmX3ej8PJAUmkpHR87yfp5z2rNAbmiQ93rvHiwUJGySikt"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                    "ipfsHash": "QmSDz1WPq4RZNXH6ZZ9SZF9g2ypB7x717ZReaZQSV7K2tp"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0003.json",
+                    "ipfsHash": "QmRGr2TQGpnm4RaGfdyjSrAhjmokTqK9RNxm4fMbPcaAtB"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                    "ipfsHash": "QmYbHpJPQ5NKAsb3MofgG52AgcmGgsFt6xXauXDJYz8JVv"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                    "ipfsHash": "Qmcx9uRUesHH6Lgx6QUKrMSNfreDxdofEfPPjCi8qFmM9C"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0003.description.json",
+                    "ipfsHash": "QmeogqnJrYNiGoh7KmUB6x1GoMaBjuTzbqujc3Q48axSSx"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0002.png",
+                    "ipfsHash": "QmZpE8whBWCBUVrewQx9GQNJuCLhm6C2HRuP1CCue5ZVsj"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0003.gif",
+                    "ipfsHash": "QmQnvH3qDoWgaL5tHiiSJ6MzHEEH6YokRBNVR39gjKeytx"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0004.description.json",
+                    "ipfsHash": "QmZrfJBWDdNmhsffBWXDNMHqeBFSQhhuPmDWBiPSG2SE5S"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0004.json",
+                    "ipfsHash": "QmZhSAWrN3261hpVRp7kmbB7Uq37D35qr7gJQAYCHcankN"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmVk289qyW6KdETPhFt1GuggA9acQMMMEXxndaz9kD44EJ"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "ipfsHash": "QmWsrUKRAhhQsttGFKfq5LFtswW5BjD8r347Qs34x8SYNu"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0004.png",
+                    "ipfsHash": "Qme5FVzv7sLohGhDcxAABoEusrzybzr4znmCsfZpu92kPE"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0005.png",
+                    "ipfsHash": "QmfLDbXj33RRFqF6umv6znA8oYqTgSJ2aSEjGderFrJ2th"
+                }
+            ]
+        },
+        "custom.finalize_token_metadata_files.1667506685921": {
+            "task": "custom.finalize_token_metadata_files",
+            "plugin": "custom",
+            "time": 1667506685921,
+            "output": [
+                {
+                    "mainAssetFiles": [
+                        {
+                            "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                            "tokenId": 1,
+                            "ext": ".webp",
+                            "baseFileName": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001",
+                            "descriptionFilePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                            "metadataFilePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                            "thumbFilePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp"
+                        },
+                        {
+                            "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0002.png",
+                            "tokenId": 2,
+                            "ext": ".png",
+                            "baseFileName": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0002",
+                            "descriptionFilePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                            "metadataFilePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0002.json"
+                        },
+                        {
+                            "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0003.gif",
+                            "tokenId": 3,
+                            "ext": ".gif",
+                            "baseFileName": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0003",
+                            "descriptionFilePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0003.description.json",
+                            "metadataFilePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0003.json"
+                        },
+                        {
+                            "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0004.png",
+                            "tokenId": 4,
+                            "ext": ".png",
+                            "baseFileName": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0004",
+                            "descriptionFilePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0004.description.json",
+                            "metadataFilePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0004.json"
+                        },
+                        {
+                            "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0005.png",
+                            "tokenId": 5,
+                            "ext": ".png",
+                            "baseFileName": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0005",
+                            "descriptionFilePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0005.description.json",
+                            "metadataFilePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0005.json"
+                        }
+                    ]
+                }
+            ]
+        },
+        "@taqueria/plugin-ipfs-pinata.publish.1667506688369": {
+            "task": "publish",
+            "plugin": "@taqueria/plugin-ipfs-pinata",
+            "time": 1667506688369,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                    "ipfsHash": "QmYbHpJPQ5NKAsb3MofgG52AgcmGgsFt6xXauXDJYz8JVv"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0002.png",
+                    "ipfsHash": "QmZpE8whBWCBUVrewQx9GQNJuCLhm6C2HRuP1CCue5ZVsj"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0003.description.json",
+                    "ipfsHash": "QmeogqnJrYNiGoh7KmUB6x1GoMaBjuTzbqujc3Q48axSSx"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0003.json",
+                    "ipfsHash": "QmRGr2TQGpnm4RaGfdyjSrAhjmokTqK9RNxm4fMbPcaAtB"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0002.json",
+                    "ipfsHash": "QmX3ej8PJAUmkpHR87yfp5z2rNAbmiQ93rvHiwUJGySikt"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                    "ipfsHash": "QmSDz1WPq4RZNXH6ZZ9SZF9g2ypB7x717ZReaZQSV7K2tp"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                    "ipfsHash": "Qmcx9uRUesHH6Lgx6QUKrMSNfreDxdofEfPPjCi8qFmM9C"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0003.gif",
+                    "ipfsHash": "QmQnvH3qDoWgaL5tHiiSJ6MzHEEH6YokRBNVR39gjKeytx"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0004.description.json",
+                    "ipfsHash": "QmZrfJBWDdNmhsffBWXDNMHqeBFSQhhuPmDWBiPSG2SE5S"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0004.json",
+                    "ipfsHash": "QmZhSAWrN3261hpVRp7kmbB7Uq37D35qr7gJQAYCHcankN"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "ipfsHash": "QmWsrUKRAhhQsttGFKfq5LFtswW5BjD8r347Qs34x8SYNu"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmVk289qyW6KdETPhFt1GuggA9acQMMMEXxndaz9kD44EJ"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0004.png",
+                    "ipfsHash": "Qme5FVzv7sLohGhDcxAABoEusrzybzr4znmCsfZpu92kPE"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0005.png",
+                    "ipfsHash": "QmfLDbXj33RRFqF6umv6znA8oYqTgSJ2aSEjGderFrJ2th"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0005.json",
+                    "ipfsHash": "QmUXU1dm1S6nxvCpg9x1jRy9h9m9By7zSqgqmjyKSBtivg"
+                }
+            ]
+        },
+        "custom.publish_metadata_files.1667506688395": {
+            "task": "custom.publish_metadata_files",
+            "plugin": "custom",
+            "time": 1667506688395,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001.description.json",
+                    "ipfsHash": "QmYbHpJPQ5NKAsb3MofgG52AgcmGgsFt6xXauXDJYz8JVv"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001.thumb.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0002.png",
+                    "ipfsHash": "QmZpE8whBWCBUVrewQx9GQNJuCLhm6C2HRuP1CCue5ZVsj"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0003.description.json",
+                    "ipfsHash": "QmeogqnJrYNiGoh7KmUB6x1GoMaBjuTzbqujc3Q48axSSx"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001.webp",
+                    "ipfsHash": "QmWFXeXSFuJhe2gt6LGFyXppoQjPRtQ1pmbTQt4raeLZrC"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0003.json",
+                    "ipfsHash": "QmRGr2TQGpnm4RaGfdyjSrAhjmokTqK9RNxm4fMbPcaAtB"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0002.json",
+                    "ipfsHash": "QmX3ej8PJAUmkpHR87yfp5z2rNAbmiQ93rvHiwUJGySikt"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0002.description.json",
+                    "ipfsHash": "QmSDz1WPq4RZNXH6ZZ9SZF9g2ypB7x717ZReaZQSV7K2tp"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0001.json",
+                    "ipfsHash": "Qmcx9uRUesHH6Lgx6QUKrMSNfreDxdofEfPPjCi8qFmM9C"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0003.gif",
+                    "ipfsHash": "QmQnvH3qDoWgaL5tHiiSJ6MzHEEH6YokRBNVR39gjKeytx"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0004.description.json",
+                    "ipfsHash": "QmZrfJBWDdNmhsffBWXDNMHqeBFSQhhuPmDWBiPSG2SE5S"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0004.json",
+                    "ipfsHash": "QmZhSAWrN3261hpVRp7kmbB7Uq37D35qr7gJQAYCHcankN"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "ipfsHash": "QmWsrUKRAhhQsttGFKfq5LFtswW5BjD8r347Qs34x8SYNu"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmVk289qyW6KdETPhFt1GuggA9acQMMMEXxndaz9kD44EJ"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0004.png",
+                    "ipfsHash": "Qme5FVzv7sLohGhDcxAABoEusrzybzr4znmCsfZpu92kPE"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0005.png",
+                    "ipfsHash": "QmfLDbXj33RRFqF6umv6znA8oYqTgSJ2aSEjGderFrJ2th"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/0005.json",
+                    "ipfsHash": "QmUXU1dm1S6nxvCpg9x1jRy9h9m9By7zSqgqmjyKSBtivg"
+                }
+            ]
+        },
+        "custom.mint_tokens.1667506696871": {
+            "task": "custom.mint_tokens",
+            "plugin": "custom",
+            "time": 1667506696871,
+            "output": [
+                {
+                    "contractAddress": "KT1AsRhcqx3rSfGzRqAztgRyjQsh2cNuJKYX",
+                    "mintedTokens": [
+                        {
+                            "tokenId": 5,
+                            "ipfsHash": "QmUXU1dm1S6nxvCpg9x1jRy9h9m9By7zSqgqmjyKSBtivg"
+                        }
+                    ]
+                }
+            ]
+        },
+        "custom.udpate_app_settings.1667506696891": {
+            "task": "custom.udpate_app_settings",
+            "plugin": "custom",
+            "time": 1667506696891,
+            "output": null
+        },
+        "custom.haveFilesChanged_asset_files.1667530365317": {
+            "task": "custom.haveFilesChanged_asset_files",
+            "plugin": "custom",
+            "time": 1667530365317,
+            "output": [
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Benefits/Fire Fighting Equipment.png",
+                    "changeTimeMs": 1667530351392.4592
+                },
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Benefits/Hay Stack.png",
+                    "changeTimeMs": 1667530351436.4602
+                },
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Benefits/Insurance Policy for Stud Ram.png",
+                    "changeTimeMs": 1667530351416.4597
+                },
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Control Program NFTs/Control of Weeds and Insects.png",
+                    "changeTimeMs": 1667530351752.4666
+                },
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Control Program NFTs/Fertilized Pasture.png",
+                    "changeTimeMs": 1667530351800.4678
+                },
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Control Program NFTs/Worm Control Programme.png",
+                    "changeTimeMs": 1667530351808.4678
+                },
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Liabilities/Blow Fly Wave.png",
+                    "changeTimeMs": 1667530352104.4739
+                },
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Liabilities/High Stock Prices Ruling.png",
+                    "changeTimeMs": 1667530352112.474
+                },
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Liabilities/New Shearing Shed.png",
+                    "changeTimeMs": 1667530352120.4744
+                },
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Stud Rams/King of Warramboo.png",
+                    "changeTimeMs": 1667530351072.4526
+                },
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Stud Rams/Lachlan Lad.png",
+                    "changeTimeMs": 1667530351108.4534
+                },
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Stud Rams/Mitchell's Pride.png",
+                    "changeTimeMs": 1667530351124.4536
+                },
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Stud Rams/Winton Boy II (1).png",
+                    "changeTimeMs": 1667530351132.4539
+                },
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Stud Rams/eLMSFORD pARK rEX.png",
+                    "changeTimeMs": 1667530351060.4524
+                }
+            ]
+        },
+        "@taqueria/plugin-ipfs-pinata.publish.1667530369785": {
+            "task": "publish",
+            "plugin": "@taqueria/plugin-ipfs-pinata",
+            "time": 1667530369785,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Stud Rams/King of Warramboo.png",
+                    "ipfsHash": "QmTdeXi5NaJqZPGSaAXW96xpwsm7yevuFpLgTzJS1DA7Cm"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Benefits/Insurance Policy for Stud Ram.png",
+                    "ipfsHash": "QmcWpkfXxCP7ZYGrh5FkdyMQEXHmJguyGm1wp5V9XQREeN"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Control Program NFTs/Control of Weeds and Insects.png",
+                    "ipfsHash": "QmV4PBWJqPfkn7CEqoaL9GWTB12yXLA6ucFtc66GJ9puHm"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Liabilities/New Shearing Shed.png",
+                    "ipfsHash": "QmPYRdzvmRoeSsLuhofbFY3LExgLMXdR8K1CZG1CywPupm"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Control Program NFTs/Fertilized Pasture.png",
+                    "ipfsHash": "QmVPR47pj3bNQxqNd6s47dSA2xU6BWbRjmxghVzENHeUGy"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Benefits/Hay Stack.png",
+                    "ipfsHash": "QmSAsgCJLkzz1YM7coi2Uk6c4huV9VueZnuVUvbCqkbtq8"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Liabilities/High Stock Prices Ruling.png",
+                    "ipfsHash": "QmaeT5dihKQ879bzXnJLJzpNEEfpJKcDzYWxQWmrqrdYZF"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Control Program NFTs/Worm Control Programme.png",
+                    "ipfsHash": "QmVNu5Q4BKZfWxFbxgptCvzRWZhg7fz3o8ioLQxk8p1JgB"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Liabilities/Blow Fly Wave.png",
+                    "ipfsHash": "QmZDqCXdxvndKf7XCHALQ2yUNviEtfGGQExBFThum7qY82"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Benefits/Fire Fighting Equipment.png",
+                    "ipfsHash": "QmbWFmtvw4CkUo25FGusUUbbTvvVEDqvzKXWDtGxQYDT4h"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmVk289qyW6KdETPhFt1GuggA9acQMMMEXxndaz9kD44EJ"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "ipfsHash": "QmWsrUKRAhhQsttGFKfq5LFtswW5BjD8r347Qs34x8SYNu"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Stud Rams/Lachlan Lad.png",
+                    "ipfsHash": "QmfWHVikmmbXtUkrsrNbkEVoPUSsKqVLg8LfP3JdnffFKA"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Stud Rams/Mitchell's Pride.png",
+                    "ipfsHash": "QmQq8PLBRQ5CkpRzhEPYyBbVbEjPqGvJCmHpoj4Fc4YxFM"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Stud Rams/Winton Boy II (1).png",
+                    "ipfsHash": "QmNxXeJtyjPvS16dJf6UCSRhvbnrHj6F8Pn3BBDfxFxdmp"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Stud Rams/eLMSFORD pARK rEX.png",
+                    "ipfsHash": "QmdUSfYnTmzCpd6rDkiu7aEhqN1hd1yeoe9NMJzMD2VnqR"
+                }
+            ]
+        },
+        "custom.publish_asset_files.1667530369800": {
+            "task": "custom.publish_asset_files",
+            "plugin": "custom",
+            "time": 1667530369800,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Stud Rams/King of Warramboo.png",
+                    "ipfsHash": "QmTdeXi5NaJqZPGSaAXW96xpwsm7yevuFpLgTzJS1DA7Cm"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Benefits/Insurance Policy for Stud Ram.png",
+                    "ipfsHash": "QmcWpkfXxCP7ZYGrh5FkdyMQEXHmJguyGm1wp5V9XQREeN"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Control Program NFTs/Control of Weeds and Insects.png",
+                    "ipfsHash": "QmV4PBWJqPfkn7CEqoaL9GWTB12yXLA6ucFtc66GJ9puHm"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Liabilities/New Shearing Shed.png",
+                    "ipfsHash": "QmPYRdzvmRoeSsLuhofbFY3LExgLMXdR8K1CZG1CywPupm"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Control Program NFTs/Fertilized Pasture.png",
+                    "ipfsHash": "QmVPR47pj3bNQxqNd6s47dSA2xU6BWbRjmxghVzENHeUGy"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Benefits/Hay Stack.png",
+                    "ipfsHash": "QmSAsgCJLkzz1YM7coi2Uk6c4huV9VueZnuVUvbCqkbtq8"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Liabilities/High Stock Prices Ruling.png",
+                    "ipfsHash": "QmaeT5dihKQ879bzXnJLJzpNEEfpJKcDzYWxQWmrqrdYZF"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Control Program NFTs/Worm Control Programme.png",
+                    "ipfsHash": "QmVNu5Q4BKZfWxFbxgptCvzRWZhg7fz3o8ioLQxk8p1JgB"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Liabilities/Blow Fly Wave.png",
+                    "ipfsHash": "QmZDqCXdxvndKf7XCHALQ2yUNviEtfGGQExBFThum7qY82"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Benefits/Fire Fighting Equipment.png",
+                    "ipfsHash": "QmbWFmtvw4CkUo25FGusUUbbTvvVEDqvzKXWDtGxQYDT4h"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmVk289qyW6KdETPhFt1GuggA9acQMMMEXxndaz9kD44EJ"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "ipfsHash": "QmWsrUKRAhhQsttGFKfq5LFtswW5BjD8r347Qs34x8SYNu"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Stud Rams/Lachlan Lad.png",
+                    "ipfsHash": "QmfWHVikmmbXtUkrsrNbkEVoPUSsKqVLg8LfP3JdnffFKA"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Stud Rams/Mitchell's Pride.png",
+                    "ipfsHash": "QmQq8PLBRQ5CkpRzhEPYyBbVbEjPqGvJCmHpoj4Fc4YxFM"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Stud Rams/Winton Boy II (1).png",
+                    "ipfsHash": "QmNxXeJtyjPvS16dJf6UCSRhvbnrHj6F8Pn3BBDfxFxdmp"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Stud Rams/eLMSFORD pARK rEX.png",
+                    "ipfsHash": "QmdUSfYnTmzCpd6rDkiu7aEhqN1hd1yeoe9NMJzMD2VnqR"
+                }
+            ]
+        },
+        "custom.finalize_token_metadata_files.1667530369809": {
+            "task": "custom.finalize_token_metadata_files",
+            "plugin": "custom",
+            "time": 1667530369809,
+            "output": [
+                {
+                    "mainAssetFiles": []
+                }
+            ]
+        },
+        "@taqueria/plugin-ipfs-pinata.publish.1667530373790": {
+            "task": "publish",
+            "plugin": "@taqueria/plugin-ipfs-pinata",
+            "time": 1667530373790,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Liabilities/Blow Fly Wave.png",
+                    "ipfsHash": "QmZDqCXdxvndKf7XCHALQ2yUNviEtfGGQExBFThum7qY82"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Liabilities/New Shearing Shed.png",
+                    "ipfsHash": "QmPYRdzvmRoeSsLuhofbFY3LExgLMXdR8K1CZG1CywPupm"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Benefits/Fire Fighting Equipment.png",
+                    "ipfsHash": "QmbWFmtvw4CkUo25FGusUUbbTvvVEDqvzKXWDtGxQYDT4h"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Benefits/Insurance Policy for Stud Ram.png",
+                    "ipfsHash": "QmcWpkfXxCP7ZYGrh5FkdyMQEXHmJguyGm1wp5V9XQREeN"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Control Program NFTs/Control of Weeds and Insects.png",
+                    "ipfsHash": "QmV4PBWJqPfkn7CEqoaL9GWTB12yXLA6ucFtc66GJ9puHm"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Control Program NFTs/Worm Control Programme.png",
+                    "ipfsHash": "QmVNu5Q4BKZfWxFbxgptCvzRWZhg7fz3o8ioLQxk8p1JgB"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Benefits/Hay Stack.png",
+                    "ipfsHash": "QmSAsgCJLkzz1YM7coi2Uk6c4huV9VueZnuVUvbCqkbtq8"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Control Program NFTs/Fertilized Pasture.png",
+                    "ipfsHash": "QmVPR47pj3bNQxqNd6s47dSA2xU6BWbRjmxghVzENHeUGy"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Liabilities/High Stock Prices Ruling.png",
+                    "ipfsHash": "QmaeT5dihKQ879bzXnJLJzpNEEfpJKcDzYWxQWmrqrdYZF"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Stud Rams/King of Warramboo.png",
+                    "ipfsHash": "QmTdeXi5NaJqZPGSaAXW96xpwsm7yevuFpLgTzJS1DA7Cm"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmVk289qyW6KdETPhFt1GuggA9acQMMMEXxndaz9kD44EJ"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "ipfsHash": "QmWsrUKRAhhQsttGFKfq5LFtswW5BjD8r347Qs34x8SYNu"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Stud Rams/Winton Boy II (1).png",
+                    "ipfsHash": "QmNxXeJtyjPvS16dJf6UCSRhvbnrHj6F8Pn3BBDfxFxdmp"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Stud Rams/Lachlan Lad.png",
+                    "ipfsHash": "QmfWHVikmmbXtUkrsrNbkEVoPUSsKqVLg8LfP3JdnffFKA"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Stud Rams/eLMSFORD pARK rEX.png",
+                    "ipfsHash": "QmdUSfYnTmzCpd6rDkiu7aEhqN1hd1yeoe9NMJzMD2VnqR"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Stud Rams/Mitchell's Pride.png",
+                    "ipfsHash": "QmQq8PLBRQ5CkpRzhEPYyBbVbEjPqGvJCmHpoj4Fc4YxFM"
+                }
+            ]
+        },
+        "custom.publish_metadata_files.1667530373804": {
+            "task": "custom.publish_metadata_files",
+            "plugin": "custom",
+            "time": 1667530373804,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Liabilities/Blow Fly Wave.png",
+                    "ipfsHash": "QmZDqCXdxvndKf7XCHALQ2yUNviEtfGGQExBFThum7qY82"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Liabilities/New Shearing Shed.png",
+                    "ipfsHash": "QmPYRdzvmRoeSsLuhofbFY3LExgLMXdR8K1CZG1CywPupm"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Benefits/Fire Fighting Equipment.png",
+                    "ipfsHash": "QmbWFmtvw4CkUo25FGusUUbbTvvVEDqvzKXWDtGxQYDT4h"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Benefits/Insurance Policy for Stud Ram.png",
+                    "ipfsHash": "QmcWpkfXxCP7ZYGrh5FkdyMQEXHmJguyGm1wp5V9XQREeN"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Control Program NFTs/Control of Weeds and Insects.png",
+                    "ipfsHash": "QmV4PBWJqPfkn7CEqoaL9GWTB12yXLA6ucFtc66GJ9puHm"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Control Program NFTs/Worm Control Programme.png",
+                    "ipfsHash": "QmVNu5Q4BKZfWxFbxgptCvzRWZhg7fz3o8ioLQxk8p1JgB"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Benefits/Hay Stack.png",
+                    "ipfsHash": "QmSAsgCJLkzz1YM7coi2Uk6c4huV9VueZnuVUvbCqkbtq8"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Control Program NFTs/Fertilized Pasture.png",
+                    "ipfsHash": "QmVPR47pj3bNQxqNd6s47dSA2xU6BWbRjmxghVzENHeUGy"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Liabilities/High Stock Prices Ruling.png",
+                    "ipfsHash": "QmaeT5dihKQ879bzXnJLJzpNEEfpJKcDzYWxQWmrqrdYZF"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Stud Rams/King of Warramboo.png",
+                    "ipfsHash": "QmTdeXi5NaJqZPGSaAXW96xpwsm7yevuFpLgTzJS1DA7Cm"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmVk289qyW6KdETPhFt1GuggA9acQMMMEXxndaz9kD44EJ"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "ipfsHash": "QmWsrUKRAhhQsttGFKfq5LFtswW5BjD8r347Qs34x8SYNu"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Stud Rams/Winton Boy II (1).png",
+                    "ipfsHash": "QmNxXeJtyjPvS16dJf6UCSRhvbnrHj6F8Pn3BBDfxFxdmp"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Stud Rams/Lachlan Lad.png",
+                    "ipfsHash": "QmfWHVikmmbXtUkrsrNbkEVoPUSsKqVLg8LfP3JdnffFKA"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Stud Rams/eLMSFORD pARK rEX.png",
+                    "ipfsHash": "QmdUSfYnTmzCpd6rDkiu7aEhqN1hd1yeoe9NMJzMD2VnqR"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Stud Rams/Mitchell's Pride.png",
+                    "ipfsHash": "QmQq8PLBRQ5CkpRzhEPYyBbVbEjPqGvJCmHpoj4Fc4YxFM"
+                }
+            ]
+        },
+        "custom.mint_tokens.1667530373854": {
+            "task": "custom.mint_tokens",
+            "plugin": "custom",
+            "time": 1667530373854,
+            "output": [
+                {
+                    "contractAddress": "KT1AsRhcqx3rSfGzRqAztgRyjQsh2cNuJKYX",
+                    "mintedTokens": []
+                }
+            ]
+        },
+        "custom.udpate_app_settings.1667530373861": {
+            "task": "custom.udpate_app_settings",
+            "plugin": "custom",
+            "time": 1667530373861,
+            "output": null
+        },
+        "custom.hasFileChanged_assets_collection_json.1667584169063": {
+            "task": "custom.hasFileChanged_assets_collection_json",
+            "plugin": "custom",
+            "time": 1667584169063,
+            "output": []
+        },
+        "@taqueria/plugin-ipfs-pinata.publish.1667584172040": {
+            "task": "publish",
+            "plugin": "@taqueria/plugin-ipfs-pinata",
+            "time": 1667584172040,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmYyhYqNMaAMjfmTaG7iBQyKwdg8S1ZPEdrdE43YqqWcrq"
+                }
+            ]
+        },
+        "custom.publish_contract_metadata.1667584172051": {
+            "task": "custom.publish_contract_metadata",
+            "plugin": "custom",
+            "time": 1667584172051,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmYyhYqNMaAMjfmTaG7iBQyKwdg8S1ZPEdrdE43YqqWcrq"
+                }
+            ]
+        },
+        "custom.originate_with_storage.1667584177203": {
+            "task": "custom.originate_with_storage",
+            "plugin": "custom",
+            "time": 1667584177203,
+            "output": [
+                {
+                    "contractAddress": "KT1UqZ1UbUQ4pazW2yx5Ua1MVwHYYhWn8TM1"
+                }
+            ]
+        },
+        "custom.haveFilesChanged_asset_metadata_files.1667584177215": {
+            "task": "custom.haveFilesChanged_asset_metadata_files",
+            "plugin": "custom",
+            "time": 1667584177215,
+            "output": [
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "changeTimeMs": 1667534238759.7747
+                },
+                {
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "changeTimeMs": 1667534362565.0193
+                }
+            ]
+        },
+        "custom.finalize_token_metadata_files.1667584177220": {
+            "task": "custom.finalize_token_metadata_files",
+            "plugin": "custom",
+            "time": 1667584177220,
+            "output": [
+                {
+                    "mainAssetFiles": []
+                }
+            ]
+        },
+        "@taqueria/plugin-ipfs-pinata.publish.1667584181320": {
+            "task": "publish",
+            "plugin": "@taqueria/plugin-ipfs-pinata",
+            "time": 1667584181320,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Liabilities/New Shearing Shed.png",
+                    "ipfsHash": "QmPYRdzvmRoeSsLuhofbFY3LExgLMXdR8K1CZG1CywPupm"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Control Program NFTs/Control of Weeds and Insects.png",
+                    "ipfsHash": "QmV4PBWJqPfkn7CEqoaL9GWTB12yXLA6ucFtc66GJ9puHm"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Benefits/Fire Fighting Equipment.png",
+                    "ipfsHash": "QmbWFmtvw4CkUo25FGusUUbbTvvVEDqvzKXWDtGxQYDT4h"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Stud Rams/King of Warramboo.png",
+                    "ipfsHash": "QmTdeXi5NaJqZPGSaAXW96xpwsm7yevuFpLgTzJS1DA7Cm"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Liabilities/High Stock Prices Ruling.png",
+                    "ipfsHash": "QmaeT5dihKQ879bzXnJLJzpNEEfpJKcDzYWxQWmrqrdYZF"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Benefits/Insurance Policy for Stud Ram.png",
+                    "ipfsHash": "QmcWpkfXxCP7ZYGrh5FkdyMQEXHmJguyGm1wp5V9XQREeN"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Liabilities/Blow Fly Wave.png",
+                    "ipfsHash": "QmZDqCXdxvndKf7XCHALQ2yUNviEtfGGQExBFThum7qY82"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Control Program NFTs/Fertilized Pasture.png",
+                    "ipfsHash": "QmVPR47pj3bNQxqNd6s47dSA2xU6BWbRjmxghVzENHeUGy"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Control Program NFTs/Worm Control Programme.png",
+                    "ipfsHash": "QmVNu5Q4BKZfWxFbxgptCvzRWZhg7fz3o8ioLQxk8p1JgB"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Benefits/Hay Stack.png",
+                    "ipfsHash": "QmSAsgCJLkzz1YM7coi2Uk6c4huV9VueZnuVUvbCqkbtq8"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmYyhYqNMaAMjfmTaG7iBQyKwdg8S1ZPEdrdE43YqqWcrq"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Stud Rams/Mitchell's Pride.png",
+                    "ipfsHash": "QmQq8PLBRQ5CkpRzhEPYyBbVbEjPqGvJCmHpoj4Fc4YxFM"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Stud Rams/Lachlan Lad.png",
+                    "ipfsHash": "QmfWHVikmmbXtUkrsrNbkEVoPUSsKqVLg8LfP3JdnffFKA"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Stud Rams/Winton Boy II (1).png",
+                    "ipfsHash": "QmNxXeJtyjPvS16dJf6UCSRhvbnrHj6F8Pn3BBDfxFxdmp"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Stud Rams/eLMSFORD pARK rEX.png",
+                    "ipfsHash": "QmdUSfYnTmzCpd6rDkiu7aEhqN1hd1yeoe9NMJzMD2VnqR"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "ipfsHash": "QmPhbZ7k12GZAauRhvtKWJGg4oesVqmvviTsG2rbZucgnF"
+                }
+            ]
+        },
+        "custom.publish_metadata_files.1667584181333": {
+            "task": "custom.publish_metadata_files",
+            "plugin": "custom",
+            "time": 1667584181333,
+            "output": [
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Liabilities/New Shearing Shed.png",
+                    "ipfsHash": "QmPYRdzvmRoeSsLuhofbFY3LExgLMXdR8K1CZG1CywPupm"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Control Program NFTs/Control of Weeds and Insects.png",
+                    "ipfsHash": "QmV4PBWJqPfkn7CEqoaL9GWTB12yXLA6ucFtc66GJ9puHm"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Benefits/Fire Fighting Equipment.png",
+                    "ipfsHash": "QmbWFmtvw4CkUo25FGusUUbbTvvVEDqvzKXWDtGxQYDT4h"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Stud Rams/King of Warramboo.png",
+                    "ipfsHash": "QmTdeXi5NaJqZPGSaAXW96xpwsm7yevuFpLgTzJS1DA7Cm"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Liabilities/High Stock Prices Ruling.png",
+                    "ipfsHash": "QmaeT5dihKQ879bzXnJLJzpNEEfpJKcDzYWxQWmrqrdYZF"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Benefits/Insurance Policy for Stud Ram.png",
+                    "ipfsHash": "QmcWpkfXxCP7ZYGrh5FkdyMQEXHmJguyGm1wp5V9XQREeN"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Liabilities/Blow Fly Wave.png",
+                    "ipfsHash": "QmZDqCXdxvndKf7XCHALQ2yUNviEtfGGQExBFThum7qY82"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Control Program NFTs/Fertilized Pasture.png",
+                    "ipfsHash": "QmVPR47pj3bNQxqNd6s47dSA2xU6BWbRjmxghVzENHeUGy"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Control Program NFTs/Worm Control Programme.png",
+                    "ipfsHash": "QmVNu5Q4BKZfWxFbxgptCvzRWZhg7fz3o8ioLQxk8p1JgB"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Benefits/Hay Stack.png",
+                    "ipfsHash": "QmSAsgCJLkzz1YM7coi2Uk6c4huV9VueZnuVUvbCqkbtq8"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/_collection.json",
+                    "ipfsHash": "QmYyhYqNMaAMjfmTaG7iBQyKwdg8S1ZPEdrdE43YqqWcrq"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Stud Rams/Mitchell's Pride.png",
+                    "ipfsHash": "QmQq8PLBRQ5CkpRzhEPYyBbVbEjPqGvJCmHpoj4Fc4YxFM"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Stud Rams/Lachlan Lad.png",
+                    "ipfsHash": "QmfWHVikmmbXtUkrsrNbkEVoPUSsKqVLg8LfP3JdnffFKA"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Stud Rams/Winton Boy II (1).png",
+                    "ipfsHash": "QmNxXeJtyjPvS16dJf6UCSRhvbnrHj6F8Pn3BBDfxFxdmp"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/Stud Rams/eLMSFORD pARK rEX.png",
+                    "ipfsHash": "QmdUSfYnTmzCpd6rDkiu7aEhqN1hd1yeoe9NMJzMD2VnqR"
+                },
+                {
+                    "?": "✔",
+                    "filePath": "/home/mike/taqueria-scaffold-nft/taqueria/assets/_common.json",
+                    "ipfsHash": "QmPhbZ7k12GZAauRhvtKWJGg4oesVqmvviTsG2rbZucgnF"
+                }
+            ]
+        },
+        "custom.mint_tokens.1667584181363": {
+            "task": "custom.mint_tokens",
+            "plugin": "custom",
+            "time": 1667584181363,
+            "output": [
+                {
+                    "contractAddress": "KT1UqZ1UbUQ4pazW2yx5Ua1MVwHYYhWn8TM1",
+                    "mintedTokens": []
+                }
+            ]
+        },
+        "custom.udpate_app_settings.1667584181371": {
+            "task": "custom.udpate_app_settings",
+            "plugin": "custom",
+            "time": 1667584181371,
+            "output": null
+        }
+    }
 }

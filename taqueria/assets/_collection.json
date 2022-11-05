@@ -1,9 +1,9 @@
 {
     "version": "v1.0.0",
-    "name": "Taqueria Nft Scaffold",
-    "description": "Using the Taqueria Nft Scaffold will make all your wildest dreams come true.",
+    "name": "Game of Sheep NFT Collection",
+    "description": "The NFTs used as benefits, liabilities and assets in the Game of Sheep",
     "authors": [
-        "ECAD Labs"
+        "Michael Kernaghan"
     ],
     "interfaces": [
         "TZIP-012",

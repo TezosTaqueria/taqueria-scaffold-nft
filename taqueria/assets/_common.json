@@ -1,17 +1,15 @@
 {
     "type": "TaqueriaNftScaffold",
     "creators": [
-        "ECAD Labs Inc."
+        "Michael Kernaghan"
     ],
     "contributors": [
-        "Rick Love"
     ],
     "publishers": [
-        "ECAD Labs Inc."
     ],
-    "externalUri": "https://ecadlabs.com",
+    "externalUri": "https://gameofsheep.netlify.app/",
     "tags": [
-        "ECAD"
+        "Game of Sheep"
     ],
     "royalties": {
         "decimals": 2,
@@ -20,5 +18,5 @@
     "decimals": 0,
     "isBooleanAmount": true,
     "language": "en",
-    "date": "2022-07-12T20:32:25.960Z"
+    "date": "2022-11-03T20:32:25.960Z"
 }
