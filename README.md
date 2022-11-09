@@ -16,16 +16,17 @@ In a rush? You can follow the steps below to get up and running immediately:
 ### Scaffold and Initialize the Project
 
 1. `taq scaffold https://github.com/ecadlabs/taqueria-scaffold-nft nft-scaffold`
-1. `cd nft-scaffold`
-1. `npm run setup`
-1. `cd taqueria`
-1. `touch .env`
-1. Get your Pinata JWT token from your [Pinata account](https://app.pinata.cloud/signin)
-1. Insert the JWT from Pinata into the .env file `echo "pinataJwtToken=eyJhbGc..." >> .env`
-1. `cd ..`
-1. `npm run start:taqueria:local`
-1. `npm run apply`
-1. `npm run start:app`
+2. `cd nft-scaffold`
+3. `npm run setup`
+4. `cd taqueria`
+5. `touch .env`
+6. Get your Pinata JWT token from your [Pinata account](https://app.pinata.cloud/signin)
+> Please note that the JWT key is only displayed once when you add a new key. If you have saved a JWS access token, you can use that, but if not, you will have to add a new key and copy the JWT from that. 
+7. Insert the JWT from Pinata into the .env file `echo "pinataJwtToken=eyJhbGc..." >> .env`
+8. `cd ..`
+9. `npm run start:taqueria:local`
+10. `npm run apply`
+11. `npm run start:app`
 
 ## Overview
 
