@@ -35,6 +35,8 @@ let update_token_metadata (p, s: (token_id * bytes) * storage): storage =
 let mint (p, s: (mint_param list) * storage): storage =
     if List.length p = 0n
     then (failwith "EMPTY_LIST": storage)
+    else if Tezos.get_sender () <> s.admin
+    then failwith "NOT_AN_ADMIN"
     else
         List.fold
             (
