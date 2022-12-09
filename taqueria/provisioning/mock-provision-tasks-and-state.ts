@@ -107,8 +107,8 @@ const readDevelopmentState = async () => {
         return await fs.readFile(developmentStateFilePath, { encoding: 'utf-8' });
     } catch {
         await fs.writeFile(developmentStateFilePath, JSON.stringify({
-            operations: [],
-            tasks: []
+            operations: {},
+            tasks: {}
         }));
         return await fs.readFile(developmentStateFilePath, { encoding: 'utf-8' });
     }
