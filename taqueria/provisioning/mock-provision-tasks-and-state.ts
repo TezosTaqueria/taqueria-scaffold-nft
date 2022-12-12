@@ -25,7 +25,7 @@ const getAllTaskOutput = async <TOutput extends null | unknown[]>(plugin: string
     //    }
 
 
-    const allStateContent = await fs.readFile(developmentStateFilePath, { encoding: 'utf-8' });
+    const allStateContent = await readDevelopmentState();
     const allState = JSON.parse(allStateContent) as DevelopmentStateJson<TOutput>;
 
     const items = [...Object.entries(allState.tasks)]
@@ -102,6 +102,20 @@ type DevelopmentStateJson<TOutput> = {
 };
 
 const developmentStateFilePath = path.resolve(process.cwd(), './.taq/development-state.json');
+const readDevelopmentState = async () => {
+    try {
+        return await fs.readFile(developmentStateFilePath, { encoding: 'utf-8' });
+    } catch {
+        await fs.writeFile(developmentStateFilePath, JSON.stringify({
+            operations: {},
+            tasks: {}
+        }));
+        return await fs.readFile(developmentStateFilePath, { encoding: 'utf-8' });
+    }
+};
+const writeDevelopmentState = async (allState: unknown) => {
+    await fs.writeFile(developmentStateFilePath, JSON.stringify(allState, null, 4));
+};
 
 export const provisionerInstance = createProvisioner({
     getInputState: async () => {
@@ -153,7 +167,7 @@ export const provisionerInstance = createProvisioner({
         };
     },
     addProvisionTaskOutputToState: async (provisionName, provisionOutput) => {
-        const allStateContent = await fs.readFile(developmentStateFilePath, { encoding: 'utf-8' });
+        const allStateContent = await readDevelopmentState();
         const allState = JSON.parse(allStateContent) as DevelopmentStateJson<unknown>;
 
         const timestamp = Date.now();
@@ -164,6 +178,6 @@ export const provisionerInstance = createProvisioner({
             output: provisionOutput
         };
 
-        await fs.writeFile(developmentStateFilePath, JSON.stringify(allState, null, 4));
+        await writeDevelopmentState(allState);
     },
 });
