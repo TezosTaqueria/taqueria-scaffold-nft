@@ -2,17 +2,18 @@
   "private": true,
   "name": "@local/contract",
   "scripts": {
-    "start:local": "taq start sandbox local",
-    "stop:local": "taq stop sandbox local"
+    "build": "taq compile main && taq generate types ../app/src/types",
+    "start:local": "taq start sandbox development",
+    "stop:local": "taq stop sandbox development"
   },
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {
-    "@taqueria/plugin-contract-types": "^0.24.1",
-    "@taqueria/plugin-flextesa": "^0.24.1",
-    "@taqueria/plugin-ipfs-pinata": "^0.24.1",
-    "@taqueria/plugin-ligo": "^0.24.1",
-    "@taqueria/plugin-taquito": "^0.24.1",
+    "@taqueria/plugin-contract-types": "file:../../../taqueria/taqueria-plugin-contract-types",
+    "@taqueria/plugin-flextesa": "file:../../../taqueria/taqueria-plugin-flextesa",
+    "@taqueria/plugin-ipfs-pinata": "file:../../../taqueria/taqueria-plugin-ipfs-pinata",
+    "@taqueria/plugin-ligo": "file:../../../taqueria/taqueria-plugin-ligo",
+    "@taqueria/plugin-taquito": "file:../../../taqueria/taqueria-plugin-taquito",
     "@taquito/signer": "13.0.0",
     "@taquito/taquito": "13.0.0",
     "@taquito/utils": "13.0.0",

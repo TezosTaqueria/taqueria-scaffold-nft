@@ -2,7 +2,7 @@
 import { ContractAbstractionFromContractType, WalletContractAbstractionFromContractType } from './type-utils';
 import { address, BigMap, bytes, contract, MMap, nat, unit } from './type-aliases';
 
-type Storage = {
+export type Storage = {
     admin: address;
     ledger: BigMap<{
         0: address;
@@ -14,6 +14,7 @@ type Storage = {
         operator: address;
         token_id: nat;
     }, unit>;
+    paused: boolean;
     token_metadata: BigMap<nat, {
         token_id: nat;
         token_info: MMap<string, bytes>;
@@ -34,6 +35,7 @@ type Methods = {
             ipfs_hash: bytes;
             owner: address;
         }>) => Promise<void>;
+    pause: () => Promise<void>;
     transfer: (param: Array<{
             from_: address;
             txs: Array<{
@@ -73,6 +75,7 @@ type MethodsObject = {
             ipfs_hash: bytes;
             owner: address;
         }>) => Promise<void>;
+    pause: () => Promise<void>;
     transfer: (param: Array<{
             from_: address;
             txs: Array<{
