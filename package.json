@@ -9,7 +9,7 @@
   "private": true,
   "scripts": {
     "setup": "npm run setup:taqueria && npm run setup:app",
-    "setup:taqueria": "cd ./taqueria && npm install && taq init",
+    "setup:taqueria": "cd ./taqueria && npm install && taq init && taq install @taqueria/plugin-contract-types",
     "setup:app": "cd ./app && npm install",
     "start": "npm run build:taqueria && npm run start:app",
     "build:taqueria": "cd ./taqueria && npm run build",
